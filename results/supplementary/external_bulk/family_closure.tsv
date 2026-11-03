@@ -1,0 +1,5 @@
+family	frozen_size	terminal_slots	estimable	nonestimable	unavailable	pending	closed	method
+PEA_CORE	2	2	2	0	0	0	TRUE	BH_on_raw_P_with_full_frozen_size
+PEA_G_MEMBERS	7	7	7	0	0	0	TRUE	BH_on_raw_P_with_full_frozen_size
+PEA_H_MEMBERS	4	4	4	0	0	0	TRUE	BH_on_raw_P_with_full_frozen_size
+PEA_CONTEXT	4	4	4	0	0	0	TRUE	BH_on_raw_P_with_full_frozen_size

@@ -1,0 +1,5 @@
+namespace	hypotheses	family_instances	estimable	nonestimable	unavailable	other_states	timing
+original	146	29	115	14	0	ESTIMABLE=115;NA_NONESTIMABLE=14;NA_NOT_APPLICABLE=17	Original_registered_roles_preserved
+A	17	4	17	0	0	ESTIMABLE=17	post_effect_exploratory
+B	12	4	10	0	2	ESTIMABLE=10;NA_UNAVAILABLE=2	post_effect_exploratory
+CD	13	4	6	2	5	ESTIMABLE=6;NA_NONESTIMABLE=2;NA_UNAVAILABLE=5	post_effect_exploratory

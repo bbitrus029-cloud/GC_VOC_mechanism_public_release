@@ -1,0 +1,2 @@
+original_feature_id	original_symbol	original_source_row	historical_gene_version	canonical_symbol	canonical_hgnc	assembly	reference_scope	action	active
+ENSG00000132465	IGJ	7669	6	JCHAIN	HGNC:5713	GRCh37	10x_hg19_1.2.0_GTF82_supported	APPROVED_SAME_GENE_RECONCILIATION	TRUE

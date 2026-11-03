@@ -1,0 +1,5 @@
+"member"	"matches"	"mapping_state"	"feature_id"	"source_symbol"	"source_row"	"technical_eligible"	"reason"	"eligible_units"	"nonzero_units"	"nonzero_fraction"	"paired_both_nonzero"
+"ALDH2"	1	"UNIQUE"	"ENSG00000111275"	"ALDH2"	21435	TRUE	"RUNTIME_MODEL_PENDING"	47	4.7e+01	1e+00	23
+"ALDH3A1"	1	"UNIQUE"	"ENSG00000108602"	"ALDH3A1"	26559	TRUE	"RUNTIME_MODEL_PENDING"	47	4.7e+01	1e+00	23
+"ALDH3A2"	1	"UNIQUE"	"ENSG00000072210"	"ALDH3A2"	26554	TRUE	"RUNTIME_MODEL_PENDING"	47	4.7e+01	1e+00	23
+"ALDH7A1"	1	"UNIQUE"	"ENSG00000164904"	"ALDH7A1"	9441	TRUE	"RUNTIME_MODEL_PENDING"	47	4.7e+01	1e+00	23

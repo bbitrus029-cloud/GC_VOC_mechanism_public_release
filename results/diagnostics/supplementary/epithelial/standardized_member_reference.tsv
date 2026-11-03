@@ -1,0 +1,5 @@
+"member"	"feature_id"	"pooled_mean"	"pooled_sample_SD"	"formal_samples"	"input_scale"
+"ALDH2"	"ENSG00000111275"	636.826086956522	650.854354909259	46	"unintegrated_raw_pseudobulk_counts_pooled_formal_units"
+"ALDH3A1"	"ENSG00000108602"	679.152173913043	838.397253160028	46	"unintegrated_raw_pseudobulk_counts_pooled_formal_units"
+"ALDH3A2"	"ENSG00000072210"	143.95652173913	147.616764558582	46	"unintegrated_raw_pseudobulk_counts_pooled_formal_units"
+"ALDH7A1"	"ENSG00000164904"	93.5869565217391	99.27304122961	46	"unintegrated_raw_pseudobulk_counts_pooled_formal_units"

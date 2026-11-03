@@ -1,0 +1,971 @@
+schema_version: 2.1.4
+programs:
+  G_core:
+    members:
+    - ACSL4
+    - LPCAT3
+    - ALOX5
+    - ALOX12
+    - ALOX15
+    - ALOX15B
+    - POR
+    orientation: all_positive
+    equal_weight: true
+    formal_bulk:
+      sources:
+      - GSE29272
+      - GSE27342
+      - GSE122401
+      - TCGA_STAD
+      required_count: 7
+      required_members:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX12
+      - ALOX15
+      - ALOX15B
+      - POR
+      reduced_member_fallback: false
+    single_cell:
+      required_count: 5
+      substrate_assembly_minimum: 1
+      oxidation_support_minimum: 2
+    protein:
+      required_count: 6
+      members:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX15
+      - ALOX15B
+      - POR
+    bridge:
+      required_count: 6
+      members:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX15
+      - ALOX15B
+      - POR
+  H_core:
+    members:
+    - ALDH2
+    - ALDH3A1
+    - ALDH3A2
+    - ALDH7A1
+    orientation: all_positive
+    equal_weight: true
+    formal_bulk:
+      sources:
+      - GSE29272
+      - GSE27342
+      - GSE122401
+      - TCGA_STAD
+      required_count: 4
+      required_members:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+      reduced_member_fallback: false
+    single_cell:
+      required_count: 3
+      fatty_aldehyde_group_minimum: 1
+      complementary_group_minimum: 1
+    protein:
+      required_count: 4
+      members:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+    bridge:
+      required_count: 4
+      members:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+  context_programs:
+    G_buffer:
+    - GPX4
+    - SLC7A11
+    - GCLC
+    - GCLM
+    - GSR
+    - AIFM2
+    - DHODH
+    - GCH1
+    H_expanded:
+    - ALDH1A1
+    - ALDH1A3
+    - ALDH3B1
+    H_reductive:
+    - AKR1B1
+    - AKR1B10
+    H_conjugation:
+    - GSTA4
+    - GSTP1
+    may_rescue_core_result: false
+coverage_contracts:
+  context_programs:
+    G_buffer:
+    - GPX4
+    - SLC7A11
+    - GCLC
+    - GCLM
+    - GSR
+    - AIFM2
+    - DHODH
+    - GCH1
+    H_expanded:
+    - ALDH1A1
+    - ALDH1A3
+    - ALDH3B1
+    H_reductive:
+    - AKR1B1
+    - AKR1B10
+    H_conjugation:
+    - GSTA4
+    - GSTP1
+  context_complete_membership_required: true
+  missing_fixed_member_action: endpoint_nonestimable_no_reduced_fallback
+  G_submodules:
+    substrate_assembly:
+    - ACSL4
+    - LPCAT3
+    oxidation_support:
+    - ALOX5
+    - ALOX12
+    - ALOX15
+    - ALOX15B
+    - POR
+    complete_membership_required: true
+    role: nominal_diagnostic_no_q_value
+  protein_core_common_pairs:
+    G: 28
+    H: 30
+  protein_core_member_pair_rule: all_G_program_and_six_G_member_tests_use_same_28_pairs_all_H_program_and_four_H_member_tests_use_same_30_pairs
+  protein_context:
+    pair_rule: one_pre_effect_frozen_common_complete_pair_set_per_fixed_program
+    pair_exclusion_rule: exclude_patient_from_program_if_any_fixed_member_missing
+    member_specific_maximum_n_prohibited: true
+    common_pair_set_frozen_before_effect_access: true
+scoring:
+  primary_rank:
+    direction: ascending
+    tie_method: average
+    background_scope: frozen_source_level
+    background_requires_finite_values_in_all_formal_samples: true
+    mapping_filtering_and_collapse_before_ranking: true
+    rank_formula: R_js=rank_average_ascending(x_js_within_B_k)
+    scale_formula: u_js=(R_js-1)/(|B_k|-1)
+    program_formula: S_ps=sum(u_js_for_j_in_program)/K
+    minimum_background_size: 2
+    missing_member_imputation: false
+    member_substitution: false
+    interpretation: within_source_relative_abundance_position_not_absolute_expression_or_cross_source_calibration
+  common_background_sensitivity:
+    sources:
+    - GSE29272
+    - GSE27342
+    definition: intersection_of_reliable_canonical_genes_after_mapping_filtering_and_collapse
+    freeze_gene_list_and_sha256_before_effect_access: true
+  standardized_member_mean:
+    role: prespecified_sensitivity
+    standardization_universe: pooled_tissue_blind_formal_samples_within_source_and_endpoint
+    formula: equal_mean_of_member_z_scores
+    zero_variance_action: nonestimable
+    may_replace_primary: false
+primary_inference:
+  paired_program:
+    estimand: mean_of_complete_pair_tumor_minus_NAT_score_differences
+    test: two_sided_one_sample_Student_t_test_against_zero
+    ci: two_sided_Student_t_95_percent_CI_for_mean_difference
+    alpha: 0.05
+    minimum_pairs: 3
+    sd_tolerance_formula: sqrt(.Machine$double.eps)*max(1,max(abs(delta)))
+    variance_comparison: var(delta)<=tol(delta)^2
+    nonestimable_if:
+    - n_less_than_3
+    - any_nonfinite_formal_pair_difference
+    - effective_zero_SD_of_pair_differences
+    nonestimable_state: NA_NONESTIMABLE
+    raw_mean_difference_reported_when_computable: true
+    infinite_t_or_degenerate_point_interval_prohibited: true
+    direction_basis: unrounded_raw_paired_mean_difference
+    applies_to:
+    - formal_bulk_programs
+    - eligible_single_cell_programs
+    - protein_programs
+    - fixed_context_programs
+    - G_submodule_diagnostics
+  GSE122401_member_model:
+    method: ordinary_limma_empirical_Bayes_paired_patient_plus_tissue
+    voom: false
+    input: log2_upper_quartile_normalized_RSEM_plus_1
+  GSE27342:
+    core_64:
+      program_method: paired_delta_Student_t_test_and_Student_t_CI
+      context_program_method: paired_delta_Student_t_test_and_Student_t_CI
+      member_method: ordinary_limma_empirical_Bayes_expression_tissue_plus_patient
+      exact_G_and_H_membership: G7_H4
+    batch_vulnerability_80:
+      permitted_endpoints:
+      - G_core_program
+      - H_core_program
+      member_context_LOO_and_other_extensions_prohibited: true
+      exact_G_and_H_membership: G7_H4
+    scan_date_role: defines_64_pair_subset_and_QC_only_not_a_model_covariate
+  GSE29272_site_interaction:
+    model: paired_program_delta_as_function_of_frozen_site
+    formula: delta_program_score~site
+    hypotheses:
+    - G_site_interaction
+    - H_site_interaction
+    multiplicity_family: BULK_SITE_INTERACTION
+    adjustment: BH2
+    stratum_estimates_role: nominal_diagnostic_no_separate_q_family
+diagnostic_inference:
+  paired_wilcoxon:
+    method: stats_wilcox_test_paired_TRUE_exact_FALSE_correct_FALSE_two_sided
+    multiplicity_role: nominal_diagnostic_no_q_value
+    may_change_primary_state: false
+diagnostic_bootstrap:
+  paired_program:
+    resampling_unit: complete_pair_id
+    resample_tumor_and_NAT_together: true
+    replicates: 10000
+    minimum_valid_replicates: 9500
+    interval: percentile
+    quantile_type: 7
+    invalid_replicate_action: discard_nonfinite_and_count
+    below_minimum_action: NA_NONESTIMABLE
+    alternative_interval_fallback_prohibited: true
+    multiplicity_role: nominal_diagnostic_no_q_value
+    may_change_primary_state: false
+bridge_inference:
+  point_estimate: Spearman_rho
+  nominal_p_method: stats_cor_test_method_spearman_exact_FALSE_two_sided
+  biological_unit: patient_complete_RNA_tumor_RNA_NAT_protein_tumor_protein_NAT_quadruplet
+  minimum_complete_cases: 15
+  bootstrap_resampling_unit: complete_patient_quadruplet
+  replicates: 10000
+  minimum_valid_replicates: 9500
+  primary_interval: patient_pair_bootstrap_percentile_type_7
+  sensitivity_interval: BCa_when_estimable
+  invalid_replicate_action: discard_nonfinite_and_count
+  below_minimum_action: bridge_nonestimable
+  alternative_primary_interval_fallback_prohibited: true
+  multiplicity_family: CPTAC_BRIDGE
+  state_order:
+  - bridge_nonestimable
+  - bridge_supported
+  - bridge_uncertain
+  bridge_nonestimable_rule: n_less_than_15_or_nonfinite_rho_or_valid_bootstrap_replicates_below_9500_or_required_input_invalid
+  bridge_supported_rule: BH2_q_below_0.05_and_primary_percentile_CI_excludes_zero
+  bridge_uncertain_rule: estimable_and_not_bridge_supported
+  bridge_q_ci_inconsistent: XOR(BH2_q_below_0.05,primary_percentile_CI_excludes_zero)
+  bridge_nominal_p_ci_inconsistent: XOR(nominal_P_below_0.05,primary_percentile_CI_excludes_zero)
+  inconsistency_flag_nonestimable_value: NA_NONESTIMABLE
+paired_effect:
+  native_difference: mean_of_within_pair_tumor_minus_NAT_differences
+  standardized_measure: paired_Hedges_g_av
+  implementation_contract: Morris_DeShon_SMCRP_LS
+  metafor_DESCRIPTION_version: 5.0-1
+  metafor_packageVersion: 5.0.1
+  package_crosscheck: metafor_escalc_measure_SMCRP_vtype_LS_correct_TRUE
+  package_tolerance: 1.0e-12
+  s_av_formula: sqrt((s_T^2+s_N^2)/2)
+  d_av_formula: (mean_T-mean_N)/s_av
+  m_formula: 2*(n-1)/(1+r^2)
+  J_formula: exp(lgamma(m/2)-0.5*log(m/2)-lgamma((m-1)/2))
+  g_av_formula: J(m)*d_av
+  variance_formula: 2*(1-r)/n + g_av^2*(1+r^2)/(4*n)
+  ci_formula: g_av +/- qnorm(0.975)*sqrt(variance)
+  correlation: complete_case_Pearson_same_pairs_same_order
+  minimum_pairs: 3
+  sd_tolerance_formula: sqrt(.Machine$double.eps)*max(1,max(abs(x)))
+  nonestimable_if:
+  - n_less_than_3
+  - nonfinite_correlation
+  - effective_zero_variance_in_either_tissue
+  native_difference_reported_when_g_av_nonestimable: true
+result_states:
+  direction_basis: unrounded_raw_paired_mean_difference
+  active_C1_source_pair:
+    selection: two_technically_eligible_core_sources_after_frozen_backup_branch
+    normal_branch:
+    - GSE29272
+    - GSE27342_64
+    one_failure_branch_uses: GSE122401
+    effect_results_may_not_trigger_branch: true
+  dimension_A:
+    input: valid_native_paired_program_estimates_and_declared_BH2_q_values
+    remains_valid_when_g_av_is_nonestimable: true
+    direction_inputs:
+    - active_source_1_unrounded_raw_paired_mean_difference
+    - active_source_2_unrounded_raw_paired_mean_difference
+    same_direction_rule: product_of_unrounded_raw_paired_mean_differences_greater_than_zero
+    opposite_direction_rule: product_of_unrounded_raw_paired_mean_differences_less_than_zero
+    exact_zero_rule: either_valid_unrounded_raw_paired_mean_difference_exactly_zero_assigns_uncertain
+    classification_precedence:
+    - non_estimable
+    - uncertain_exact_zero
+    - replicated_program_change
+    - directionally_consistent_partial_support
+    - concordant_but_inconclusive
+    - opposite_direction_statistical_conflict
+    - directionally_discordant_inconclusive
+    - uncertain_catch_all
+  magnitude:
+    input: paired_Hedges_g_av_for_active_C1_source_pair
+    nonestimable_state: magnitude_nonestimable_g_av
+    dependent_flag_nonestimable_value: NA_NONESTIMABLE
+    nonestimable_if_either_active_source_g_av_invalid: true
+  reproducibility:
+    replicated_program_change: both_core_BH2_q_below_0.05_and_same_nonzero_direction
+    directionally_consistent_partial_support: exactly_one_core_BH2_q_below_0.05_and_same_nonzero_direction
+    concordant_but_inconclusive: neither_core_BH2_q_below_0.05_and_same_nonzero_direction
+    opposite_direction_statistical_conflict: both_core_BH2_q_below_0.05_and_opposite_direction
+    directionally_discordant_inconclusive: fewer_than_two_core_BH2_q_below_0.05_and_opposite_direction
+    uncertain: both_core_estimates_valid_but_no_prior_explicit_pattern_applies
+    non_estimable: required_core_estimate_invalid_after_frozen_backup_rule
+  zero_point_estimate_flag:
+    basis: any_unrounded_raw_paired_mean_difference_exactly_zero
+    changes_scientific_state: false
+  small_effect_region:
+    label: both_core_CI_bounded_within_small_effect_region
+    lower_bound: -0.2
+    upper_bound: 0.2
+    lower_operator: '>'
+    upper_operator: <
+    requires_both_core_cohorts: true
+    equivalence_test: false
+    TOST: false
+  precision_uncertain:
+    rule: at_least_one_core_CI_includes_zero_and_reaches_or_crosses_minus_0.20_or_plus_0.20
+    mutually_exclusive_with_small_effect_region_flag: true
+diagnostics:
+  direction_comparison:
+    same: product_greater_than_zero
+    opposite: product_less_than_zero
+    strict_zero: uncertain_not_directional
+  loo_direction_stable_by_source:
+    status_values:
+    - 'TRUE'
+    - 'FALSE'
+    - NA_NONESTIMABLE
+    - NA_NOT_DIRECTIONAL
+    direction_basis: unrounded_raw_paired_mean_difference
+    output_shape: source_by_axis_by_deleted_member_long_table
+    full_zero_state: NA_NOT_DIRECTIONAL
+    LOO_nonestimable_state: NA_NONESTIMABLE
+    same_nonzero_direction_state: 'TRUE'
+    opposite_direction_state: 'FALSE'
+    loo_zero_state: 'FALSE'
+  loo_direction_stable_both_core:
+    status_values:
+    - 'TRUE'
+    - 'FALSE'
+    - NA_NONESTIMABLE
+    - NA_NOT_DIRECTIONAL
+    aggregate_priority:
+    - 'FALSE'
+    - NA_NONESTIMABLE
+    - NA_NOT_DIRECTIONAL
+    - 'TRUE'
+    true_rule: all_required_deletions_in_both_core_sources_are_TRUE
+  member_direction_concordance:
+    numerator: members_with_same_nonzero_raw_mean_difference_sign_as_full_program
+    denominator_G: 7
+    denominator_H: 4
+    exact_zero_counts_as_concordant: false
+    full_program_zero_state: NA_NOT_DIRECTIONAL
+  loo_replication_label_sensitive:
+    status_values:
+    - 'TRUE'
+    - 'FALSE'
+    - NA_NONESTIMABLE
+    changes_primary_label: false
+    recompute_G_rule: LOO_G_nominal_P_plus_primary_H_nominal_P_then_BH2_per_source
+    recompute_H_rule: primary_G_nominal_P_plus_LOO_H_nominal_P_then_BH2_per_source
+    aggregate_rule: any_estimable_label_change_TRUE_else_any_required_nonestimable_NA_NONESTIMABLE_else_FALSE
+  score_method_sensitive:
+    direction_basis: raw_paired_mean_difference
+    true_rule: any_estimable_primary_rank_and_standardized_member_mean_comparison_has_opposite_nonzero_direction
+    false_rule: no_estimable_opposite_and_no_required_alternative_nonestimable
+    secondary_nonestimable_state: NA_NONESTIMABLE
+    zero_direction_rule: estimable_exact_zero_is_not_opposite_so_flag_FALSE_unless_another_comparison_is_opposite
+    zero_direction_interpretation: FALSE_does_not_support_directional_robustness_when_either_direction_is_exactly_zero
+    required_output_fields:
+    - primary_rank_unrounded_raw_paired_mean_difference
+    - standardized_member_mean_unrounded_raw_paired_mean_difference
+    - primary_rank_direction
+    - standardized_member_mean_direction
+    - score_method_sensitive
+    - score_method_nonestimable
+    - exact_zero_direction_flag
+  score_method_nonestimable:
+    status_values:
+    - 'TRUE'
+    - 'FALSE'
+    true_rule: any_required_standardized_member_mean_comparison_nonestimable
+  member_dominated_label_permitted: false
+multiplicity:
+  NA_handling: BH_on_finite_p_with_n_equal_frozen_family_size_then_restore_NA_in_frozen_order
+  inactive_GSE122401_rule: family_is_prefrozen_but_no_P_value_is_generated_unless_backup_is_activated
+  diagnostic_rule: nominal_diagnostics_have_no_q_value_and_cannot_change_formal_states
+  families:
+    BULK_CORE_GSE29272:
+      hypotheses:
+      - G_core
+      - H_core
+      frozen_size: 2
+    BULK_CORE_GSE27342_64:
+      hypotheses:
+      - G_core
+      - H_core
+      frozen_size: 2
+    BULK_CORE_GSE27342_80:
+      hypotheses:
+      - G_core
+      - H_core
+      frozen_size: 2
+    BULK_CORE_BACKUP:
+      hypotheses:
+      - G_core
+      - H_core
+      frozen_size: 2
+    BULK_CORE_TCGA:
+      hypotheses:
+      - G_core
+      - H_core
+      frozen_size: 2
+    BULK_G_MEMBERS_GSE29272:
+      hypotheses:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX12
+      - ALOX15
+      - ALOX15B
+      - POR
+      frozen_size: 7
+    BULK_G_MEMBERS_GSE27342_64:
+      hypotheses:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX12
+      - ALOX15
+      - ALOX15B
+      - POR
+      frozen_size: 7
+    BULK_G_MEMBERS_GSE122401_BACKUP:
+      hypotheses:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX12
+      - ALOX15
+      - ALOX15B
+      - POR
+      frozen_size: 7
+    BULK_G_MEMBERS_TCGA_STAD:
+      hypotheses:
+      - ACSL4
+      - LPCAT3
+      - ALOX5
+      - ALOX12
+      - ALOX15
+      - ALOX15B
+      - POR
+      frozen_size: 7
+    BULK_H_MEMBERS_GSE29272:
+      hypotheses:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+      frozen_size: 4
+    BULK_H_MEMBERS_GSE27342_64:
+      hypotheses:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+      frozen_size: 4
+    BULK_H_MEMBERS_GSE122401_BACKUP:
+      hypotheses:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+      frozen_size: 4
+    BULK_H_MEMBERS_TCGA_STAD:
+      hypotheses:
+      - ALDH2
+      - ALDH3A1
+      - ALDH3A2
+      - ALDH7A1
+      frozen_size: 4
+    BULK_CONTEXT_GSE29272:
+      hypotheses:
+      - G_buffer
+      - H_expanded
+      - H_reductive
+      - H_conjugation
+      frozen_size: 4
+    BULK_CONTEXT_GSE27342_64:
+      hypotheses:
+      - G_buffer
+      - H_expanded
+      - H_reductive
+      - H_conjugation
+      frozen_size: 4
+    BULK_CONTEXT_GSE122401_BACKUP:
+      hypotheses:
+      - G_buffer
+      - H_expanded
+      - H_reductive
+      - H_conjugation
+      frozen_size: 4
+    BULK_CONTEXT_TCGA_STAD:
+      hypotheses:
+      - G_buffer
+      - H_expanded
+      - H_reductive
+      - H_conjugation
+      frozen_size: 4
+    BULK_SITE_INTERACTION:
+      hypotheses:
+      - G_site_interaction
+      - H_site_interaction
+      frozen_size: 2
+    SC_MAIN_STATES:
+      hypotheses:
+      - myeloid_G
+      - myeloid_H
+      - fibroblast_H
+      - B_plasma_H
+      frozen_size: 4
+    SC_G_MEMBERS:
+      hypotheses:
+      - myeloid__ACSL4
+      - myeloid__LPCAT3
+      - myeloid__ALOX5
+      - myeloid__ALOX15B
+      - myeloid__POR
+      frozen_size: 5
+    SC_H_MEMBERS:
+      hypotheses:
+      - myeloid__ALDH2
+      - myeloid__ALDH3A2
+      - myeloid__ALDH7A1
+      - fibroblast__ALDH2
+      - fibroblast__ALDH3A2
+      - fibroblast__ALDH7A1
+      - B_plasma__ALDH2
+      - B_plasma__ALDH3A2
+      - B_plasma__ALDH7A1
+      frozen_size: 9
+    SC_COMPOSITION_PRIMARY:
+      hypotheses:
+      - epithelial
+      - fibroblast
+      - endothelial
+      - myeloid
+      - T_NK
+      - B_plasma
+      - mast_other_immune
+      frozen_size: 7
+    SC_COMPOSITION_STRICT200:
+      hypotheses:
+      - epithelial
+      - fibroblast
+      - endothelial
+      - myeloid
+      - T_NK
+      - B_plasma
+      - mast_other_immune
+      frozen_size: 7
+    SC_COMPOSITION_CLR:
+      hypotheses:
+      - epithelial
+      - fibroblast
+      - endothelial
+      - myeloid
+      - T_NK
+      - B_plasma
+      - mast_other_immune
+      frozen_size: 7
+    SC_COMPOSITION_QUASIBINOMIAL:
+      hypotheses:
+      - epithelial
+      - fibroblast
+      - endothelial
+      - myeloid
+      - T_NK
+      - B_plasma
+      - mast_other_immune
+      frozen_size: 7
+    PROTEIN_CORE:
+      hypotheses:
+      - protein_G_program
+      - protein_H_program
+      frozen_size: 2
+    PROTEIN_CORE_MEMBERS:
+      hypotheses:
+      - G__ACSL4
+      - G__LPCAT3
+      - G__ALOX5
+      - G__ALOX15
+      - G__ALOX15B
+      - G__POR
+      - H__ALDH2
+      - H__ALDH3A1
+      - H__ALDH3A2
+      - H__ALDH7A1
+      frozen_size: 10
+    PROTEIN_CONTEXT:
+      hypotheses:
+      - G_buffer
+      - H_expanded
+      - H_reductive
+      - H_conjugation
+      frozen_size: 4
+    CPTAC_BRIDGE:
+      hypotheses:
+      - bridge_G
+      - bridge_H
+      frozen_size: 2
+  diagnostic_catalog:
+    family: NO_FORMAL_FAMILY
+    categories:
+    - leave_one_gene_out
+    - G_submodule
+    - paired_Wilcoxon
+    - paired_percentile_bootstrap
+    - site_stratum_estimate
+    - influence
+    - technical_QC
+    - standardized_member_mean_direction
+    q_value_generated: false
+    may_change_formal_state: false
+  bulk_core_each_source: BH2
+  single_cell_main_states: BH4
+  single_cell_composition_primary: BH7
+  single_cell_composition_each_sensitivity: BH7
+  protein_core: BH2
+  cptac_bridge: BH2
+  loo_series: diagnostic_not_discovery_family
+cross_layer_flags:
+  state_order:
+  - non_estimable
+  - orthogonally_supported
+  - directionally_convergent
+  - cross_layer_conflict
+  - indeterminate
+  first_applicable_state_in_order_controls: true
+  states_exhaustive_and_mutually_exclusive: true
+  non_estimable:
+    rule: protein_program_fails_required_coverage_pairing_or_model_validity
+    precedence: 1
+  bulk_consensus_direction:
+    rule: active_C1_pair_has_same_nonzero_unrounded_native_direction
+    otherwise: no_bulk_consensus_direction
+  orthogonally_supported:
+    rule: bulk_dimension_A_is_replicated_or_directionally_consistent_partial_support_and_bulk_consensus_exists_and_protein_estimable_q_below_0.05_and_same_nonzero_unrounded_raw_mean_difference_direction
+    allowed_bulk_dimension_A_states:
+    - replicated_program_change
+    - directionally_consistent_partial_support
+    requires_protein_estimable: true
+    requires_protein_q_below_0.05: true
+    requires_same_nonzero_unrounded_raw_mean_difference_direction: true
+  directionally_convergent:
+    rule: bulk_consensus_exists_and_protein_estimable_and_same_direction_and_orthogonally_supported_FALSE
+  cross_layer_conflict:
+    rule: bulk_consensus_exists_and_protein_estimable_and_opposite_direction
+  indeterminate:
+    rule: protein_program_technically_estimable_and_no_preceding_biological_comparison_rule_applies
+    requires_protein_technically_estimable: true
+  orthogonal_convergent_conflict_mutually_exclusive: true
+  concordant_but_inconclusive_with_concordant_protein_label: directionally_convergent
+  compensation_compatible:
+    required_axis_states:
+    - replicated_program_change
+    - directionally_consistent_partial_support
+    required_G_direction: positive
+    required_H_direction: positive
+    G_and_H_each_must_independently_meet_required_state: true
+    does_not_establish_effective_clearance_or_net_carbonyl_direction: true
+  bridge:
+    scope: separate_three_state_same_patient_association
+    states:
+    - bridge_nonestimable
+    - bridge_supported
+    - bridge_uncertain
+    may_change_bulk_or_protein_state: false
+single_cell_marker_audit:
+  score_input: unrounded_panel_scores
+  markers_required_per_panel: 4
+  all_marker_genes_unique_mapped_and_present_required: true
+  zero_expression_is_not_missing: true
+  eligible_unit: tissue_pooled_donor_by_author_broad_label
+  minimum_cells_per_unit: 20
+  minimum_UMI_per_unit: 10000
+  minimum_eligible_donor_units_per_label: 8
+  within_unit_selection: expected_panel_must_be_unique_maximum
+  within_unit_tie_state: AMBIGUOUS
+  ambiguous_units_remain_in_60_percent_denominator: true
+  ambiguous_units_count_as_expected_selection: false
+  expected_selection_fraction_operator: greater_than_or_equal
+  expected_selection_fraction: 0.6
+  donor_balanced_median_rule: expected_panel_strictly_greater_than_every_competing_panel
+  donor_balanced_median_ties_fail: true
+  label_states:
+  - PASS
+  - FAIL
+  - NA_NONESTIMABLE
+  state_local_propagation:
+    myeloid:
+    - myeloid_G
+    - myeloid_H
+    fibroblast:
+    - fibroblast_H
+    B_plasma:
+    - B_plasma_H
+    epithelial:
+    - epithelial_H
+  non_state_label_failure_cancels_passing_state_endpoints: false
+  formal_state_label_failure_action: owner_review_not_automatic_whole_project_no_go
+  composition_requirement: all_seven_labels_PASS_for_all_four_q_valued_composition_families
+  composition_failure_action: all_four_families_NA_NONESTIMABLE_author_label_composition_descriptive_only
+single_cell_member_model:
+  amendment_date: '2026-09-07'
+  amendment_revision: 6a9e4b27f508eba67ee25805
+  plan_section: 15.5.1
+  families:
+  - SC_G_MEMBERS
+  - SC_H_MEMBERS
+  hypothesis_count: 14
+  edgeR_version: 4.10.1
+  minimum_cells: 20
+  minimum_original_UMI: 10000
+  minimum_complete_pairs: 8
+  marker_gate: PASS
+  background_unique_finite_raw_count_genes: true
+  detection_fraction: 0.5
+  detection_denominator: all_eligible_units_including_unmatched_without_tissue_stratification
+  minimum_paired_donors_nonzero_both_tissues: 3
+  modeling_columns: complete_eligible_pairs_only
+  remove_modeling_all_zero_rows: true
+  recompute_library_sizes_after_filtering: true
+  shared_TMM_dispersion_QL_background: true
+  normalization: TMM
+  normalization_options: frozen_ordinary_defaults
+  design: tissue_plus_donor
+  reference: NAT
+  coefficient: tissueTumor
+  chemistry_term: prohibited_rank_redundant
+  estimateDisp: false
+  glmQLFit:
+    legacy: false
+    robust: true
+    dispersion: null
+    top.proportion: null
+    abundance.trend: true
+    covariate.trend: null
+    prior.count: 0.125
+    remaining_options: frozen_defaults
+  additional_weights: false
+  custom_offsets: false
+  test: glmQLFTest
+  test_calibration: native_modern_workflow
+  extraction: after_full_background_fitting_moderation_and_native_testing
+  background_discovery_reporting_or_multiplicity: false
+  output:
+  - biological_n
+  - logFC
+  - F
+  - numerator_df
+  - denominator_df
+  - p_value
+  - q_value
+  degrees_of_freedom: native_df.test_and_df.total_without_integer_conversion
+  standard_error_status: NA_UNAVAILABLE
+  confidence_interval_status: NA_UNAVAILABLE
+  uncertainty_reason: native_modern_edgeR_does_not_provide_coefficient_SE_or_95_percent_CI
+  reconstruct_uncertainty: false
+  missing_native_uncertainty_invalidates_endpoint: false
+  genuine_failure: NA_NONESTIMABLE_retain_reason_and_full_family
+  real_data_execution_permitted_in_S01: false
+composition_inference:
+  compartments:
+  - epithelial
+  - fibroblast
+  - endothelial
+  - myeloid
+  - T_NK
+  - B_plasma
+  - mast_other_immune
+  families:
+    SC_COMPOSITION_PRIMARY: 7
+    SC_COMPOSITION_STRICT200: 7
+    SC_COMPOSITION_CLR: 7
+    SC_COMPOSITION_QUASIBINOMIAL: 7
+  shared_entry_condition: all_seven_marker_labels_PASS
+  failure_role: NA_NONESTIMABLE_with_author_label_composition_descriptive_only
+  primary:
+    donors: 20
+    threshold: at_least_100_retained_cells_in_each_tissue
+    empirical_logit_formula: log((k+0.5)/(n-k+0.5))
+    contrast: paired_tumor_minus_NAT
+    test: two_sided_one_sample_Student_t_test_of_paired_tumor_minus_NAT_differences
+    ci: two_sided_Student_t_95_percent_CI
+    family: SC_COMPOSITION_PRIMARY
+  strict200:
+    donors: 18
+    threshold: at_least_200_retained_cells_in_each_tissue
+    rule: exact_repeat_of_primary_method_in_18_donors
+    family: SC_COMPOSITION_STRICT200
+  CLR:
+    donors: 20
+    threshold: at_least_100_retained_cells_in_each_tissue
+    formula: CLR_ij=log(k_ij+0.5)-(1/7)*sum_l_log(k_il+0.5)
+    contrast: paired_tumor_minus_NAT
+    test: two_sided_one_sample_Student_t_test_of_paired_tumor_minus_NAT_differences
+    ci: two_sided_Student_t_95_percent_CI
+    family: SC_COMPOSITION_CLR
+  quasibinomial:
+    donors: 24
+    formula: glm(cbind(compartment_count,total_count-compartment_count)~tissue+donor,family=quasibinomial(link=logit))
+    fit_engine: stats_glm_with_quasibinomial_logit
+    glm_control: stats::glm.control(epsilon=1e-8,maxit=25,trace=FALSE)
+    warning_capture: withCallingHandlers_capture_exact_conditionMessage_and_muffle
+    recognized_nonestimable_warning_messages:
+    - 'glm.fit: algorithm did not converge'
+    - 'glm.fit: algorithm stopped at boundary value'
+    fitted_probability_boundary_epsilon: 10*.Machine$double.eps
+    fitted_probability_boundary_rule: any(fitted_probability<epsilon_or_fitted_probability>1-epsilon)
+    unexpected_warning_action: STOP_OWNER_REVIEW
+    reference: NAT
+    coefficient: tumor_minus_NAT
+    statistic: t=beta/SE
+    degrees_of_freedom: df.residual
+    p_value: two_sided_Student_t
+    ci: beta_plus_or_minus_qt_0.975_df_times_SE
+    profile_confint_prohibited: true
+    nonestimable_if:
+    - model_rank_below_model_matrix_column_count
+    - fit_converged_not_TRUE
+    - fit_boundary_TRUE
+    - recognized_nonestimable_warning
+    - fitted_probability_at_machine_boundary
+    - nonfinite_coefficient
+    - nonfinite_SE
+    - nonfinite_dispersion
+    - df_residual_not_positive
+    family: SC_COMPOSITION_QUASIBINOMIAL
+technical_qc:
+  array:
+    robust_threshold: cohort_median_plus_or_minus_3_unscaled_MAD
+    MAD_zero_rule: metric_cannot_flag
+    domains:
+      distribution:
+        metrics:
+        - sample_median_log2_intensity
+        - sample_log2_intensity_IQR
+      RLE_NUSE:
+        metrics:
+        - absolute_median_RLE
+        - RLE_IQR
+        - median_NUSE_when_available
+      RNA_degradation:
+        metrics:
+        - frozen_RNA_degradation_slope
+      sample_correlation:
+        metrics:
+        - median_inter_array_Pearson_correlation_lower_tail
+    multiple_metrics_within_domain_count: one_domain_maximum
+    unavailable_domain_state: NA_UNAVAILABLE
+    minimum_abnormal_domains_for_exclusion: 2
+    lower_threshold_when_domain_unavailable: false
+    PCA_role: diagnostic_only_not_an_exclusion_domain
+  non_array:
+    TCGA_STAD: no_expression_or_PCA_biological_outlier_deletion_beyond_identity_integrity_nonfinite_frozen_filtering_and_complete_pairs
+    GSE122401: no_expression_or_PCA_biological_outlier_deletion_beyond_identity_integrity_nonfinite_frozen_filtering_and_complete_pairs
+    PDC000614: use_verified_post_publication_QC_universe_no_new_expression_or_PCA_biological_outlier_deletion
+sources:
+  GSE29272:
+    role: core_first_estimate
+    expected_pairs: 134
+    formal_bulk_membership: exact_G7_H4
+  GSE27342:
+    role: core_independent_replication
+    core_pairs: 64
+    batch_vulnerability_pairs: 80
+    formal_bulk_membership: exact_G7_H4
+    core_64_program_inference: paired_delta_Student_t_test_and_Student_t_CI
+    core_64_context_inference: paired_delta_Student_t_test_and_Student_t_CI
+    core_64_member_inference: ordinary_limma_empirical_Bayes_expression_tissue_plus_patient
+    batch_vulnerability_80_endpoints:
+    - G_core_program
+    - H_core_program
+    batch_vulnerability_80_other_extensions_prohibited: true
+    scan_date_role: defines_64_pair_subset_and_QC_only_not_a_model_covariate
+  GSE122401:
+    role: conditional_technical_backup_only
+    expected_pairs: 80
+    eligibility: ELIGIBLE_AS_CONDITIONAL_TECHNICAL_BACKUP
+    activation_state: NOT_ACTIVATED_PRE_EFFECT_CONDITIONAL_ONLY
+    activation_trigger: exactly_one_core_source_fails_frozen_technical_gate_before_first_effect
+    formal_bulk_membership: exact_G7_H4
+  TCGA_STAD:
+    role: cross_platform_sensitivity
+    expected_pairs: 33
+    formal_bulk_membership: exact_G7_H4
+    may_replace_core_source: false
+  GSE206785:
+    role: donor_aware_single_cell_context
+    donors: 24
+    chemistry_gate: PASS_SHARED_CHEMISTRY_AND_STRUCTURAL_ELIGIBILITY_CONFIRMED
+    marker_audit: NOT_RUN_PENDING_PRE_EFFECT_SESSION
+    formal_candidates:
+    - myeloid_G
+    - myeloid_H
+    - fibroblast_H
+    - B_plasma_H
+    exploratory_candidates:
+    - epithelial_H
+    composition_n_primary_strict_count_aware:
+    - 20
+    - 18
+    - 24
+  PDC000614:
+    role: paired_human_protein_orthogonal_evidence
+    gate: PASS_POST_PUBLICATION_QC_MATRIX
+    protein_G_pairs: 28
+    protein_H_pairs: 30
+    protein_program_roles: formal
+    standardized_member_mean_role: prespecified_sensitivity
+  CPTAC_bridge:
+    role: prespecified_exploratory_same_cohort_rna_protein_bridge
+    G_complete_quadruplets: 19
+    H_complete_quadruplets: 21
+  GSE270680:
+    role: not_admitted
+    gate: NOT_ELIGIBLE_FOR_FORMAL_ADMISSION
+  PDC000621:
+    role: not_admitted
+    rationale: construct_coverage_insufficient_and_phospholipid_elimination_limits_G_axis_relevance
+seeds:
+  production_master_seed: 20260825
+  production_target_seed_map_rule: deterministic_derivation_from_master_seed_and_stable_target_name
+  audit_only_seeds:
+    paired_and_bridge: 20260813
+    joint_BH2: 20260901
+  audit_only_seeds_may_be_reused_as_observed_data_results: false

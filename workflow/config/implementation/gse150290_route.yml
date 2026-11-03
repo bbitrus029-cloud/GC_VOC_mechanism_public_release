@@ -1,0 +1,457 @@
+source: GSE150290
+timing: post_effect_exploratory
+author_annotation_route:
+  state: NO_JOINABLE_COMPLETE_AUTHOR_CELL_MAP_IN_INSPECTED_PUBLIC_RELEASE
+  future_requirement: Complete original-barcode map with retained-cell, low-quality,
+    doublet and annotation evidence; reconcile all original raw keys and subset selection
+    before use
+  absence_establishes_source_failure: no
+source_appropriate_route:
+  decision: Source-appropriate reconstruction; undocumented original author processing
+    is not claimed.
+  input: Original raw_gene_bc_matrices archives listed in the official GSE150290 sample
+    roster; unintegrated nonnegative integer UMI
+  primary_scope: 47 primary-patient samples, comprising 23 candidate pairs and unmatched
+    Pat21-A; five standalone control stomach samples excluded by source role
+  raw_feature_identity: Preserve original Ensembl identifier, symbol and source row
+    order; reject duplicate Ensembl IDs; retain all original rows for QC totals and
+    later original-UMI aggregation
+  symbol_mapping: Unique symbol-to-Ensembl only for marker decisions; record 29 ambiguous
+    prototype symbols without choosing a first match or summing them
+  author_filtered_matrix_role: Provenance diagnostic only; its nonimmune subset does
+    not define the complete epithelial universe or interchangeable raw counts
+  capture_identity: One independently released GSM raw 10x library is the provisional
+    capture unit; hg19 reference 1.2.0 and 10x 3-prime v2 are reported. Unknown multiplexing
+    or multiple physical captures inside one archive requires identity resolution
+    before that library proceeds
+  technical_replicates: Deduplicate physical archive/capture/barcode identities; sequencing
+    lanes of one capture are not separate samples or added count copies; distinct
+    verified captures aggregate only after QC
+  cell_key: source-prefixed_sample_id|physical_capture_id|original_barcode; sample_id
+    is GSE150290_GSMidentifier; source accession is retained separately
+  ordering: Source roster GSM order, original barcode order, and original feature
+    order retained; computational tie breaks use lexical Ensembl ID then cell key
+  original_counts: Immutable throughout; no rounding, ambient subtraction, integration,
+    imputation or normalization of the inferential count input
+cell_retention:
+  sequence:
+  - identity_and_integer_validation
+  - cell_calling
+  - low_quality_and_author_flags
+  - doublet_detection
+  - pooled_annotation
+  - independent_audit
+  metric_universe: All original feature rows on original UMI counts, including zeros;
+    no feature prefilter for library totals, detected features, or fraction denominators
+  zero_UMI: Exclude as ZERO_UMI; fractions NA; never treated as zero mitochondrial
+    fraction
+  mitochondrial_definition: All rows whose original symbol starts exactly with MT-
+  hemoglobin_symbols:
+  - HBA1
+  - HBA2
+  - HBB
+  - HBD
+  - HBE1
+  - HBG1
+  - HBG2
+  - HBM
+  - HBQ1
+  - HBZ
+  fraction_definition: Sum original counts in the union of mitochondrial and listed
+    hemoglobin rows divided by total original UMI; union prevents double counting.
+    Also retain the two separate fractions
+  duplicate_symbols_in_QC_sets: Include every identified row in the count sum once;
+    this is a QC set sum, not a unique gene measurement bridge
+  feature_definition_failure: Missing or unresolved source feature annotation prevents
+    fraction validation; do not silently assign zero
+  cell_calling:
+    function: DropletUtils::emptyDrops
+    unit: each_verified_capture_separately
+    arguments:
+      lower: 100
+      retain: ~
+      barcode.args: {}
+      niters: 100000
+      test.ambient: no
+      ignore: ~
+      alpha: Inf
+      round: no
+      by.rank: ~
+      known.empty: ~
+    retain_rule: retain=NULL uses the package barcodeRanks knee on this library; save
+      knee and algorithm metadata; no manual knee rescue
+    call_rule: Finite FDR <= 0.001, including the native automatic high-count retention
+      result. NA FDR is not a cell call; totals <=100 remain outside the tested calls
+    limited_rule: Record Limited for every barcode. Any Limited=TRUE barcode with
+      FDR>0.001 stops advancement for that library as unresolved Monte Carlo resolution;
+      no seed retries, increased draws or fallback in this proposal
+    invalid_rule: Missing/nonfinite knee, failed ambient estimation or unexpected
+      nonfinite output above lower stops the library trial; no automatic replacement
+      source
+    interpretation: Ambient-droplet technical P/FDR only; these are not disease tests
+      or new B hypothesis families
+  low_quality:
+    apply_to: Cell-called barcodes; estimate thresholds before excluding author flags
+      and without tissue/target-gene stratification
+    UMI_range_inclusive:
+    - 100
+    - 20000
+    combined_MT_Hb_fraction_exclusive_upper: 0.1
+    complexity_rule: Independently on log2(total_original_UMI) and log2(number_of_detected_original_features),
+      flag values strictly below median(x)-3*stats::mad(x, center=median(x), constant=1.4826)
+    threshold_population: All cell-called barcodes within one capture; no tissue-pooled
+      threshold or annotation-based trimming
+    MAD_zero: Retain the mathematical median threshold; values below it fail, equality
+      passes; do not add a tolerance or alternative rule
+    nonfinite_metrics: Exclude with explicit NONFINITE_QC_METRIC and investigate unexpected
+      arithmetic; no na.rm threshold estimation
+    empty_called_population: Local NO_CALLED_CELLS; retain sample identity; not a
+      whole-source failure by itself
+    no_SD_or_zero_fraction_gate: The published SD and all-genes zero-fraction rules
+      are not operationalized in production; their literal probe remains unchanged
+      evidence
+    rationale: Ambient testing and within-capture robust lower-tail complexity rules
+      avoid treating all raw droplets or an undocumented gene denominator as retained
+      cells; upper UMI and contamination limits retain source-specific restrictions
+  author_flags:
+    availability_now: NOT_PROVIDED_IN_INSPECTED_JOINABLE_RELEASE
+    if_present: Validate complete key mapping and provenance first; exclude author
+      low-quality or doublet flags even if computational metrics pass; retain each
+      original flag
+    missing_flag: UNKNOWN_NOT_FALSE; missing flags never certify a singlet
+    partial_flags: Preserve known flags and unknown status separately; do not invent
+      flags from file absence
+  doublets:
+    function: scDblFinder::scDblFinder
+    unit: Each physical capture separately after cell calling and low-quality/known-author
+      exclusion; never pool different captures to create artificial doublets
+    input_features: Original UMI rows excluding all 26 protected genes, every held-out
+      audit marker, MT- rows and the hemoglobin set; no disease label or external
+      reference
+    arguments:
+      clusters: no
+      samples: ~
+      clustCor: ~
+      knownDoublets: ~
+      knownUse: discard
+      artificialDoublets: max(1500L,ncol(sce))
+      dbr: 0.008*ncol(sce)/1000
+      dbr.sd: 0.15*dbr
+      dbr.per1k: 0.008
+      nfeatures: min(2000L,number_of_positive_variance_permitted_features)
+      dims: min(20L,ncol(sce)-1L,nfeatures-1L)
+      k: 5L
+      includePCs: min(19L,dims)
+      removeUnidentifiable: yes
+      propRandom: 1
+      propMarkers: 0
+      aggregateFeatures: no
+      returnType: sce
+      score: xgb
+      processing: default
+      metric: logloss
+      nrounds: 0.25
+      max_depth: 4
+      iter: 3
+      trainingFeatures: ~
+      unident.th: ~
+      multiSampleMode: split
+      threshold: yes
+      verbose: yes
+    other_arguments: No ellipsis overrides; transitive numerical defaults belong to
+      the exact pinned package versions and must be captured before future use
+    boundary: Fewer than 10 cells, fewer than 3 usable features, dbr outside (0,1),
+      missing score/class or algorithm failure is unresolved technical feasibility;
+      no arbitrary singlet substitution or automatic source failure
+    retention: Keep only native class singlet; class doublet excluded; unknown/NA
+      class unresolved and not included
+    limitation: Homotypic doublets may be missed; expected rate is the documented
+      standard-10x loading approximation, not measured loading for this cohort
+  reason_precedence:
+  - IDENTITY_INTEGRITY_STOP
+  - ZERO_UMI
+  - NOT_CELL_CALLED
+  - NONFINITE_QC_METRIC
+  - AUTHOR_LOW_QUALITY
+  - AUTHOR_DOUBLET
+  - UMI_OUTSIDE_RANGE
+  - MT_HB_AT_LEAST_10_PERCENT
+  - LOW_UMI_MAD
+  - LOW_DETECTED_FEATURES_MAD
+  - COMPUTATIONAL_DOUBLET
+  - UNRESOLVED_DOUBLET
+  - UNRESOLVED_EPITHELIAL_IDENTITY
+  - RETAINED_EPITHELIAL
+  - RETAINED_NON_EPITHELIAL
+  audit_map: Preserve all original barcodes and all flags, first exclusion reason
+    plus all reasons, QC thresholds, original source label, tissue origin, capture/sample/donor,
+    epithelial membership, lineage, evidence, author malignancy status/evidence and
+    proliferation state
+annotation_qualification:
+  protected_genes: All 26 unique G/H/context genes from config/post_effect_supplement.yml;
+    exclude from assignment, feature selection, dimensional reduction, clustering,
+    doublet features and marker validation
+  independent_audit_panel:
+  - EPCAM
+  - KRT8
+  - KRT18
+  - KRT19
+  held_out_policy: Every broad and lineage audit marker below is excluded from assignment
+    panels, variable features, dimensional reduction, clustering and doublet features
+  annotation_only_normalization: On permitted rows, y_gc=log2(1+10000*x_gc/sum_permitted_rows(x_c));
+    positive denominator required. This copy is never used as UMI or for inference
+  feature_selection:
+    filter: Unique mapped permitted genes detected in at least 10 retained cells overall;
+      exclude MT/Hb, protected genes, all audit genes and listed proliferation markers
+    function: scran::modelGeneVar
+    arguments:
+      block: donor
+      design: ~
+      subset.row: ~
+      subset.fit: ~
+      equiweight: yes
+      method: fisher
+    selection: Order finite positive bio variance decreasing, tie by Ensembl ID; select
+      first min(2000,available) genes; fewer than 3 is unresolved; no use or export
+      of gene variance P/FDR for disease claims
+    version_note: Pinned scran 1.40.0 documents modelGeneVar as deprecated but available;
+      retain any warning. API and synthetic smoke validation required before future
+      execution, no silent substitution
+  dimensional_reduction:
+    function: BiocSingular::runPCA
+    input: Transpose of selected annotation-only log matrix; all QC-retained cells,
+      tissue pooled
+    arguments:
+      rank: min(30L,ncells-1L,nfeatures-1L)
+      center: yes
+      scale: no
+      get.rotation: yes
+      get.pcs: yes
+      BSPARAM: BiocSingular::IrlbaParam(deferred=TRUE)
+    orientation: For each PC make its largest absolute loading positive, ties by Ensembl
+      ID; save rotations and centering
+  graph:
+    function: bluster::clusterRows
+    arguments:
+      full: yes
+      BLUSPARAM: bluster::SNNGraphParam(k=min(20L,ncells-1L),type="rank",BNPARAM=BiocNeighbors::KmknnParam(),num.threads=1L,BPPARAM=NULL,cluster.fun="louvain",cluster.args=list(resolution=1))
+    labels: Canonicalize cluster numbers by smallest original cell key, never by tissue
+      or marker score
+    prohibited: No integration, disease DE, cluster-resolution search, UMAP/tSNE selection
+      or target-gene rescue
+  assignment_panels:
+    epithelial:
+    - TACSTD2
+    - KRT7
+    - CLDN3
+    - CLDN4
+    fibroblast:
+    - COL6A1
+    - COL6A2
+    - LUM
+    - PDGFRA
+    endothelial:
+    - ESAM
+    - CDH5
+    - EGFL7
+    - RAMP2
+    myeloid:
+    - AIF1
+    - CSF1R
+    - SPI1
+    - C1QC
+    T_NK:
+    - CD2
+    - CD7
+    - CCL5
+    - GNLY
+    B_plasma:
+    - CD37
+    - CD19
+    - CD22
+    - JCHAIN
+    mast:
+    - MS4A2
+    - HDC
+    - HPGDS
+    - GATA2
+    erythroid:
+    - GYPA
+    - SLC4A1
+    - AHSP
+    - EPB42
+  broad_assignment:
+    units: Donor-by-cluster original-count sums, tissue pooled; units with >=20 cells
+      and >=10000 original UMI contribute equally
+    score: Within each unit rank unrounded log2(CPM+1) over the common unique permitted
+      assignment universe, average ties; percentile=(rank-1)/(N-1); mean all four
+      uniquely mapped panel genes
+    decision: Require at least two eligible donor units, expected panel unique maximum
+      in >=60% of eligible units and its donor-median score strictly above all competitors;
+      otherwise broad identity UNRESOLVED. All assignment markers must map uniquely;
+      no substitution
+    ties_and_NA: Ties remain in denominator and are not selections; incomplete panel
+      mapping or fewer than two donor units is unresolved, not a forced label
+    cell_membership: All QC-singlet cells in a supported epithelial cluster enter
+      the provisional epithelial population; no per-cell H filters; unsupported broad
+      identity remains explicitly unresolved/excluded pending review
+  broad_audit_panels:
+    epithelial:
+    - EPCAM
+    - KRT8
+    - KRT18
+    - KRT19
+    fibroblast:
+    - COL1A1
+    - COL1A2
+    - COL3A1
+    - DCN
+    endothelial:
+    - PECAM1
+    - VWF
+    - EMCN
+    - KDR
+    myeloid:
+    - LST1
+    - TYROBP
+    - FCER1G
+    - CTSS
+    T_NK:
+    - CD3D
+    - CD3E
+    - TRBC1
+    - NKG7
+    B_plasma:
+    - CD79A
+    - CD74
+    - MS4A1
+    - MZB1
+    mast:
+    - KIT
+    - TPSAB1
+    - TPSB2
+    - CPA3
+  independent_broad_audit:
+    applicability: Apply the incorporated Section 15.3 donor-balanced audit to the
+      proposed overall epithelial label; competitors provide an independent specificity
+      check. Do not import the GSE206785 rule requiring all seven formal labels to
+      pass for its four whole-source composition families
+    units: Sum original counts by donor and proposed broad label, pool tissues, >=20
+      cells and >=10000 UMI; at least eight eligible donors for formal audit
+    marker_coverage: All four markers of each of seven audit panels must map uniquely;
+      observed zero is valid
+    scoring: log2(CPM+1), average within-unit ascending percentile ranks across the
+      common unique source feature universe excluding the protected 26, equal-weight
+      panel means; no finite-value omission
+    pass: Expected panel unique maximum in >=60% of all eligible donors including
+      ties in denominator, AND donor-median score strictly above every competing panel
+      median
+    failure: Formal epithelial audit FAIL or nonestimability blocks epithelial admission
+      pending review; no automatic relabeling, new marker selection or threshold change.
+      Other broad-label failures do not automatically veto B's independently validated
+      epithelial universe
+    subsidiary_checks: Retain donor-by-cluster audit matrices to detect mixed/unsupported
+      rare clusters; an estimable cluster-level disagreement requires adjudication
+      before population freeze, not dilution within a pooled PASS
+    insufficient_cluster_donors: Record nonestimable cluster-specific audit; no claim
+      of separate validation. Supported broad epithelial membership can remain under
+      the overall audit; uncertain finer lineage is other_unassigned, whereas unresolved
+      broad membership requires adjudication/exclusion
+    limitation: Held-out canonical evidence is label consistency, not independent
+      biological replication or gold-standard annotation accuracy
+  lineage_assignment_panels:
+    pit_surface_mucous:
+    - GKN1
+    - MUC5AC
+    gland_mucous:
+    - MUC6
+    - AQP5
+    chief:
+    - LIPF
+    - PGA3
+    intestinal_metaplastic:
+    - MUC2
+    - TFF3
+    enteroendocrine:
+    - CHGA
+    - NEUROD1
+  lineage_audit_panels:
+    pit_surface_mucous:
+    - GKN2
+    - TFF1
+    gland_mucous:
+    - TFF2
+    - BPIFB1
+    chief:
+    - PGC
+    - PGA4
+    intestinal_metaplastic:
+    - REG4
+    - FABP1
+    enteroendocrine:
+    - CHGB
+    - INSM1
+  lineage_rules:
+    assignment: On epithelial clusters use the same donor-balanced percentile procedure,
+      now with two-member lineage panels and all five competitors; require both genes
+      uniquely mapped, >=2 donor units, >=60% unique expected maxima and strictly
+      greater donor median; otherwise other_unassigned
+    held_out_audit: Apply the two independent marker panels per lineage on tissue-pooled
+      donor-by-proposed-lineage units, >=20 cells and >=10000 UMI; >=8 donors, >=60%
+      unique expected maxima and strictly greatest donor median. Failed/nonestimable
+      finer audit retains supported cells in other_unassigned, with original provisional
+      label and reason preserved
+    no_forced_normal_counterpart: Generic author tumor-cell state is not matched to
+      a normal lineage. Supported epithelial tumor-associated cells stay in overall
+      and K; only independently supported biological lineage can enter L
+    L_definition: Before H coverage freeze every source-supported biologically comparable
+      lineage endpoint with a documented counterpart rationale in both tissue identities;
+      annotation/cell-number failures after planning retain slots and L. No H measurement
+      or significance used; missing all comparable states requires documented biological
+      evidence for L=0, never unresolved annotation
+    K_definition: One validated source-supported lineage category per included epithelial
+      cell plus other_unassigned, including tumor-associated epithelial states without
+      a counterpart; deterministic mapping of nested labels to parent lineage, proliferation
+      never forms another category; do not force unobserved candidate categories.
+      Once frozen, empty categories retain slots
+    L_H4_eligible: Only after QC/annotation and biological L are frozen, apply exact
+      four-member coverage and frozen shared endpoint population rules; currently
+      unresolved
+  original_labels: Preserve exact author labels when traceably available; otherwise
+    ORIGINAL_LABEL_NOT_PROVIDED, with computational cluster and assignment evidence
+    in separate fields
+  malignancy: UNKNOWN unless authors supply traceable cell-level supporting evidence;
+    tissue origin is not malignancy evidence; no inferCNV/copyKAT or new calling
+  proliferation: Preserve author-supported status if supplied, otherwise UNKNOWN;
+    record any computational marker consistency separately without assigning a new
+    malignancy or lineage
+  proliferation_markers_excluded_from_DR:
+  - MKI67
+  - TOP2A
+  - PCNA
+  - MCM2
+  - MCM5
+  - TYMS
+  D7_proposed_assignment:
+  - GKN1
+  - MUC5AC
+  - MUC6
+  D7_proposed_audit:
+  - GKN2
+  - TFF1
+  - TFF2
+  - PGC
+  D7_used_in_actual_annotation: []
+  D7_limit: All seven D7 members would contribute to proposed lineage annotation/audit;
+    subsequent D7 enrichment in those labels is annotation-linked descriptive consistency,
+    not independent D7 validation
+  new_molecular_reference: prohibited
+technical_identifiability:
+  current_state: Common reported 10x 3-prime v2 chemistry; actual processing batches
+    and capture/loading details unknown
+  review: Freeze a pair-by-protocol evidence table with unknowns before effects; investigate
+    documented tissue-specific processing and whether the tissue contrast is identifiable.
+    Unknown proves neither matching nor confounding
+  stop: Proven or unresolved complete tissue-processing confounding requires endpoint
+    unavailability or an explicit scientific decision; integration, design rank and
+    added batch terms do not repair missing evidence

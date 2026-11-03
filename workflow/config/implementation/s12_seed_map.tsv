@@ -1,0 +1,4 @@
+"derivation_version"	"master_seed"	"operation_name"	"seed"	"rng_kind"	"hash_prefix"
+"sha256_first_28_bits_plus_master_mod_R_integer_v1"	20260825	"S12_B_composition_enteroendocrine_raw_proportion_bootstrap"	130138392	"L'Ecuyer-CMRG"	"68c993e8"
+"sha256_first_28_bits_plus_master_mod_R_integer_v1"	20260825	"S12_B_composition_other_unassigned_raw_proportion_bootstrap"	234745823	"L'Ecuyer-CMRG"	"cc8c805b"
+"sha256_first_28_bits_plus_master_mod_R_integer_v1"	20260825	"S12_B_overall_H4_paired_bootstrap"	132339962	"L'Ecuyer-CMRG"	"6ae3120f"

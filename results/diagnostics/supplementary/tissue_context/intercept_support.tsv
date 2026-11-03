@@ -1,0 +1,3 @@
+source	biological_n	delta_D_min	delta_D_max	zero_supported	intercept_label	residual_df	R_squared	max_leverage	HC3_state	HC3_reason	exclusion_count	excluded_patients	interpretation
+GSE122401	80	-3.19265122343844	1.32518262711929	TRUE	WITHIN_OBSERVED_SUPPORT	78	0.548565317262241	0.109590568730211	AVAILABLE	NONE	0		between_patient_paired_change_association_no_percent_of_mean_biologically_explained
+TCGA_STAD	33	-2.24844023263855	1.8643085064401	TRUE	WITHIN_OBSERVED_SUPPORT	31	0.259291725732298	0.13132241282049	AVAILABLE	NONE	0		between_patient_paired_change_association_no_percent_of_mean_biologically_explained

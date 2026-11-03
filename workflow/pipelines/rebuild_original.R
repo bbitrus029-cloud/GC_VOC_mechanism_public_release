@@ -1,0 +1,6 @@
+args <- commandArgs(TRUE)
+if(length(args)!=3L || !args[1] %in% c('bulk','single_cell','protein','integration'))
+ stop('Usage: workflow/environment/run-r workflow/pipelines/rebuild_original.R bulk|single_cell|protein|integration INPUT_MANIFEST OUTPUT_DIRECTORY')
+if(!file.exists('PUBLIC_MANIFEST.tsv'))stop('Run from the public release root.')
+source('workflow/R/common/load_analysis.R');load_public_analysis()
+run_public_reconstruction(paste0('original_',args[1]),args[2],args[3])

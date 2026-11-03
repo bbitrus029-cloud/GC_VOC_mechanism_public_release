@@ -1,0 +1,5 @@
+"member"	"state"	"reason"	"effect"	"statistic"	"numerator_df"	"denominator_df"	"p_value"	"standard_error"	"ci_lower"	"ci_upper"	"uncertainty_status"	"uncertainty_reason"	"feature_id"	"source_symbol"	"source_row"
+"ALDH2"	"ESTIMABLE"	"NONE"	-0.00588492514779413	0.000614212572256878	1	38.6534499886085	0.98035530815687	NA	NA	NA	"NA_UNAVAILABLE"	"native_modern_edgeR_does_not_provide_coefficient_SE_or_95_percent_CI"	"ENSG00000111275"	"ALDH2"	21435
+"ALDH3A1"	"NA_UNAVAILABLE"	"MEMBER_DETECTION_OR_PAIRED_NONZERO_FAILED"	NA	NA	NA	NA	NA	NA	NA	NA	"NA_UNAVAILABLE"	"native_modern_edgeR_does_not_provide_coefficient_SE_or_95_percent_CI"	"ENSG00000108602"	"ALDH3A1"	26559
+"ALDH3A2"	"ESTIMABLE"	"NONE"	-0.275183395895164	0.916141147648929	1	40.0160553357581	0.344237532882233	NA	NA	NA	"NA_UNAVAILABLE"	"native_modern_edgeR_does_not_provide_coefficient_SE_or_95_percent_CI"	"ENSG00000072210"	"ALDH3A2"	26554
+"ALDH7A1"	"ESTIMABLE"	"NONE"	-0.0025728421574187	6.86219268814691e-05	1	39.5180127269017	0.993432209823187	NA	NA	NA	"NA_UNAVAILABLE"	"native_modern_edgeR_does_not_provide_coefficient_SE_or_95_percent_CI"	"ENSG00000164904"	"ALDH7A1"	9441

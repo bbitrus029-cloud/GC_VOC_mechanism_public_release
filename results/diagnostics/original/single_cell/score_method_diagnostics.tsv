@@ -1,0 +1,6 @@
+endpoint_id	primary_rank_unrounded_raw_paired_mean_difference	standardized_member_mean_unrounded_raw_paired_mean_difference	primary_rank_direction	standardized_member_mean_direction	score_method_sensitive	score_method_nonestimable	exact_zero_direction_flag
+GSE206785_B_plasma_H	-0.0354892183125784	-0.0355620148024665	negative	negative	FALSE	FALSE	FALSE
+GSE206785_epithelial_H	0.00194630107853561	-0.0455395544164959	positive	negative	TRUE	FALSE	FALSE
+GSE206785_fibroblast_H	-0.0498568612779407	-0.402268716268579	negative	negative	FALSE	FALSE	FALSE
+GSE206785_myeloid_G	-0.0153913451023277	0.459868152033053	negative	positive	TRUE	FALSE	FALSE
+GSE206785_myeloid_H	0.00614487319689633	0.485599591886475	positive	positive	FALSE	FALSE	FALSE

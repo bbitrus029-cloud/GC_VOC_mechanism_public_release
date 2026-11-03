@@ -1,0 +1,5 @@
+source	model	H_definition	coefficient	effect	standard_error	ci_lower	ci_upper	residual_df	state	reason	p_value	q_value	role	timing	inference
+GSE122401	M1	accepted_rank_H	(Intercept)	-0.0254735122063014	0.00767492011647037	-0.0407531044235404	-0.0101939199890625	78	AVAILABLE	NONE	NA	NA	same_data_robustness	post_effect_exploratory	HC3_Student_t_n_minus_p_finite_sample_approximation
+GSE122401	M1	accepted_rank_H	delta_D	0.0594199962256964	0.00559548633506117	0.048280238656964	0.0705597537944288	78	AVAILABLE	NONE	NA	NA	same_data_robustness	post_effect_exploratory	HC3_Student_t_n_minus_p_finite_sample_approximation
+TCGA_STAD	M1	accepted_rank_H	(Intercept)	-0.088407157368414	0.0235725403378799	-0.136483670353242	-0.0403306443835862	31	AVAILABLE	NONE	NA	NA	same_data_robustness	post_effect_exploratory	HC3_Student_t_n_minus_p_finite_sample_approximation
+TCGA_STAD	M1	accepted_rank_H	delta_D	0.0551528714524645	0.0177119400880145	0.0190291314811914	0.0912766114237377	31	AVAILABLE	NONE	NA	NA	same_data_robustness	post_effect_exploratory	HC3_Student_t_n_minus_p_finite_sample_approximation

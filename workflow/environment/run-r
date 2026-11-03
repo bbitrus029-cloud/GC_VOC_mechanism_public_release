@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${GCVOC_RSCRIPT:=Rscript}"
+: "${GCVOC_R_LIBRARY:=NULL}"
+: "${GCVOC_TMPDIR:=${TMPDIR:-/tmp}}"
+export R_LIBS='' R_LIBS_SITE=NULL R_LIBS_USER="$GCVOC_R_LIBRARY" TZ=UTC
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 RCPP_PARALLEL_NUM_THREADS=1
+export TMPDIR="$GCVOC_TMPDIR"
+if ! command -v "$GCVOC_RSCRIPT" >/dev/null 2>&1; then
+  printf '%s\n' 'Rscript unavailable. Specify GCVOC_RSCRIPT for an existing R 4.6.1 runtime; see REPRODUCIBILITY.md.' >&2
+  exit 2
+fi
+exec "$GCVOC_RSCRIPT" --vanilla "$@"

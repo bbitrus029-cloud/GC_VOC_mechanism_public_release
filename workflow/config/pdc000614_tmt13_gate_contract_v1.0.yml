@@ -1,0 +1,27 @@
+publication_prose_reported_tmt13_exclusions:
+  tumor_samples: 10
+  nat_samples: 6
+  total_samples: 16
+  identifiers_resolved: no
+  operative_exclusion_identity_source: no
+  discrepancy_retained: yes
+structured_official_tmt13_exclusions:
+  tumor_samples: 6
+  nat_samples: 10
+  total_samples: 16
+  identifiers_resolved: yes
+  all_table_s1_passed_qc_false: yes
+  pdc_and_table_s1_canonical_aliquot_sets_equal: yes
+  pdc_and_table_s1_case_tissue_sets_equal: yes
+  canonical_aliquot_set_sha256: 618be9dfed64c4ffad3d48f93ebaa9a0a3c2bc4c4f93f33e0beb5e2b7b503a64
+  canonical_case_plus_tissue_set_sha256: 088b725e666dd80ce8dc30f8d26efa4cd7a4e85ca3ae5be2ac266e370b84c883
+  identity_sources:
+  - official_primary_supplement_table_s1
+  - official_pdc_plex_and_biospecimen_metadata
+  reference_channels_excluded:
+  - NCI7-9
+  - Ref-13
+  relevant_pdc_plex: 13CPTAC_GC_Proteome_JHU_Ascend
+  relevant_pdc_experiment_number: 2
+  biological_channel_count: 16
+  reference_channel_count: 2

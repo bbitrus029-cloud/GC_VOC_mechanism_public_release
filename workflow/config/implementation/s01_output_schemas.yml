@@ -1,0 +1,1088 @@
+schema_version: s01-output-schema-1.3.1
+authority:
+  - docs/plans/APPROVED_ANALYSIS_PLAN.md#21.3
+  - config/analysis_config.yml
+  - config/hypothesis_estimand_crosswalk.tsv
+common_estimate_columns:
+  - endpoint_id
+  - hypothesis_id
+  - source
+  - biological_unit
+  - biological_n
+  - estimand
+  - effect
+  - ci_lower
+  - ci_upper
+  - p_value
+  - q_value
+  - multiplicity_status
+  - multiplicity_family
+  - family_hypothesis
+  - frozen_family_size
+  - role
+  - timing
+  - dependence
+  - activation_condition
+  - estimability
+  - missing_reason
+  - claim_ceiling
+  - provenance_id
+missing_representations:
+  - NA_NONESTIMABLE
+  - NA_UNAVAILABLE
+  - NA_NOT_APPLICABLE
+  - NA_NOT_DIRECTIONAL
+  - NO_FORMAL_FAMILY
+terminal_state_values:
+  dimension_a:
+    - non_estimable
+    - uncertain
+    - replicated_program_change
+    - directionally_consistent_partial_support
+    - concordant_but_inconclusive
+    - opposite_direction_statistical_conflict
+    - directionally_discordant_inconclusive
+  dimension_b:
+    - magnitude_nonestimable_g_av
+    - substantive_in_both
+    - substantive_in_one
+    - small_point_estimates_in_both
+  bridge:
+    - bridge_nonestimable
+    - bridge_supported
+    - bridge_uncertain
+  cross_layer:
+    - non_estimable
+    - orthogonally_supported
+    - directionally_convergent
+    - cross_layer_conflict
+    - indeterminate
+  generic_estimability:
+    - ESTIMABLE
+    - NA_NONESTIMABLE
+    - NA_UNAVAILABLE
+    - NA_NOT_APPLICABLE
+multiplicity:
+  family_population_source: config.analysis_config.yml#multiplicity.families
+  endpoint_population_source: config.hypothesis_estimand_crosswalk.tsv
+  q_rule: BH_on_finite_P_with_complete_vector_equal_frozen_family_size_then_restore_structural_NA_in_frozen_order
+  inactive_GSE122401: no_effect_or_P_value_unless_pre_effect_backup_activation_occurs
+  nonestimable_no_test: nominal_P_NA_and_q_NO_FORMAL_FAMILY
+  exploratory_nominal: nominal_P_if_estimable_and_q_NO_FORMAL_FAMILY
+reporting:
+  retain_every_registered_hypothesis: yes
+  significant_results_only_permitted: no
+  retain_conditional_nonestimable_uncertain_conflicting_unfavorable: yes
+registered_method_contract_resolutions:
+  edgeR_QL_member_uncertainty:
+    state: APPROVED_METHOD_IMPLEMENTED
+    registered_method: edgeR_QL_tissue_plus_donor
+    approved_reporting_exception: native_SE_and_CI_NA_UNAVAILABLE_does_not_invalidate_native_QL_test
+    decision_dossier:
+      outcome: APPROVED_METHOD_IMPLEMENTED
+      method: edgeR_QL_tissue_plus_donor
+      issue: RESOLVED_BY_PUBLISHED_S01_AMENDMENT_2026_09_07
+      fixed:
+        edgeR_version: 4.10.1
+        version_authority: accepted_receipt.repository.scientific_contract_commit:renv.lock
+        scientific_contract_commit: b8a42905fc610de81f52d80bb29deeb4e7e06f68
+        renv_lock_git_blob: 92322f52b4d6291e0c3baeffedf6a8cc876951e9
+        renv_lock_sha256: ad12c52f4d112c067ef9705d288eabac42b49398514edc4607114e66f383a881
+        scientific_rules: 'plan_15.3-15.5: marker_gate; eligible_raw_UMI_donor_by_tissue_by_compartment;20_cells_and_10000_UMI_per_unit;8_paired_donors;member_detection_nonzero_in_at_least_50_percent_of_units_and_both_tissues_in_3_donors;TMM;edgeR_QL;tissue_plus_donor;no_redundant_chemistry_term;crosswalk_Tumor_minus_NAT;SC_G_MEMBERS_5_and_SC_H_MEMBERS_9'
+      amendment:
+        receipt: data/manifests/registration/OSF_S01_METHODS_AMENDMENT_2026-09-07.json
+        revision: 6a9e4b27f508eba67ee25805
+        plan_section: 15.5.1
+        configuration: single_cell_member_model
+      production_execution_permitted: no
+      synthetic_check_scope: ACTUAL_APPROVED_HELPER_WHOLE_SYNTHETIC_BACKGROUND_ONLY
+      new_scientific_rule_invented: no
+    native_field_mapping:
+      logFC: effect
+      F: statistic
+      df.test: numerator_df
+      df.total: denominator_df
+    invented_rule_permitted: no
+outputs:
+  all_program_estimates:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - hypothesis_id
+      - source
+      - biological_unit
+      - biological_n
+      - estimand
+      - effect
+      - ci_lower
+      - ci_upper
+      - p_value
+      - q_value
+      - multiplicity_status
+      - multiplicity_family
+      - family_hypothesis
+      - frozen_family_size
+      - role
+      - timing
+      - dependence
+      - activation_condition
+      - estimability
+      - missing_reason
+      - claim_ceiling
+      - provenance_id
+      - construct
+      - native_direction
+      - g_av
+      - g_av_ci_lower
+      - g_av_ci_upper
+    deterministic_order:
+      - endpoint_id
+      - source
+    row_population: all_registered_crosswalk_rows_mapped_to_all_program_estimates_in_registered_order_including_inactive_and_nonestimable
+    favorable_row_filter_permitted: no
+    reconciliation: one_terminal_row_per_crosswalk_endpoint_mapped_to_all_program_estimates
+  all_member_estimates:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - hypothesis_id
+      - source
+      - biological_unit
+      - biological_n
+      - estimand
+      - effect
+      - ci_lower
+      - ci_upper
+      - p_value
+      - q_value
+      - multiplicity_status
+      - multiplicity_family
+      - family_hypothesis
+      - frozen_family_size
+      - role
+      - timing
+      - dependence
+      - activation_condition
+      - estimability
+      - missing_reason
+      - claim_ceiling
+      - provenance_id
+      - construct
+      - member
+      - standard_error
+      - statistic
+      - numerator_df
+      - denominator_df
+      - standard_error_status
+      - confidence_interval_status
+      - uncertainty_reason
+      - ql_df_status
+    deterministic_order:
+      - endpoint_id
+      - source
+    row_population: all_registered_crosswalk_rows_mapped_to_all_member_estimates_in_registered_order_including_inactive_and_nonestimable
+    favorable_row_filter_permitted: no
+    reconciliation: one_terminal_row_per_crosswalk_endpoint_mapped_to_all_member_estimates
+  bulk_reproducibility_states:
+    primary_key: construct
+    required_columns:
+      - construct
+      - active_source_1_endpoint_id
+      - active_source_2_endpoint_id
+      - dimension_a_state
+      - zero_point_estimate_flag
+      - dimension_b_state
+      - both_core_CI_bounded_within_small_effect_region
+      - precision_uncertain
+      - primary_rank_unrounded_raw_paired_mean_difference
+      - standardized_member_mean_unrounded_raw_paired_mean_difference
+      - primary_rank_direction
+      - standardized_member_mean_direction
+      - score_method_sensitive
+      - score_method_nonestimable
+      - exact_zero_direction_flag
+      - claim_ceiling
+      - provenance_id
+    deterministic_order: construct
+    row_population: one_row_per_axis_for_active_core_source_pair
+    favorable_row_filter_permitted: no
+    reconciliation: exactly_one_state_row_for_each_of_G_and_H
+  single_cell_state_estimates:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - hypothesis_id
+      - source
+      - biological_unit
+      - biological_n
+      - estimand
+      - effect
+      - ci_lower
+      - ci_upper
+      - p_value
+      - q_value
+      - multiplicity_status
+      - multiplicity_family
+      - family_hypothesis
+      - frozen_family_size
+      - role
+      - timing
+      - dependence
+      - activation_condition
+      - estimability
+      - missing_reason
+      - claim_ceiling
+      - provenance_id
+      - broad_label
+      - donor_count
+      - marker_audit_state
+      - member
+      - standard_error
+      - statistic
+      - numerator_df
+      - denominator_df
+      - standard_error_status
+      - confidence_interval_status
+      - uncertainty_reason
+      - ql_df_status
+    deterministic_order:
+      - endpoint_id
+      - source
+    row_population: all_registered_crosswalk_rows_mapped_to_single_cell_state_estimates_in_registered_order_including_inactive_and_nonestimable
+    favorable_row_filter_permitted: no
+    reconciliation: one_terminal_row_per_crosswalk_endpoint_mapped_to_single_cell_state_estimates
+  captured_composition_estimates:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - hypothesis_id
+      - source
+      - biological_unit
+      - biological_n
+      - estimand
+      - effect
+      - ci_lower
+      - ci_upper
+      - p_value
+      - q_value
+      - multiplicity_status
+      - multiplicity_family
+      - family_hypothesis
+      - frozen_family_size
+      - role
+      - timing
+      - dependence
+      - activation_condition
+      - estimability
+      - missing_reason
+      - claim_ceiling
+      - provenance_id
+      - compartment
+      - composition_method
+      - donor_count
+    deterministic_order:
+      - endpoint_id
+      - source
+    row_population: all_registered_crosswalk_rows_mapped_to_captured_composition_estimates_in_registered_order_including_inactive_and_nonestimable
+    favorable_row_filter_permitted: no
+    reconciliation: one_terminal_row_per_crosswalk_endpoint_mapped_to_captured_composition_estimates
+  protein_estimates:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - hypothesis_id
+      - source
+      - biological_unit
+      - biological_n
+      - estimand
+      - effect
+      - ci_lower
+      - ci_upper
+      - p_value
+      - q_value
+      - multiplicity_status
+      - multiplicity_family
+      - family_hypothesis
+      - frozen_family_size
+      - role
+      - timing
+      - dependence
+      - activation_condition
+      - estimability
+      - missing_reason
+      - claim_ceiling
+      - provenance_id
+      - construct
+      - member
+      - common_pair_set_id
+    deterministic_order:
+      - endpoint_id
+      - source
+    row_population: all_registered_crosswalk_rows_mapped_to_protein_estimates_in_registered_order_including_inactive_and_nonestimable
+    favorable_row_filter_permitted: no
+    reconciliation: one_terminal_row_per_crosswalk_endpoint_mapped_to_protein_estimates
+  cptac_bridge_estimates:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - hypothesis_id
+      - source
+      - biological_unit
+      - biological_n
+      - estimand
+      - effect
+      - ci_lower
+      - ci_upper
+      - p_value
+      - q_value
+      - multiplicity_status
+      - multiplicity_family
+      - family_hypothesis
+      - frozen_family_size
+      - role
+      - timing
+      - dependence
+      - activation_condition
+      - estimability
+      - missing_reason
+      - claim_ceiling
+      - provenance_id
+      - construct
+      - rho
+      - bootstrap_ci_lower
+      - bootstrap_ci_upper
+      - bca_ci_lower
+      - bca_ci_upper
+      - valid_bootstrap_replicates
+      - bridge_state
+      - bridge_q_ci_inconsistent
+      - bridge_nominal_p_ci_inconsistent
+    deterministic_order:
+      - endpoint_id
+      - source
+    row_population: all_registered_crosswalk_rows_mapped_to_cptac_bridge_estimates_in_registered_order_including_inactive_and_nonestimable
+    favorable_row_filter_permitted: no
+    reconciliation: one_terminal_row_per_crosswalk_endpoint_mapped_to_cptac_bridge_estimates
+  cross_layer_evidence_matrix:
+    primary_key:
+      - construct
+      - layer
+    required_columns:
+      - construct
+      - layer
+      - evidence_identifier
+      - cross_layer_state
+      - compensation_compatible
+      - same_cohort_dependence_flag
+      - principal_limitation
+      - claim_ceiling
+      - provenance_id
+    deterministic_order:
+      - construct
+      - layer
+    row_population: one_row_per_axis_and_evidence_layer
+    favorable_row_filter_permitted: no
+    reconciliation: complete_dependence_aware_layer_inventory_for_each_axis
+  claim_boundary_ledger:
+    primary_key: claim_id
+    required_columns:
+      - claim_id
+      - evidence_identifier
+      - permitted_claim
+      - prohibited_inference
+      - uncertainty_statement
+      - provenance_id
+    deterministic_order: claim_id
+    row_population: one_row_per_registered_or_derived_claim_boundary
+    favorable_row_filter_permitted: no
+    reconciliation: each_evidence_identifier_has_an_explicit_claim_ceiling
+  figure_source_data_index:
+    primary_key:
+      - figure_id
+      - source_data_id
+    required_columns:
+      - figure_id
+      - source_data_id
+      - artifact_path
+      - artifact_sha256
+      - reconciliation_state
+    deterministic_order:
+      - figure_id
+      - source_data_id
+    row_population: one_row_per_figure_source_data_artifact
+    favorable_row_filter_permitted: no
+    reconciliation: every_figure_panel_reconciles_to_one_verified_source_data_artifact
+indispensable_diagnostics:
+  exclusions_and_deviations:
+    primary_key:
+      - source
+      - record_id
+    required_columns:
+      - source
+      - record_id
+      - rule_id
+      - terminal_state
+      - provenance_id
+    deterministic_order:
+      - source
+      - record_id
+    row_population: one_row_per_prespecified_exclusion_or_deviation_record
+    favorable_row_filter_permitted: no
+    reconciliation: complete_admitted_source_exclusion_and_deviation_population
+  robustness_diagnostics:
+    primary_key:
+      - endpoint_id
+      - diagnostic_id
+    required_columns:
+      - endpoint_id
+      - diagnostic_id
+      - diagnostic_state
+      - multiplicity_status
+      - provenance_id
+    deterministic_order:
+      - endpoint_id
+      - diagnostic_id
+    row_population: one_row_per_registered_endpoint_and_applicable_diagnostic
+    favorable_row_filter_permitted: no
+    reconciliation: complete_prespecified_diagnostic_population_with_terminal_states
+  result_state_ledger:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - activation_state
+      - estimability
+      - terminal_state
+      - missing_representation
+      - provenance_id
+    deterministic_order: endpoint_id
+    row_population: exactly_one_row_per_registered_crosswalk_endpoint
+    favorable_row_filter_permitted: no
+    reconciliation: exactly_146_ordered_endpoint_terminal_state_rows
+  quasibinomial_model_audit:
+    primary_key: endpoint_id
+    required_columns:
+      - endpoint_id
+      - warning_messages
+      - recognized_warning_present
+      - unexpected_warning_present
+      - converged
+      - boundary
+      - model_rank
+      - model_columns
+      - fitted_probability_boundary
+      - coefficient
+      - standard_error
+      - dispersion
+      - residual_df
+      - diagnostic_state
+      - provenance_id
+    deterministic_order: endpoint_id
+    row_population: one_row_per_SC_COMPOSITION_QUASIBINOMIAL_endpoint
+    favorable_row_filter_permitted: no
+    reconciliation: exactly_seven_frozen_family_rows_with_exact_warning_and_model_facts
+method_field_applicability:
+  authority: config/hypothesis_estimand_crosswalk.tsv
+  QL_scope:
+    - SC_G_MEMBERS
+    - SC_H_MEMBERS
+  native_QL: native_F_df.test_df.total_required_when_estimable_no_rounding
+  other_methods: retain_registered_native_statistic_SE_and_CI_numeric_QL_df_NA_with_ql_df_status_NA_NOT_APPLICABLE
+  uncertainty_exception: only_14_SC_members_numeric_SE_CI_NA_with_NA_UNAVAILABLE_and_native_unavailability_reason
+  program_member: member_NA_NOT_APPLICABLE_for_nonmember_program_rows
+  row_validator: s01_validate_method_output_rows
+field_contracts:
+  endpoint_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  hypothesis_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  source:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  biological_unit:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  biological_n:
+    type: integer
+    domain: integer_nonnegative
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  estimand:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  effect:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  ci_lower:
+    type: double
+    domain: finite_numeric_when_estimable_except_14_SC_members_native_uncertainty_unavailable
+    nullability: NA_UNAVAILABLE_for_SC_G_MEMBERS_and_SC_H_MEMBERS_native_uncertainty_only_otherwise_estimability_dependent
+    missing_state_behavior: numeric_NA_with_explicit_uncertainty_status_and_reason_for_14_SC_members_no_fabricated_interval
+  ci_upper:
+    type: double
+    domain: finite_numeric_when_estimable_except_14_SC_members_native_uncertainty_unavailable
+    nullability: NA_UNAVAILABLE_for_SC_G_MEMBERS_and_SC_H_MEMBERS_native_uncertainty_only_otherwise_estimability_dependent
+    missing_state_behavior: numeric_NA_with_explicit_uncertainty_status_and_reason_for_14_SC_members_no_fabricated_interval
+  p_value:
+    type: double
+    domain: closed_interval_0_1_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  q_value:
+    type: double
+    domain: closed_interval_0_1_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  multiplicity_status:
+    type: character_nonempty
+    domain: registered_multiplicity_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  multiplicity_family:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  family_hypothesis:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  frozen_family_size:
+    type: integer
+    domain: integer_nonnegative
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  role:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  timing:
+    type: character_nonempty
+    domain: registered_timing_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  dependence:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  activation_condition:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  estimability:
+    type: character_nonempty
+    domain: registered_estimability_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  missing_reason:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  claim_ceiling:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  provenance_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  construct:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  native_direction:
+    type: character_nonempty
+    domain: positive_negative_zero_or_NA_NOT_DIRECTIONAL
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  g_av:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  g_av_ci_lower:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  g_av_ci_upper:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  member:
+    type: character_nonempty
+    domain: registered_member_identity_or_NA_NOT_APPLICABLE_for_program_row
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  standard_error:
+    type: double
+    domain: finite_numeric_when_estimable_except_14_SC_members_native_uncertainty_unavailable
+    nullability: NA_UNAVAILABLE_for_SC_G_MEMBERS_and_SC_H_MEMBERS_native_uncertainty_only_otherwise_estimability_dependent
+    missing_state_behavior: numeric_NA_with_explicit_uncertainty_status_and_reason_for_14_SC_members_no_fabricated_interval
+  statistic:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  numerator_df:
+    type: double
+    domain: positive_finite_native_QL_double_when_estimable_SC_member_only
+    nullability: numeric_NA_when_QL_not_applicable_or_nonestimable
+    missing_state_behavior: ql_df_status_NA_NOT_APPLICABLE_for_other_methods_NA_NONESTIMABLE_for_failed_QL
+  denominator_df:
+    type: double
+    domain: positive_finite_native_QL_double_when_estimable_SC_member_only
+    nullability: numeric_NA_when_QL_not_applicable_or_nonestimable
+    missing_state_behavior: ql_df_status_NA_NOT_APPLICABLE_for_other_methods_NA_NONESTIMABLE_for_failed_QL
+  standard_error_status:
+    type: character_nonempty
+    domain: AVAILABLE_or_NA_NONESTIMABLE_with_NA_UNAVAILABLE_exclusively_for_14_SC_members
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  confidence_interval_status:
+    type: character_nonempty
+    domain: AVAILABLE_or_NA_NONESTIMABLE_with_NA_UNAVAILABLE_exclusively_for_14_SC_members
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  uncertainty_reason:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  ql_df_status:
+    type: character_nonempty
+    domain: AVAILABLE_NA_NONESTIMABLE_or_NA_NOT_APPLICABLE
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  active_source_1_endpoint_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  active_source_2_endpoint_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  dimension_a_state:
+    type: character_nonempty
+    domain: registered_dimension_A_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  zero_point_estimate_flag:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  dimension_b_state:
+    type: character_nonempty
+    domain: registered_dimension_B_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  both_core_CI_bounded_within_small_effect_region:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  precision_uncertain:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  primary_rank_unrounded_raw_paired_mean_difference:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  standardized_member_mean_unrounded_raw_paired_mean_difference:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  primary_rank_direction:
+    type: character_nonempty
+    domain: positive_negative_zero_or_NA_NOT_DIRECTIONAL
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  standardized_member_mean_direction:
+    type: character_nonempty
+    domain: positive_negative_zero_or_NA_NOT_DIRECTIONAL
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  score_method_sensitive:
+    type: character_nonempty
+    domain: TRUE_FALSE_or_NA_NONESTIMABLE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  score_method_nonestimable:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  exact_zero_direction_flag:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  broad_label:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  donor_count:
+    type: integer
+    domain: integer_nonnegative
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  marker_audit_state:
+    type: character_nonempty
+    domain: PASS_FAIL_or_NA_NONESTIMABLE
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  compartment:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  composition_method:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  common_pair_set_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  rho:
+    type: double
+    domain: closed_interval_minus1_plus1_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  bootstrap_ci_lower:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  bootstrap_ci_upper:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  bca_ci_lower:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  bca_ci_upper:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  valid_bootstrap_replicates:
+    type: integer
+    domain: integer_nonnegative
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  bridge_state:
+    type: character_nonempty
+    domain: registered_bridge_state_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  bridge_q_ci_inconsistent:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  bridge_nominal_p_ci_inconsistent:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  layer:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  evidence_identifier:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  cross_layer_state:
+    type: character_nonempty
+    domain: registered_cross_layer_state_vocabulary
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  compensation_compatible:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  same_cohort_dependence_flag:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  principal_limitation:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  claim_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  permitted_claim:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  prohibited_inference:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  uncertainty_statement:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  figure_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  source_data_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  artifact_path:
+    type: character_nonempty
+    domain: nonempty_project_relative_path_no_absolute_or_traversal
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  artifact_sha256:
+    type: character_nonempty
+    domain: lowercase_SHA256_exactly_64_hex
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  reconciliation_state:
+    type: character_nonempty
+    domain: VERIFIED_or_NA_UNAVAILABLE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  record_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  rule_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  terminal_state:
+    type: character_nonempty
+    domain: registered_terminal_state_vocabulary
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  diagnostic_id:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  diagnostic_state:
+    type: character_nonempty
+    domain: registered_diagnostic_terminal_state
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  activation_state:
+    type: character_nonempty
+    domain: nonempty_UTF8
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  missing_representation:
+    type: character_nonempty
+    domain: registered_missing_representation_vocabulary
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  warning_messages:
+    type: character_vector
+    domain: exact_conditionMessage_strings_in_capture_order
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  recognized_warning_present:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  unexpected_warning_present:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  converged:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  boundary:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  model_rank:
+    type: integer
+    domain: integer_nonnegative
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  model_columns:
+    type: integer
+    domain: integer_nonnegative
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+  fitted_probability_boundary:
+    type: logical
+    domain: TRUE_or_FALSE
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  coefficient:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  dispersion:
+    type: double
+    domain: finite_numeric_when_estimable
+    nullability: state_dependent_only_as_declared_by_estimability_or_activation_state
+    missing_state_behavior: use_only_registered_explicit_missing_state_never_silent_drop
+  residual_df:
+    type: integer
+    domain: integer_positive_when_estimable
+    nullability: never_null_or_blank
+    missing_state_behavior: missing_prohibited
+column_types:
+  endpoint_id: character_nonempty
+  hypothesis_id: character_nonempty
+  source: character_nonempty
+  biological_unit: character_nonempty
+  biological_n: integer
+  estimand: character_nonempty
+  effect: double
+  ci_lower: double
+  ci_upper: double
+  p_value: double
+  q_value: double
+  multiplicity_status: character_nonempty
+  multiplicity_family: character_nonempty
+  family_hypothesis: character_nonempty
+  frozen_family_size: integer
+  role: character_nonempty
+  timing: character_nonempty
+  dependence: character_nonempty
+  activation_condition: character_nonempty
+  estimability: character_nonempty
+  missing_reason: character_nonempty
+  claim_ceiling: character_nonempty
+  provenance_id: character_nonempty
+  construct: character_nonempty
+  native_direction: character_nonempty
+  g_av: double
+  g_av_ci_lower: double
+  g_av_ci_upper: double
+  member: character_nonempty
+  standard_error: double
+  statistic: double
+  numerator_df: double
+  denominator_df: double
+  standard_error_status: character_nonempty
+  confidence_interval_status: character_nonempty
+  uncertainty_reason: character_nonempty
+  ql_df_status: character_nonempty
+  active_source_1_endpoint_id: character_nonempty
+  active_source_2_endpoint_id: character_nonempty
+  dimension_a_state: character_nonempty
+  zero_point_estimate_flag: logical
+  dimension_b_state: character_nonempty
+  both_core_CI_bounded_within_small_effect_region: logical
+  precision_uncertain: logical
+  primary_rank_unrounded_raw_paired_mean_difference: double
+  standardized_member_mean_unrounded_raw_paired_mean_difference: double
+  primary_rank_direction: character_nonempty
+  standardized_member_mean_direction: character_nonempty
+  score_method_sensitive: character_nonempty
+  score_method_nonestimable: logical
+  exact_zero_direction_flag: logical
+  broad_label: character_nonempty
+  donor_count: integer
+  marker_audit_state: character_nonempty
+  compartment: character_nonempty
+  composition_method: character_nonempty
+  common_pair_set_id: character_nonempty
+  rho: double
+  bootstrap_ci_lower: double
+  bootstrap_ci_upper: double
+  bca_ci_lower: double
+  bca_ci_upper: double
+  valid_bootstrap_replicates: integer
+  bridge_state: character_nonempty
+  bridge_q_ci_inconsistent: logical
+  bridge_nominal_p_ci_inconsistent: logical
+  layer: character_nonempty
+  evidence_identifier: character_nonempty
+  cross_layer_state: character_nonempty
+  compensation_compatible: logical
+  same_cohort_dependence_flag: logical
+  principal_limitation: character_nonempty
+  claim_id: character_nonempty
+  permitted_claim: character_nonempty
+  prohibited_inference: character_nonempty
+  uncertainty_statement: character_nonempty
+  figure_id: character_nonempty
+  source_data_id: character_nonempty
+  artifact_path: character_nonempty
+  artifact_sha256: character_nonempty
+  reconciliation_state: character_nonempty
+  record_id: character_nonempty
+  rule_id: character_nonempty
+  terminal_state: character_nonempty
+  diagnostic_id: character_nonempty
+  diagnostic_state: character_nonempty
+  activation_state: character_nonempty
+  missing_representation: character_nonempty
+  warning_messages: character_vector
+  recognized_warning_present: logical
+  unexpected_warning_present: logical
+  converged: logical
+  boundary: logical
+  model_rank: integer
+  model_columns: integer
+  fitted_probability_boundary: logical
+  coefficient: double
+  dispersion: double
+  residual_df: integer

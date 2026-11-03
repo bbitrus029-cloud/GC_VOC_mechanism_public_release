@@ -1,0 +1,79 @@
+source_commit: dd0e37b1ab5dcf41caa2bce5eea08aa9446446da
+count_scale: strict_nonnegative_integer_raw_UMI
+identity: fixed_author_column_order_and_exact_sample_suffix_not_barcode_key_join
+ordering:
+  genes_checkpoint: original_raw_row_order
+  genes_audit: original_raw_row_order
+  genes_state_and_member_background: bytewise_ascending_source_gene_identifier
+  donors: bytewise_ascending
+  tissues:
+  - Normal
+  - Tumor
+  compartments:
+  - epithelial
+  - fibroblast
+  - endothelial
+  - myeloid
+  - T_NK
+  - B_plasma
+  - mast_other_immune
+audit:
+  background: all_unique_finite_source_gene_rows_no_expression_filter
+  mapping: exact_unique_source_gene_identifier_no_alias_substitution
+  eligibility: pool_tissues_before_20_cells_and_10000_original_UMI_thresholds
+  library_size: all_original_summed_UMI_in_tissue_pooled_unit
+  transformation: log2_1_plus_CPM
+  CPM_multiplier: 1000000
+  log_pseudocount: 1
+  zero_handling: retain_observed_zeros_in_background_and_panels
+  ties: average
+  scaled_rank: (rank_minus_1)_divided_by_(background_size_minus_1)
+  weighting: unrounded_equal_mean_of_exact_four_members
+  panels:
+    epithelial:
+    - EPCAM
+    - KRT8
+    - KRT18
+    - KRT19
+    fibroblast:
+    - COL1A1
+    - COL1A2
+    - COL3A1
+    - DCN
+    endothelial:
+    - PECAM1
+    - VWF
+    - EMCN
+    - KDR
+    myeloid:
+    - LST1
+    - TYROBP
+    - FCER1G
+    - CTSS
+    T_NK:
+    - CD3D
+    - CD3E
+    - TRBC1
+    - NKG7
+    B_plasma:
+    - CD79A
+    - CD74
+    - MS4A1
+    - MZB1
+    mast_other_immune:
+    - KIT
+    - TPSAB1
+    - TPSB2
+    - CPA3
+member_preparation:
+  contract: workflow/config/original_analysis.yml:single_cell_member_model
+  normalization_and_model_fitting: NOT_RUN_S03
+  remove_all_zero_modeling_rows: true
+  preserve_original_eligibility_totals: true
+runtime:
+  workers: 1
+  BLAS_OpenMP_threads: 1
+  nested_parallelism: false
+  heavy_start_available_GiB: 8
+  stop_available_GiB: 6
+  stop_rising_swap_GiB: 2

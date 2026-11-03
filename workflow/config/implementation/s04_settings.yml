@@ -1,0 +1,8 @@
+scientific_rules: workflow/config/original_analysis.yml
+protein_file: GC_TMT_proteomics_ratio_gene_MD_GencodeV42_Tumor_NAT.cct
+rna_file: GC_RNAseq_gene_rsem_rm_circRNA_UQ_log2(x+1)_Tumor_NAT.cct
+protein_sha256: f826ecbc37646e0a012b0a0ea9855b0b791fc456f0c919274a04098ef1456700
+rna_sha256: fe78198ec38aa09daeec1ea93dbb56e4927d5d9542a92b6968b6af00986af8d3
+workers: 1
+threads: 1
+voom: deferred_under_D01_no_real_execution

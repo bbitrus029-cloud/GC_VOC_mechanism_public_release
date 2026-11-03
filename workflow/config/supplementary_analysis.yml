@@ -1,0 +1,191 @@
+schema_version: 1
+timing: post_effect_exploratory
+master_seed: 20260825
+rng: L'Ecuyer-CMRG
+programs:
+  G_core7:
+  - ACSL4
+  - LPCAT3
+  - ALOX5
+  - ALOX12
+  - ALOX15
+  - ALOX15B
+  - POR
+  H_core4:
+  - ALDH2
+  - ALDH3A1
+  - ALDH3A2
+  - ALDH7A1
+  G_buffer8:
+  - GPX4
+  - SLC7A11
+  - GCLC
+  - GCLM
+  - GSR
+  - AIFM2
+  - DHODH
+  - GCH1
+  H_expanded3:
+  - ALDH1A1
+  - ALDH1A3
+  - ALDH3B1
+  H_reductive2:
+  - AKR1B1
+  - AKR1B10
+  H_conjugation2:
+  - GSTA4
+  - GSTP1
+D7:
+- GKN1
+- GKN2
+- MUC5AC
+- TFF1
+- MUC6
+- TFF2
+- PGC
+A:
+  source: GSE122401
+  role: external_cohort_post_effect
+  native_scale: log2_abundance_plus_1
+  ranks: continuous_UQ_abundance_over_historical_23818_ENSG_background
+  native_model: tissue_plus_patient_limma_full_background
+  trend: true
+  robust: true
+  voom: false
+  renormalize: false
+  families:
+    PEA_CORE: 2
+    PEA_G_MEMBERS: 7
+    PEA_H_MEMBERS: 4
+    PEA_CONTEXT: 4
+  diagnostics:
+  - standardized_member_mean_G7_H4
+  - every_G7_H4_leave_one_member_out
+  - paired_Wilcoxon
+  - paired_patient_bootstrap
+  - fixed_denominator_member_direction_concordance
+B:
+  candidate_order:
+  - GSE150290
+  - GSE183904
+  first_qualifying_overall_H4_source: retain_even_if_lineage_or_reference_unavailable
+  minimum_cells: 20
+  minimum_original_UMI: 10000
+  detection_fraction: 0.5
+  minimum_paired_donors_nonzero_both_tissues: 3
+  minimum_pairs: 8
+  composition_minimum_epithelial_cells_per_tissue: 100
+  L: null
+  K: null
+  L_H4_eligible: null
+  roster_state: UNRESOLVED_UNTIL_SOURCE_AND_EXHAUSTIVE_CELL_MAP_QUALIFIED
+  required_fields:
+  - tissue_origin
+  - epithelial_membership
+  - lineage
+  - author_malignancy_status
+  - proliferation_state
+  qualification_excluded_program_universe_count: 26
+  modern_edgeR:
+    version: 4.10.1
+    normalization: TMM
+    legacy: false
+    robust: true
+    dispersion: null
+    top.proportion: null
+    abundance.trend: true
+    covariate.trend: null
+    prior.count: 0.125
+    observation_weights: none
+    custom_offsets: none
+    estimateDisp: prohibited
+  composition_degeneracy: exact_integer_cross_products_no_outcome_tolerance
+  maximum_exact_product_denominator: 94906265
+  degenerate_cases:
+  - all_zero
+  - all_full_including_K1
+  - equal_raw_proportion_in_every_pair
+  degenerate_action: retain_slot_counts_raw_delta_and_reason_inference_NA
+C_D7:
+  cohorts:
+  - GSE29272
+  - GSE27342_core
+  - GSE122401
+  - TCGA_STAD
+  reference: common_complete_seven_member_two_tissue_pairs_from_formal_population
+  standardization: pooled_gene_means_and_sample_SDs_N_minus_1
+  effective_zero_variance: S01_sqrt_machine_epsilon_times_max_1_absolute_values
+  composite_restandardization: prohibited
+  coefficients_units: per_one_score_unit_of_paired_D7_change
+  primary_method: OLS_Student_t_residual_df
+  models:
+    M0: delta_H ~ 1
+    M1: delta_H ~ delta_D
+    M2: delta_H ~ delta_D + delta_E
+  minimum_pairs: 20
+  HC3: exact_covariance_no_HC1_rescaling_Student_t_n_minus_p
+  HC3_leverage_one_tolerance: 1.4901161193847656e-08
+  LOO: fixed_scores_and_formula_no_primary_n_gate_on_n_minus_1_diagnostics
+  VIF_flag: 10
+  arrays: M1_only
+  families:
+    PEC_DIFFERENTIATION: 4
+    PEC_COMPOSITION: 4
+C_composition:
+  method: MuSiC
+  version: 1.0.0
+  commit: f21fe67f5670d5e9fca0ad7550abaae3423eb59c
+  reference_order: B_selected_complete_release_then_remaining_candidate_or_GSE150290_then_GSE183904_if_none_admitted
+  excluded_fitting_genes: all_26_program_and_7_D7_genes
+  bulk_sources:
+  - TCGA_STAD
+  - GSE122401
+  actual_bulk_fraction_estimation: NOT_AUTHORIZED_S10
+  pre_validation_freeze: REQUIRED_IF_REFERENCE_QUALIFIED
+  tissue_resolved_validation: AUTHORIZED_ONLY_AFTER_COMPLETE_HASHED_FREEZE_AND_LEDGER_EVENT
+  reference_omission_diagnostic: all_eligible_reference_donors_hold_method_features_and_bulk_population_fixed_after_M2_release
+  uncertainty: conditional_on_estimated_E_does_not_include_reference_or_deconvolution_uncertainty
+D:
+  candidate: Mun2019_early_onset_protein_official_or_author_linked_processed_resource_only
+  official_accession: PDC000214
+  minimum_pairs: 8
+  required_members:
+  - ALDH2
+  - ALDH3A1
+  - ALDH3A2
+  - ALDH7A1
+  families:
+    PED_H4: 1
+    PED_H_MEMBERS: 4
+  permitted_branches:
+  - separate_sample_measurements
+  - separate_common_reference_log2_ratios
+  - paired_tumor_adjacent_log2_ratio_only
+  ratio_only_method: one_sample_t_against_zero
+  ratio_only_H4_score: NA_UNAVAILABLE
+  ratio_only_g_av: NA_UNAVAILABLE
+  selected_branch: paired_tumor_adjacent_log2_ratio_only
+  ratio_field: Unshared_Log_T_over_N
+  field_rationale: unique_gene_peptide_quantitation_avoids_shared_ALDH_peptide_convolution
+  normalization: retain_CDAP_per_ratio_median_centering_no_additional_normalization
+  reference_pool: none_patient_specific_adjacent_denominator
+  log_base: 2
+  repeated_measurement_rule: equal_arithmetic_mean_of_all_declared_log2_ratio_replicates_at_later_effect_stage
+  common_population: every_H4_member_finite_in_every_declared_replicate_no_imputation
+  estimand: mean_patient_level_replicate_averaged_median_centered_log2_tumor_adjacent_ratio
+  separate_measurements: unavailable
+common:
+  program_inference: S01_paired_delta_Student_t_and_Morris_DeShon_SMCRP_g_av_LS
+  rank_definition: ascending_average_rank_minus_1_divided_by_background_size_minus_1
+  bootstrap_draws: 10000
+  bootstrap_minimum_valid: 9500
+  bootstrap_quantile_type: 7
+  Wilcoxon_exact: false
+  Wilcoxon_correct: false
+  families: retain_full_frozen_size_and_no_final_q_until_all_slots_terminal
+  diagnostics_timing: same_data_robustness_within_post_effect_exploratory
+  one_heavy_process: true
+  numerical_threads: 1
+  minimum_available_GiB: 8
+  atomic_target_stop_available_GiB: 6
+  atomic_target_stop_swap_GiB_rising: 2

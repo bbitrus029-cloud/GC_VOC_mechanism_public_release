@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "policy_id": "GSE150290_BROAD_AUDIT_SOURCE_SPECIFIC_1",
+  "active": true,
+  "timing": "post_effect_exploratory",
+  "broad_audit_panels": {
+    "epithelial": ["EPCAM", "KRT8", "KRT18", "KRT19"],
+    "fibroblast": ["COL1A1", "COL1A2", "COL3A1", "DCN"],
+    "endothelial": ["VWF", "EMCN", "KDR"],
+    "myeloid": ["LST1", "TYROBP", "FCER1G", "CTSS"],
+    "T_NK": ["CD3D", "CD3E", "NKG7"],
+    "B_plasma": ["CD79A", "CD74", "MS4A1", "MZB1"],
+    "mast": ["KIT", "TPSAB1", "CPA3"]
+  },
+  "complete_roster_sizes": [4, 4, 3, 4, 3, 4, 3],
+  "minimum_cells": 20,
+  "minimum_original_UMI": 10000,
+  "minimum_assignment_donors": 2,
+  "minimum_audit_donors": 8,
+  "unique_maximum_fraction": 0.6,
+  "strict_median": true,
+  "common_ranking_background": true,
+  "equal_donor_weight": true,
+  "missing_policy": "Every specified marker must map uniquely; no omission, substitution or missing-as-zero. Observed zero valid.",
+  "reduced_redundancy": "Three-member panels reduce redundancy and alter score behavior. Literature and synthetic tests do not validate exact-assay sensitivity or specificity."
+}

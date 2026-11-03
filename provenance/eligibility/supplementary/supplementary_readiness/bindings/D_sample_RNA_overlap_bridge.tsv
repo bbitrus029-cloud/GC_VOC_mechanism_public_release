@@ -1,0 +1,161 @@
+case_submitter_id	sample_submitter_id	aliquot_submitter_id	sample_type	patient_id
+32	adjacent Pat32	N123	Solid Tissue Normal	Pat32
+79	adjacent Pat79	N5381	Solid Tissue Normal	Pat79
+67	adjacent Pat67	N247	Solid Tissue Normal	Pat67
+64	Tumor Pat64	T226	Tumor	Pat64
+4	adjacent Pat4	N21	Solid Tissue Normal	Pat4
+76	adjacent Pat76	N5263	Solid Tissue Normal	Pat76
+68	adjacent Pat68	N249	Solid Tissue Normal	Pat68
+5	adjacent Pat5	N23	Solid Tissue Normal	Pat5
+75	adjacent Pat75	N2397	Solid Tissue Normal	Pat75
+19	Tumor Pat19	T60	Tumor	Pat19
+6	adjacent Pat6	N25	Solid Tissue Normal	Pat6
+51	Tumor Pat51	T192	Tumor	Pat51
+20	Tumor Pat20	T62	Tumor	Pat20
+7	adjacent Pat7	N27	Solid Tissue Normal	Pat7
+50	Tumor Pat50	T190	Tumor	Pat50
+21	Tumor Pat21	T64	Tumor	Pat21
+8	adjacent Pat8	N29	Solid Tissue Normal	Pat8
+22	Tumor Pat22	T66	Tumor	Pat22
+23	Tumor Pat23	T68	Tumor	Pat23
+28	Tumor Pat28	T112	Tumor	Pat28
+65	Tumor Pat65	T232	Tumor	Pat65
+53	Tumor Pat53	T196	Tumor	Pat53
+52	Tumor Pat52	T194	Tumor	Pat52
+66	adjacent Pat66	N235	Solid Tissue Normal	Pat66
+29	adjacent Pat29	N115	Solid Tissue Normal	Pat29
+61	Tumor Pat61	T218	Tumor	Pat61
+60	Tumor Pat60	T216	Tumor	Pat60
+65	adjacent Pat65	N231	Solid Tissue Normal	Pat65
+28	adjacent Pat28	N111	Solid Tissue Normal	Pat28
+54	adjacent Pat54	N199	Solid Tissue Normal	Pat54
+59	Tumor Pat59	T214	Tumor	Pat59
+78	adjacent Pat78	N5373	Solid Tissue Normal	Pat78
+30	adjacent Pat30	N117	Solid Tissue Normal	Pat30
+9	adjacent Pat9	N31	Solid Tissue Normal	Pat9
+31	adjacent Pat31	N119	Solid Tissue Normal	Pat31
+10	adjacent Pat10	N33	Solid Tissue Normal	Pat10
+11	adjacent Pat11	N35	Solid Tissue Normal	Pat11
+49	Tumor Pat49	T182	Tumor	Pat49
+12	adjacent Pat12	N37	Solid Tissue Normal	Pat12
+48	Tumor Pat48	T180	Tumor	Pat48
+13	adjacent Pat13	N39	Solid Tissue Normal	Pat13
+63	Tumor Pat63	T222	Tumor	Pat63
+62	Tumor Pat62	T220	Tumor	Pat62
+38	adjacent Pat38	N145	Solid Tissue Normal	Pat38
+72	adjacent Pat72	N267	Solid Tissue Normal	Pat72
+39	adjacent Pat39	N147	Solid Tissue Normal	Pat39
+73	adjacent Pat73	N269	Solid Tissue Normal	Pat73
+67	Tumor Pat67	T248	Tumor	Pat67
+37	adjacent Pat37	N143	Solid Tissue Normal	Pat37
+71	adjacent Pat71	N265	Solid Tissue Normal	Pat71
+14	adjacent Pat14	N41	Solid Tissue Normal	Pat14
+40	adjacent Pat40	N149	Solid Tissue Normal	Pat40
+15	adjacent Pat15	N43	Solid Tissue Normal	Pat15
+16	adjacent Pat16	N45	Solid Tissue Normal	Pat16
+24	Tumor Pat24	T88	Tumor	Pat24
+74	adjacent Pat74	N271	Solid Tissue Normal	Pat74
+33	Tumor Pat33	T132	Tumor	Pat33
+69	Tumor Pat69	T254	Tumor	Pat69
+68	Tumor Pat68	T250	Tumor	Pat68
+34	adjacent Pat34	N135	Solid Tissue Normal	Pat34
+70	adjacent Pat70	N257	Solid Tissue Normal	Pat70
+30	Tumor Pat30	T118	Tumor	Pat30
+35	adjacent Pat35	N137	Solid Tissue Normal	Pat35
+29	Tumor Pat29	T116	Tumor	Pat29
+33	adjacent Pat33	N131	Solid Tissue Normal	Pat33
+69	adjacent Pat69	N253	Solid Tissue Normal	Pat69
+66	Tumor Pat66	T236	Tumor	Pat66
+77	adjacent Pat77	N5357	Solid Tissue Normal	Pat77
+25	Tumor Pat25	T90	Tumor	Pat25
+26	Tumor Pat26	T92	Tumor	Pat26
+36	adjacent Pat36	N139	Solid Tissue Normal	Pat36
+17	adjacent Pat17	N53	Solid Tissue Normal	Pat17
+18	adjacent Pat18	N55	Solid Tissue Normal	Pat18
+80	adjacent Pat80	N5759	Solid Tissue Normal	Pat80
+27	Tumor Pat27	T96	Tumor	Pat27
+19	adjacent Pat19	N59	Solid Tissue Normal	Pat19
+1	Tumor Pat1	T14	Tumor	Pat1
+2	Tumor Pat2	T16	Tumor	Pat2
+32	Tumor Pat32	T124	Tumor	Pat32
+3	Tumor Pat3	T18	Tumor	Pat3
+31	Tumor Pat31	T120	Tumor	Pat31
+45	adjacent Pat45	N167	Solid Tissue Normal	Pat45
+55	adjacent Pat55	N201	Solid Tissue Normal	Pat55
+46	adjacent Pat46	N169	Solid Tissue Normal	Pat46
+56	adjacent Pat56	N203	Solid Tissue Normal	Pat56
+43	adjacent Pat43	N163	Solid Tissue Normal	Pat43
+44	adjacent Pat44	N165	Solid Tissue Normal	Pat44
+72	Tumor Pat72	T268	Tumor	Pat72
+39	Tumor Pat39	T148	Tumor	Pat39
+20	adjacent Pat20	N61	Solid Tissue Normal	Pat20
+80	Tumor Pat80	T5760	Tumor	Pat80
+57	adjacent Pat57	N209	Solid Tissue Normal	Pat57
+21	adjacent Pat21	N63	Solid Tissue Normal	Pat21
+22	adjacent Pat22	N65	Solid Tissue Normal	Pat22
+23	adjacent Pat23	N67	Solid Tissue Normal	Pat23
+73	Tumor Pat73	T270	Tumor	Pat73
+4	Tumor Pat4	T22	Tumor	Pat4
+5	Tumor Pat5	T24	Tumor	Pat5
+41	Tumor Pat41	T156	Tumor	Pat41
+6	Tumor Pat6	T26	Tumor	Pat6
+47	adjacent Pat47	N173	Solid Tissue Normal	Pat47
+7	Tumor Pat7	T28	Tumor	Pat7
+40	Tumor Pat40	T150	Tumor	Pat40
+74	Tumor Pat74	T272	Tumor	Pat74
+35	Tumor Pat35	T138	Tumor	Pat35
+34	Tumor Pat34	T136	Tumor	Pat34
+41	adjacent Pat41	N155	Solid Tissue Normal	Pat41
+70	Tumor Pat70	T258	Tumor	Pat70
+77	Tumor Pat77	T5358	Tumor	Pat77
+8	Tumor Pat8	T30	Tumor	Pat8
+9	Tumor Pat9	T32	Tumor	Pat9
+10	Tumor Pat10	T34	Tumor	Pat10
+11	Tumor Pat11	T36	Tumor	Pat11
+71	Tumor Pat71	T266	Tumor	Pat71
+12	Tumor Pat12	T38	Tumor	Pat12
+38	Tumor Pat38	T146	Tumor	Pat38
+42	adjacent Pat42	N161	Solid Tissue Normal	Pat42
+37	Tumor Pat37	T144	Tumor	Pat37
+36	Tumor Pat36	T140	Tumor	Pat36
+50	adjacent Pat50	N189	Solid Tissue Normal	Pat50
+64	adjacent Pat64	N225	Solid Tissue Normal	Pat64
+75	Tumor Pat75	T2398	Tumor	Pat75
+56	Tumor Pat56	T204	Tumor	Pat56
+55	Tumor Pat55	T202	Tumor	Pat55
+63	adjacent Pat63	N221	Solid Tissue Normal	Pat63
+24	adjacent Pat24	N87	Solid Tissue Normal	Pat24
+25	adjacent Pat25	N89	Solid Tissue Normal	Pat25
+46	Tumor Pat46	T170	Tumor	Pat46
+13	Tumor Pat13	T40	Tumor	Pat13
+14	Tumor Pat14	T42	Tumor	Pat14
+79	Tumor Pat79	T5382	Tumor	Pat79
+15	Tumor Pat15	T44	Tumor	Pat15
+16	Tumor Pat16	T46	Tumor	Pat16
+76	Tumor Pat76	T5264	Tumor	Pat76
+52	adjacent Pat52	N193	Solid Tissue Normal	Pat52
+58	Tumor Pat58	T212	Tumor	Pat58
+53	adjacent Pat53	N195	Solid Tissue Normal	Pat53
+57	Tumor Pat57	T210	Tumor	Pat57
+47	Tumor Pat47	T174	Tumor	Pat47
+51	adjacent Pat51	N191	Solid Tissue Normal	Pat51
+58	adjacent Pat58	N211	Solid Tissue Normal	Pat58
+48	adjacent Pat48	N179	Solid Tissue Normal	Pat48
+59	adjacent Pat59	N213	Solid Tissue Normal	Pat59
+26	adjacent Pat26	N91	Solid Tissue Normal	Pat26
+62	adjacent Pat62	N219	Solid Tissue Normal	Pat62
+27	adjacent Pat27	N95	Solid Tissue Normal	Pat27
+60	adjacent Pat60	N215	Solid Tissue Normal	Pat60
+61	adjacent Pat61	N217	Solid Tissue Normal	Pat61
+1	adjacent Pat1	N13	Solid Tissue Normal	Pat1
+17	Tumor Pat17	T54	Tumor	Pat17
+2	adjacent Pat2	N15	Solid Tissue Normal	Pat2
+18	Tumor Pat18	T56	Tumor	Pat18
+3	adjacent Pat3	N17	Solid Tissue Normal	Pat3
+78	Tumor Pat78	T5374	Tumor	Pat78
+49	adjacent Pat49	N181	Solid Tissue Normal	Pat49
+54	Tumor Pat54	T200	Tumor	Pat54
+45	Tumor Pat45	T168	Tumor	Pat45
+44	Tumor Pat44	T166	Tumor	Pat44
+43	Tumor Pat43	T164	Tumor	Pat43
+42	Tumor Pat42	T162	Tumor	Pat42

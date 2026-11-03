@@ -1,0 +1,16 @@
+# Synthetic only: reused native Student-t and metafor SMCRP anchors.
+source('workflow/R/common/contracts.R')
+source('workflow/R/common/statistics.R')
+testthat::test_that('native paired inference remains valid when only standardized magnitude fails', {
+ t<-c(2.2,1.7,3.4,2.9,4.1,3.6);n<-c(1.4,1.3,2.7,2.1,3.2,2.8);id<-paste0('P',1:6)
+ a<-s01_paired_delta_t(t,n,id);z<-t.test(t-n)
+ testthat::expect_equal(c(a$effect,a$statistic,a$p_value,a$ci_lower,a$ci_upper),c(mean(t-n),as.numeric(z$statistic),z$p.value,as.numeric(z$conf.int)),tolerance=1e-12)
+ g<-s01_paired_g_av(t,n,id);m<-metafor::escalc(measure='SMCRP',m1i=mean(t),m2i=mean(n),sd1i=sd(t),sd2i=sd(n),ni=6,ri=cor(t,n),vtype='LS',correct=TRUE)
+ testthat::expect_equal(c(g$g_av,g$variance),c(as.numeric(m$yi),as.numeric(m$vi)),tolerance=1e-12)
+ testthat::expect_true(s01_paired_delta_t(1:6,rep(1,6),id)$estimable)
+ testthat::expect_false(s01_paired_g_av(1:6,rep(1,6),id)$estimable)
+ zero<-s01_paired_delta_t(1:6+1,1:6,id);testthat::expect_false(zero$estimable);testthat::expect_equal(zero$effect,1);testthat::expect_true(is.na(zero$p_value))
+ near<-s01_paired_delta_t(1+(1:6)*1e-10,rep(0,6),id);testthat::expect_false(near$estimable)
+ tiny<-s01_paired_delta_t((1:6)*1e-6,rep(0,6),id);testthat::expect_true(tiny$estimable)
+ testthat::expect_identical(s01_direction_label(1e-30),'positive')
+})
