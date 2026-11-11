@@ -3,7 +3,7 @@ accepted_draw_tissue_context <- function(x, line, sp, s) {
  # Consume the preserved 100-point fitted-line source, including its accepted CI.
  grid <- line$delta_D
  pred <- as.matrix(line[, c('fit', 'ci_lower', 'ci_upper'), drop = FALSE])
-  par(mar=c(5,5,4,1)+.1)
+  par(mar=c(5,5,6,1)+.1)
   plot(x$delta_D,x$delta_H,type="n",xlab="Paired D7 change (one score unit; tumor - adjacent)",
    ylab="Paired accepted rank-H change (tumor - adjacent)",
    main=paste0(s," (",nrow(x)," patient pairs)\n","gastric-type mucous and chief-cell expression proxy D7"))

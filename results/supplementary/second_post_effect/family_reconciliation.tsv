@@ -1,0 +1,3 @@
+family	frozen_family_size	registered_slots	terminal_slots	pending_slots	estimable_slots	nonestimable_slots	unavailable_slots	family_closed	q_values_computed	status
+PE2_D_COMPONENT_ASSOC	6	6	6	0	6	0	0	TRUE	TRUE	CLOSED_FIXED_SIZE_BH
+PE2_E_MUN_MEMBER_BRIDGE	4	4	4	0	4	0	0	TRUE	TRUE	CLOSED_FIXED_SIZE_BH

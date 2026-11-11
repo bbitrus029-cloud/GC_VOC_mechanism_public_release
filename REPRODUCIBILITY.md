@@ -2,9 +2,9 @@
 
 ## Scope actually checked
 
-The release delivers the seven maintained analysis modules and source-specific preparation functions. The four core bulk estimates were recalculated from public patient scores. Deterministic original evidence integration was reconstructed from bundled complete results. Existing numerical and reader/preparation tests used synthetic fixtures. Both plotting modes read saved permitted tables. Other study models, raw inputs, expression scores, annotation graphs and raw-accession preparation were **not** rerun. No new environment was installed or validated.
+The release preserves the seven original/first-supplement module interfaces and adds explicit second-supplement computation/reporting and current figure routes. The following earlier verification statements are historical unless explicitly listed in the current-batch section below. The four core bulk estimates were recalculated from public patient scores. Deterministic original evidence integration was reconstructed from bundled complete results. Existing numerical and reader/preparation tests used synthetic fixtures. Both plotting modes read saved permitted tables. Other study models, raw inputs, expression scores, annotation graphs and raw-accession preparation were **not** rerun. No new environment was installed or validated.
 
-`./verify` checks the complete physical manifest, independent regular files, 146 original plus 42 supplementary hypotheses, all 41 families, source navigation and required withdrawals. `PUBLIC_MANIFEST.tsv` includes its own size and uses `SELF_HASH_EXCLUDED` for its own digest; every other file has a full SHA-256. Python 3 standard library suffices. Verification writes only stdout/stderr.
+`./verify` checks the complete physical manifest, independent regular files, 146 original, 42 first-supplement and 10 second-supplement slots, with 29 + 12 + 2 separate family instances, source navigation and required withdrawals. `PUBLIC_MANIFEST.tsv` includes its own size and uses `SELF_HASH_EXCLUDED` for its own digest; every other file has a full SHA-256. Python 3 standard library suffices. Verification writes only stdout/stderr.
 
 ## Runtime and runnable commands
 
@@ -40,7 +40,7 @@ Calculation was saved before the accepted estimates were read. The comparison ru
 
 ## Explicit reconstruction interfaces
 
-All analysis functions are under [workflow/R/analysis](workflow/R/analysis). `source('workflow/R/common/load_analysis.R'); load_public_analysis()` loads definitions without running analysis. `public_analysis_context(scope, manifest_path, output_root)` binds inputs and safe outputs. `public_preparation_context(ctx)` adds source-specific configuration. The seven factories expose their maintained functions and `run()`; formulas, seeds, populations and terminal states are retained. Private approval/orchestration records are replaced by explicit current input hashes, not simulated historical approvals.
+The seven historical module implementations are under [workflow/R/analysis](workflow/R/analysis). `source('workflow/R/common/load_analysis.R'); load_public_analysis()` loads definitions without running analysis. `public_analysis_context(scope, manifest_path, output_root)` binds inputs and safe outputs. `public_preparation_context(ctx)` adds source-specific configuration. The seven factories expose their maintained functions and `run()`; formulas, seeds, populations and terminal states are retained. Private approval/orchestration records are replaced by explicit current input hashes, not simulated historical approvals.
 
 [reconstruction_inputs.tsv](workflow/config/reconstruction_inputs.tsv) gives each module's logical input keys, bundled paths where available, schemas and recorded source identities. Its `binding_rule` distinguishes `BUNDLED_MANIFEST`, `EXACT_ACQUISITION` and `RECONSTRUCTED_INTERMEDIATE`; `authority_sha256` is mandatory for catalogued exact acquisitions and is not inferred from a historical RDS hash. [bundled_input_aliases.tsv](workflow/config/bundled_input_aliases.tsv) maps legacy relative keys to permitted canonical public files. Keys beginning `data/processed/`, `data/manifests/` or `reports/qc/` identify dependencies; they are not filesystem fallback routes. The new interface resolves only those aliases, manifest-listed public files and explicitly declared local inputs.
 
@@ -125,12 +125,97 @@ D starts from the exact PDC000214 `Gastric_Cancer_Korea_Proteome.itraq.tsv` rati
 
 | Original requirement | Public evidence or precise limit |
 |---|---|
-| Reusable analysis code, settings, members and seeds | Seven analysis modules, readers/preparation, original/supplementary settings, fixed crosswalks and target/full/inference seed maps. |
+| Reusable analysis code, settings, members and seeds | Preserved seven historical module interfaces plus PE2 methods/reporting and current rendering; all three fixed rosters and seed maps. |
 | Raw inputs and version identities | Official routes and file identities; allowed raw files are independently acquired, not mirrored. LinkedOmics, GSE206785 derivatives, publisher/controlled inputs and opaque containers remain unbundled. |
 | Pairing, eligibility and mapping | Permitted source ledgers and complete state/population tables; restricted source-specific individual maps must be acquired/reconstructed under their own terms. |
-| Scores, full effects, uncertainty, missing states and families | Permitted saved scores, all 146+42 hypotheses and 41 families; held individual-level score/bridge payloads are not recreated from aggregates. |
-| Figure-source values and claim boundaries | 44 retained source tables plus canonical result aliases and full claim-boundary records; finished figures/tables and selected display grids/orders are omitted. |
+| Scores, full effects, uncertainty, missing states and families | Permitted saved scores, all three scopes: 146/29, 42/12 and 10/2 slots/families; held individual-level score/bridge payloads are not recreated from aggregates. |
+| Figure-source values and claim boundaries | Reviewed current panel/source inventory, canonical result aliases, complete section navigation and eligible current display rows; held sources and finished figures/tables remain excluded. |
 | Environment and recomputation | Qualified version profiles, offline verification, four-estimate patient-score replay, tested readers/interfaces and explicit external-input routes. Raw accession-to-results equivalence remains untested. |
 | Pre-effect freeze and deviations | `PRE_EFFECT_FREEZE_MANIFEST.tsv` remains INTERNAL_ONLY and is not copied or disguised as a new manifest. Scientific rules, complete terminal states and fixed family identities are public; original operational signatures, historical freeze bindings and full deviation/acceptance originals are not disclosed. A new input manifest is current integrity evidence, not proof of pre-effect timing. |
 
 Maintain one substantial process, at least 8 GiB available at start and the 6 GiB atomic-target floor; stop when swap exceeds 2 GiB and rises. Preserve master seed 20260825, L'Ecuyer-CMRG and the supplied operation seeds. Do not change samples or methods to fit resource limits. Adjacent tissue is not healthy tissue; RNA, protein, activity, flux and VOC release are different quantities. Same-cohort layers/repeated models are dependent. D7 slopes are associations per score unit, not mediation or a fraction of H change explained.
+
+## Second post-effect supplement and current export verification
+
+The [frozen public C6KE7 plan and adoption cover](provenance/registration/second_post_effect_supplement_2026-11-07/SECOND_POST_EFFECT_SUPPLEMENTARY_ANALYSIS_PLAN_v0.3_PUBLIC.md) is additive to STQJC and GE7BK. Its historical DRAFT_FOR_REVIEW body label does not reopen registration. The [ten-slot roster](workflow/config/second_post_effect_endpoints.tsv) and [seed map](workflow/config/implementation/second_post_effect_seed_map.tsv) are exact source copies. No old Git-HEAD/index condition, expired deadline, private RDS binding, release receipt or simulated historic approval is a public prerequisite.
+
+```sh
+# Use the existing epithelial profile for B/test_B; supplementary profile for D/E/test_DE.
+workflow/environment/run-r workflow/pipelines/second_post_effect.R test_B "$INPUT_MANIFEST" "$TEST_B_OUT"
+workflow/environment/run-r workflow/pipelines/second_post_effect.R test_DE "$INPUT_MANIFEST" "$TEST_DE_OUT"
+workflow/environment/run-r workflow/pipelines/second_post_effect.R B "$INPUT_MANIFEST" "$B_OUT"
+workflow/environment/run-r workflow/pipelines/second_post_effect.R D "$INPUT_MANIFEST" "$D_OUT"
+workflow/environment/run-r workflow/pipelines/second_post_effect.R E "$INPUT_MANIFEST" "$E_OUT"
+# Compare only after the corresponding computation has persisted successfully.
+workflow/environment/run-r workflow/pipelines/compare_second_post_effect.R B "$B_OUT" "$B_COMPARISON"
+workflow/environment/run-r workflow/pipelines/compare_second_post_effect.R D "$D_OUT" "$D_COMPARISON"
+workflow/environment/run-r workflow/pipelines/compare_second_post_effect.R E "$E_OUT" "$E_COMPARISON"
+python3 workflow/pipelines/second_post_effect_reporting.py A "$INPUT_MANIFEST" "$A_REPORT"
+python3 workflow/pipelines/second_post_effect_reporting.py C "$INPUT_MANIFEST" "$C_REPORT"
+python3 workflow/pipelines/second_post_effect_reporting.py K "$INPUT_MANIFEST" "$K_REPORT"
+```
+
+A header-only input manifest suffices for these bundled routes. B recalculates member-z/mean scores from exported normalized logCPM with the fixed 46-unit pooled moments, then paired Student-t inference, g_av, all 10,000 donor resamples and 23 omissions. It preserves the 23-donor order and remains TECHNICAL_SCORING_SENSITIVITY / NO_FORMAL_FAMILY. The 15,219-row full-background TMM calculation is preserved as callable `pe2_normalized_h(counts, members)` and independently tested synthetically against edgeR; **the current real-data replay does not start from raw counts**. The full qualified count/background and population inputs would have to be supplied independently for that route. Member-only normalization is not valid.
+
+D starts from the 113 exported patient-delta rows (80 GSE122401 and 33 TCGA-STAD), preserving frozen D7 reference moments for Pit4/Gland2/PGC without composite restandardization. It runs all six OLS slopes with HC3 and Student-t df n−2, 339 omission fits and six descriptive component correlations. PE2_D_COMPONENT_ASSOC closes as one BH family of six across both cohorts. `pe2_components(expression, reference)` preserves the upstream fixed-reference calculation but that expression-to-component route is not rerun here.
+
+E starts from complete paired member RNA/protein values in the common 80-patient order. It retains all four members, Spearman `exact=FALSE`, average ranks for ties, one shared 80×10,000 donor-resampling design (seed 134607028), type-7 percentile intervals with 9,500 valid-draw minimum, 320 omissions and BH4 PE2_E_MUN_MEMBER_BRIDGE. All 130 technical ratios are nested in 80 patients; the replay validates their identities and repeat counts but does not claim a fresh raw-report-to-patient-average reconstruction. The original source-specific ratio preparation functions remain available.
+
+A reconstructs availability counts for the 126 eligible aggregate rows from screened clinical/member inputs and carries forward all 279 held-source aggregate rows with explicit restrictions. C validates every nested public source row and preserves the 8 November singleton correction, 454 reused results, 49 coverage rows and one missing-member context row. K validates the complete fixed 41-record roster (four genes, eight antibodies, 16 source patient identifiers), preserving categorical disagreement and limitations; it performs no new image interpretation or HPA RNA analysis.
+
+The current batch executed the focused synthetic methods, A/C/K reporting, and all three persisted value-to-estimate replays under a filesystem allowlist that denied access to scientific source files and hidden operational files. Calculation input logs exclude accepted estimate tables. Every persisted replay file was compared only after calculation, using exact identities/order/missingness and the registered 1e-12 numerical tolerance, including an explicit positive-tiny-P/q check. Historical full-background/input qualification remains reused evidence, not a newly executed raw-data route. The current batch also repeated the four original core-bulk patient-score estimates, deterministic original integration (146 slots and the complete 304-row diagnostic inventory), and existing method/preparation tests. Persisted original integration fields matched exactly; the four estimates passed the unchanged original 1e-13 scaled-absolute and positive-P/q relative checks. Twenty computation/reporting and eight rendering input-failure checks passed. Current table checks compared 29,394 eligible cell tokens per journal, all 108 Directory entries and current section notes; native Excel/Calc validation was not performed. This proves the tested starting points, not end-to-end reproducibility or independent scientific acceptance.
+
+## Current figure rendering
+
+Use the existing [rendering package versions](workflow/environment/rendering_packages.tsv), R 4.6.1, `rsvg-convert` 2.58.0, Cairo, and legitimately available Arial (JTIM) or Tahoma (WJG) normal/bold fonts discoverable through Fontconfig. Fonts and host binaries are not distributed. An explicit `FONTCONFIG_FILE` may point to a reader-owned configuration outside this tree; it must not rely on a source-project configuration. The renderer fails if the requested journal font is unavailable.
+
+```sh
+workflow/environment/run-r workflow/pipelines/render_dual_journal_figures.R 6 WJG complete "$INPUT_MANIFEST" "$FIGURE_OUT"
+workflow/environment/run-r workflow/pipelines/render_dual_journal_figures.R 5 JTIM eligible-panels "$INPUT_MANIFEST" "$ELIGIBLE_OUT"
+```
+
+Figure number is 2–8. Both journal selectors use the same scientific source values and current layouts. Complete bundled figures are 3, 6 and 7; bundled eligible panels are 2A/C/D, 4A/C/D, 5C–F and 8B/C. Complete Figures 2/4/5/8 accept the screened scientific intermediates prepared below; they do not require private production files. Missing held panels are visibly labelled and metadata state `complete_figure=false`; the complete mode fails before rendering when an explicit catalogued input is absent. The seven held views use the portable scientific-content contracts below; a self-declared file hash or matching header is insufficient. Historical private-view byte hashes are provenance only. Current percentage bins, native bars, patient boxplots and CI crossbars are retained without refitting accepted analyses. Figure 4B's complete two-cohort boxplots require held CPTAC values.
+
+Outputs (SVG/PDF/600-dpi PNG, plus JTIM TIFF; inspection images and public source/mark/layout JSON) go outside the release. The current eligible displays and full bundled figures were exercised in both journals; source/mark and final-size visual checks are recorded in the private review handoff. The existing `render.R tissue_context|protein` modes retain their scientific data and drawing logic. The tissue-context top margin is enlarged to separate its inherited two-line title, support label and plot border; the actual rerenders passed collision and visual checks. No finished output is a package prerequisite.
+
+## Eligible table-section export
+
+`workflow/pipelines/render_data_tables.R all|SECTION_ID JTIM|WJG INPUT_MANIFEST.tsv OUTPUT_DIRECTORY` renders the screened current sections to an explicitly labelled eligible XLSX workbook outside the release. A stable ID such as `PE2_D` selects one section. The Directory uses current section IDs and the corrected related-figure field. This portable table view preserves saved display tokens as text and records held-row counts; it does not reproduce the full manuscript workbook, native numeric-cell packaging or the DOCX companion. Full-precision numerical results remain in canonical public tables. JTIM uses Arial; WJG uses legitimately available Book Antiqua. Fonts are never payload files. The underlying layout and public cell/source mapping are bundled so readers can inspect every retained value.
+
+For new entry-point negative tests, set `GCVOC_PE2_B_LIBRARY`, `GCVOC_PE2_DE_LIBRARY` and `GCVOC_RENDER_LIBRARY` to the separately qualified existing libraries, then run `python3 workflow/tests/test_current_inputs.py "$TEST_OUTPUT"`. The test uses disposable copies outside the release and checks missing/mismatched inputs, catalog shadowing, unsafe outputs and complete-figure failure with held inputs absent. Version differences between module-specific libraries must not be hidden by pooling their search order.
+
+## Review repair: complete replay evidence
+
+`compare_second_post_effect.R` requires the exact output roster declared by the B/D/E writer: **5 / 7 / 8 scientific files**, respectively, plus the matching stage-completion JSON and input-identity TSV. Missing directories/files, empty sets, truncated records, wrong-stage mixtures, unexpected scientific outputs and invalid QC cannot yield PASS. The receipt enumerates expected and checked relative paths/counts. Frozen scientific input, endpoint and seed identities are checked without requiring private historical paths to exist. Accepted estimates are opened only after the complete persisted calculation set; all existing identity/order/missingness and 1e-12 numerical/positive-P/q checks remain. This repair re-compared preserved calculations and did not rerun calculators or resampling.
+
+```sh
+python3 workflow/tests/test_second_post_effect_comparison.py "$B_RUN" "$D_RUN" "$E_RUN" "$COMPARATOR_TEST_OUT"
+```
+
+## Portable held figure intermediates
+
+These are reconstructed scientific intermediates, not exact source acquisitions. [figure_scientific_contracts.json](workflow/config/figure_scientific_contracts.json) commits to their complete typed scientific projections: exact population/patient/sample identities, pairing, members, scales, flags and values. Identifiers remain UTF-8 strings; finite numbers are canonical IEEE-754 binary64 values, without rounding; booleans are canonical TRUE/FALSE. Rows sort by the declared scientific keys. The independent frozen scientific digest is checked in addition to the reader manifest's actual file SHA-256. Equivalent quoting, line endings, numeric notation, column order and ignored operational columns may change file bytes without changing scientific content. This is an exact rendering-input identity check, not a changed statistical tolerance or a test of newly fitted effects. A different cohort, subset, rounded values or fabricated content is rejected. Private binding columns and obsolete coordinates are not required; public source keys and donor display indices are generated locally.
+
+| Logical input | Existing analysis output / projection | Complete scientific population |
+|---|---|---|
+| `figure_2_protein_G`, `figure_2_protein_H` | `original_protein.R` → `results/protein_paired_deltas.tsv`; select the fixed G/H endpoint | 28 G6 / 30 H4 pairs; both tissue scores and delta |
+| `figure_4_protein_changes` | `results/patient_member_values.tsv`; join NAT/Tumor by member/patient within `protein_H_program`, protein layer | Four fixed H4 members × 30 patients; sample IDs, source scale, both values and delta. Other 482 historical display rows are not consumed by this panel. |
+| `figure_5_G_pairs`, `figure_5_H_pairs` | `results/bridge_paired_deltas.tsv`; select the fixed G/H endpoint | 19 / 21 patient quadruplets, layer/tissue values, deltas and record identities |
+| `figure_8_composition`, `figure_8_donors` | `original_single_cell.R` → `results/composition_source_data.tsv`; project counts/denominators/fractions, derive one consistent eligibility row per donor | 24 donors × 2 tissues × 7 compartments; 20 primary / 18 strict donors; no donor-map replacement |
+
+The upstream public `rebuild_original.R protein|single_cell` routes and their explicit preparation/qualification gaps are described above. They are **not** rerun by this adapter. Readers need lawful access to the exact original molecular acquisitions and held identity/qualification inputs, or already reconstructed qualified analysis outputs. The original protein global eligibility assembly and original single-cell raw/annotation preparation are not a newly validated end-to-end route. No private display container, binding receipt or publisher attachment is an adapter prerequisite.
+
+Prepare a standard three-column input manifest with actual SHA-256 values. For `protein`, map `figure_source_protein_pairs`, `figure_source_protein_members` and `figure_source_bridge_pairs` to the three existing output tables above. For `composition`, map `figure_source_composition` to its existing output table. The adapter checks every resulting scientific projection before writing any output:
+
+```sh
+python3 workflow/pipelines/prepare_figure_inputs.py protein "$PROTEIN_TABLE_MANIFEST" "$PROTEIN_FIGURE_INPUTS"
+python3 workflow/pipelines/prepare_figure_inputs.py composition "$COMPOSITION_TABLE_MANIFEST" "$COMPOSITION_FIGURE_INPUTS"
+workflow/environment/run-r workflow/pipelines/render_dual_journal_figures.R 2 JTIM complete "$PROTEIN_FIGURE_INPUTS/figure_inputs_manifest.tsv" "$FIGURE2_OUT"
+workflow/environment/run-r workflow/pipelines/render_dual_journal_figures.R 4 WJG complete "$PROTEIN_FIGURE_INPUTS/figure_inputs_manifest.tsv" "$FIGURE4_OUT"
+workflow/environment/run-r workflow/pipelines/render_dual_journal_figures.R 5 JTIM complete "$PROTEIN_FIGURE_INPUTS/figure_inputs_manifest.tsv" "$FIGURE5_OUT"
+workflow/environment/run-r workflow/pipelines/render_dual_journal_figures.R 8 WJG complete "$COMPOSITION_FIGURE_INPUTS/figure_inputs_manifest.tsv" "$FIGURE8_OUT"
+python3 workflow/tests/test_figure_scientific_inputs.py "$SEVEN_FIGURE_INPUT_MANIFEST" "$FIGURE_TEST_OUT"
+python3 workflow/tests/test_figure_scientific_inputs.py preparation "$PROTEIN_TABLE_MANIFEST" "$COMPOSITION_TABLE_MANIFEST" "$ADAPTER_TEST_OUT"
+```
+
+The repair tests used explicitly supplied private fixtures made from existing accepted analysis outputs, with scientific/operational source trees inaccessible during public entry-point execution. This demonstrates analysis-output-to-panel adaptation and rendering, not independently acquired raw-data reconstruction, redistribution permission or independent acceptance. All seven clean inputs omit private bindings/coordinates; equivalent serializations and incorrect identity/content/missing fields were exercised. Full and eligible routes were tested in both journal styles. No held rows or test images are bundled. Exact acquisition checks, including the PDC000214 ratio report and LinkedOmics matrices, remain unchanged.

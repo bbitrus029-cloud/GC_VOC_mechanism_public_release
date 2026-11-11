@@ -2,6 +2,7 @@
 """Offline release integrity and complete frozen result coverage; never fits models."""
 from pathlib import Path
 import csv, hashlib, json, os, stat, sys
+sys.dont_write_bytecode = True
 ROOT = Path.cwd()
 
 def require(ok, message):
@@ -70,7 +71,8 @@ def verify():
             'Finished/embedded/container payload is outside this working-tree scope')
     require(all(p.endswith('.tsv.gz') for p in expected if p.endswith('.gz')), 'Unexpected compressed container')
     figures = [p for p in expected if p.startswith('publication/Figure') and '/source/' in p]
-    require(len(figures) == 44, 'Retained figure-source count')
+    from verify_current import check
+    current = check(ROOT, table, require, expected)
     for r in table('workflow/config/bundled_input_aliases.tsv'):
         require(r['bundled_path'] in expected, 'Unresolved bundled input alias')
     for r in table('workflow/config/reconstruction_inputs.tsv'):
@@ -78,7 +80,7 @@ def verify():
     for p in ROOT.rglob('*.py'):
         if '.git' not in p.relative_to(ROOT).parts:
             compile(p.read_text(), str(p), 'exec')  # No bytecode/cache files.
-    return {'status':'PASS','files':len(entries),'bytes':sum(int(r['bytes']) for r in entries),
+    return {**current, 'status':'PASS','files':len(entries),'bytes':sum(int(r['bytes']) for r in entries),
             'original_hypotheses':146,'supplementary_hypotheses':42,
             'original_families':29,'supplementary_families':12,
             'network_access':False,'scientific_recomputation':False,

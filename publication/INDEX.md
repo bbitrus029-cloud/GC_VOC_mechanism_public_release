@@ -1,20 +1,27 @@
-# Scientific source navigation
+# Current publication source navigation
 
-This working-tree package contains 44 retained figure-source tables and complete permitted numerical results, with canonical aliases in [SOURCE_INDEX.tsv](SOURCE_INDEX.tsv). It contains no finished manuscript figures, formatted tables, previews or cached renders. Previously included Figure 2/4/8 PDF/SVG files, Table S3 DOCX and the S4–S7 workbook have been withdrawn from the working-tree payload. Earlier Git commits are not changed by that withdrawal.
+The current dual-journal mapping is authoritative. Legacy filenames retain historical source identities; they are not current panel labels. [SOURCE_INDEX.tsv](SOURCE_INDEX.tsv) resolves current roles and historical support to canonical public tables. [figure_inputs.tsv](figure_inputs.tsv) records every source dependency, actual public schema and reconstructed scientific identity; [PANEL_MAPPING.tsv](PANEL_MAPPING.tsv) records all 32 current panels and their exact requirements. There is no fixed figure-source file-count expectation.
 
-| Item | Retained scientific content and boundary |
-|---|---|
-| Figure 2 | Complete eligible effect/member/site tables and observed patient differences in [Figure2distributions.tsv](Figure2/source/Figure2distributions.tsv), primary paired scores and supplementary rank scores. The derived density grid is omitted. Its descriptive calculation is `stats::density(x, bw=stats::bw.nrd0(x), kernel="gaussian", n=512, from=min(x), to=max(x), cut=0)` per exact analysis ID; only outline height was scaled for display. |
-| Figure 3 | Separately eligible aggregate protein/bridge source tables; linked individual inputs and complete exports remain withheld. |
-| Figure 4 | Eligible score/member/subprogram/population diagnostic tables; repeated analyses are dependent evidence. |
-| Figure 5 | Eligible cross-source reconciliation tables; unresolved individual protein components remain withheld. |
-| Figure 6 | Eligible aggregate state/member findings; GSE206785 individual/cell derivatives remain withheld. |
-| Figure 7 | Eligible source tables. [Figure7C.tsv](Figure7/source/Figure7C.tsv) contains 20 paired donors for each of `enteroendocrine` and `other_unassigned`, including original counts, denominators, proportions and logit differences. The former C pair/index displays use the enteroendocrine subset; D used both categories. Their separate index, pair-display and repeated individual-display copies are omitted. The source records retain scientific values, not display row positions. GSE206785 individual displays remain excluded. |
-| Figure 8 | [Figure8A.tsv](Figure8/source/Figure8A.tsv) contains 80 GSE122401 patients; [Figure8B.tsv](Figure8/source/Figure8B.tsv) contains 33 TCGA patients, with exact paired identities and H/D7 changes. The separate concatenated patient display-order file is omitted. Other fixed-score, incomplete-cohort and influence sources remain. These are associations, not mediation. |
-| Table S3 | Essential clinical/reference, eligibility and dependence facts remain in their canonical source/result records, scientific configurations and REPRODUCIBILITY.md. GSE150290 methods retain processing uncertainty, result-informed timing and lineage qualification. No formatted table is recreated. |
-| Tables S4–S7 | Full-precision complete effects, family/uncertainty and diagnostic tables under `results/`; no formatted workbook. |
-| Figure 1; Main Table 1; S1–S2 | Outside this package; no items imported or invented. |
+| Figure | Scientific content | Bundled rendering | Additional input for a complete figure |
+|---|---|---|---|
+| 2 | Tissue-level program changes | A, C, D | B: LinkedOmics-derived paired protein G6/H4 scores (28/30 patients) |
+| 3 | Heterogeneity within G | Complete A–E | None |
+| 4 | H expression across molecular layers | A, C, D | B: CPTAC patient protein values; Mun values are bundled but do not make the two-cohort panel complete |
+| 5 | Patient-level RNA–protein associations | C–F (PE2 E; four members, same 80 patients) | A/B: held CPTAC paired G/H bridge values (19/21 patients) |
+| 6 | Gastric-expression context | Complete A–F; PE2 D in D/E | None |
+| 7 | Cellular expression context | Complete A–D; PE2 B in C | None |
+| 8 | Captured-cell composition | B/C | A: held GSE206785 donor composition; donor navigation is also external |
 
-[The data dictionary](tables/source/data_dictionary.tsv) preserves definitions. Its binding examples describe internal production records; use [SOURCE_INDEX.tsv](SOURCE_INDEX.tsv) for bundled files. The index explicitly distinguishes canonical sources from replacement references to equivalent values; omitted derived grids and display order are not claimed to be byte-identical aliases.
+Current presentation includes percentage histograms in Figure 2A, native-coefficient bars with stored intervals in Figure 4A, patient boxplots in Figure 4B, and confidence-interval crossbars in Figure 6D. These operations do not change scientific estimates. Existing rank H, historical raw-count standardized H and PE2 normalized H4 remain distinct. K is IHC-only supporting context with no invented main-figure assignment.
 
-[The plotting interface](../workflow/pipelines/render.R) can generate two tissue-context plots and one protein-member plot from saved permitted sources into an external directory. It does not recreate the complete manuscript packages or bypass holds. No manuscript, final legends or manuscript placement is implied.
+[TABLE_DIRECTORY.tsv](TABLE_DIRECTORY.tsv) preserves the current section IDs and **10 November 2026 Directory figure-reference correction** from `layout.json`: 105 workbook sections and three concise reader sections. Project TableS3 is submission Supplementary Table 1; project Tables S1/S2 are submission Supplementary Tables 2/3 and remain outside this source-rendering package; S4–S7 keep their numbers. Section labels do not determine figure references; `related_figures` is carried by stable section ID.
+
+[table_layout.json](table_layout.json) contains eligible current display rows only. Each retained row was screened through every source cell binding; [table_marks.tsv](table_marks.tsv) maps it to public path/row/field tokens. `source_rows`, `eligible_rows` and `held_rows` distinguish full source coverage from the permitted display projection. Held rows are not zero or unavailable scientific outcomes. Full scientific endpoint coverage is separately retained in [RESULT_DISPOSITION.tsv](RESULT_DISPOSITION.tsv); table-layout eligibility is not endpoint selection. No private accepted/display container, omission-alias map, publisher attachment or operational binding container is bundled.
+
+Canonical full-precision scientific tables are the numerical authority. Reused C results add no independent evidence. The source index retains unique diagnostic and supporting rows even when no current main panel draws them. Historical display support is stored in `source/legacy_support/` with its original identity explicitly identified.
+
+The seven held inputs have public scientific projections and adapters from existing analysis outputs; their historical private-view hashes are labelled provenance only. The schema omits private bindings and obsolete coordinates, while independently frozen typed-content checks protect complete populations and values. Full Figures 2/4/5/8 remain conditional on lawfully supplied qualified scientific inputs; only their output-to-panel route has been tested with private fixtures.
+
+Rendering commands and exact prerequisites are in [REPRODUCIBILITY.md](../REPRODUCIBILITY.md). No finished graphics, DOCX/XLSX tables or previews are payload files.
+
+The eligible workbook retains current section notes, including units, denominators, fixed families and dependence qualifications. Held rows include source-label detail from excluded clinical inputs and cells bound to internal qualification records. Aggregate denominators and complete released numerical results remain in the canonical public tables. Native Excel/Calc application validation has not been performed; persisted OOXML cells, source links and font geometry were inspected.

@@ -1,0 +1,24 @@
+[
+  {
+    "scope": "Original",
+    "registration": "https://osf.io/stqjc/",
+    "relationship": "Original registered study",
+    "slots": 146,
+    "families": 29
+  },
+  {
+    "scope": "First post-effect supplement",
+    "registration": "https://osf.io/ge7bk/",
+    "relationship": "Additive post-effect supplement",
+    "slots": 42,
+    "families": 12
+  },
+  {
+    "scope": "Second post-effect supplement",
+    "registration": "https://osf.io/c6ke7/",
+    "doi": "10.17605/OSF.IO/C6KE7",
+    "relationship": "Additive to STQJC and GE7BK; public cover adopts unchanged scientific body despite historical DRAFT_FOR_REVIEW label",
+    "slots": 10,
+    "families": 2
+  }
+]

@@ -1,0 +1,2 @@
+hypothesis_id	role	family	biological_n	effect	ci_lower	ci_upper	p_value	state	bootstrap_lower	bootstrap_upper	valid_draws	bootstrap_state	units	timing
+PE2_B_H4_TMM_LOGCPM_Z	TECHNICAL_SCORING_SENSITIVITY	NO_FORMAL_FAMILY	23	-0.494346220344752	-0.849547641801198	-0.139144798888306	0.00857087703069825	ESTIMABLE	-0.859537771007484	-0.221952891960054	10000	ESTIMABLE	mean_member_z	post_effect_exploratory

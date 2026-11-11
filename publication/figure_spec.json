@@ -1,0 +1,271 @@
+{
+  "backend": "existing R/grid primitives; direct R vector/raster export",
+  "width_mm": 168,
+  "height_mm": {
+    "2": 166,
+    "3": 233,
+    "4": 194,
+    "5": 192,
+    "6": 226,
+    "7": 216,
+    "8": 182
+  },
+  "figure_titles": {
+    "2": "Tissue-level program changes",
+    "3": "Heterogeneity within G",
+    "4": "H expression across molecular layers",
+    "5": "Patient-level RNA\u2013protein associations",
+    "6": "Gastric-expression context of H",
+    "7": "Cellular expression context",
+    "8": "Composition of captured cell populations"
+  },
+  "journals": {
+    "JTIM": {
+      "font": "Arial",
+      "letter": 10,
+      "title": 9,
+      "label": 8,
+      "formats": [
+        "svg",
+        "pdf",
+        "png",
+        "tiff"
+      ]
+    },
+    "WJG": {
+      "font": "Tahoma",
+      "letter": 10,
+      "title": 8,
+      "label": 7,
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ]
+    }
+  },
+  "figures": {
+    "2": [
+      {
+        "panel": "A",
+        "title": "RNA program changes",
+        "legacy_source": "old Figure2A/B distributions",
+        "quantity_population": "faceted percentage histograms of paired rank-score changes; shared equal-width bins per program; 112/49/33/80 pairs; TCGA G unavailable"
+      },
+      {
+        "panel": "B",
+        "title": "Protein program changes",
+        "legacy_source": "old Figure3A/B",
+        "quantity_population": "relative protein rank score; G6 28/H4 30 paired patients"
+      },
+      {
+        "panel": "C",
+        "title": "Across-cohort effects",
+        "legacy_source": "old Figure2A/B + Figure3A/B estimates",
+        "quantity_population": "program Hedges g_av with stored 95% CI; four RNA sources and CPTAC"
+      },
+      {
+        "panel": "D",
+        "title": "Anatomical strata",
+        "legacy_source": "old Figure2D",
+        "quantity_population": "stored program g_av and CI; 48 cardia/64 non-cardia"
+      }
+    ],
+    "3": [
+      {
+        "panel": "A",
+        "title": "G member patterns",
+        "legacy_source": "old Figure2C + Figure3C",
+        "quantity_population": "native RNA and protein coefficients; separate source-scale keys; fixed seven genes"
+      },
+      {
+        "panel": "B",
+        "title": "Functional submodules",
+        "legacy_source": "old Figure4C",
+        "quantity_population": "grouped bars; stored g_av and 95% CI; no GSE122401 submodule"
+      },
+      {
+        "panel": "C",
+        "title": "Scoring sensitivity",
+        "legacy_source": "old Figure4 primary/alternative",
+        "quantity_population": "G rank versus mean-z program g_av; identity guide; four finite sources"
+      },
+      {
+        "panel": "D",
+        "title": "Member influence",
+        "legacy_source": "old Figure4 omissions/primary",
+        "quantity_population": "27 primary-rank omissions; native CI and intact reference; four separate scales"
+      },
+      {
+        "panel": "E",
+        "title": "Buffering context",
+        "legacy_source": "old Figure5A",
+        "quantity_population": "G-buffer rank and mean-z program g_av with saved CI; missing entries retained"
+      }
+    ],
+    "4": [
+      {
+        "panel": "A",
+        "title": "H member expression",
+        "legacy_source": "old Figure2C",
+        "quantity_population": "grouped bars for all 16 H-member native RNA coefficients with saved 95% CIs; fixed four-source palette"
+      },
+      {
+        "panel": "B",
+        "title": "H protein changes",
+        "legacy_source": "old Figure5B/C",
+        "quantity_population": "boxplots with every patient: CPTAC paired protein change n=30; Mun centered log2 T/N n=80; type-7 hinges; observed 1.5-IQR whiskers, not CIs"
+      },
+      {
+        "panel": "C",
+        "title": "H robustness",
+        "legacy_source": "old Figure4 primary/alternative",
+        "quantity_population": "five-source H program g_av with saved 95% CI"
+      },
+      {
+        "panel": "D",
+        "title": "Related programs",
+        "legacy_source": "old Figure5A",
+        "quantity_population": "three H context programs; stored program g_av; five sources"
+      }
+    ],
+    "5": [
+      {
+        "panel": "A",
+        "title": "G program association",
+        "legacy_source": "old Figure3E",
+        "quantity_population": "CPTAC 19 paired rank changes; saved Spearman rho/percentile CI"
+      },
+      {
+        "panel": "B",
+        "title": "H program association",
+        "legacy_source": "old Figure3F",
+        "quantity_population": "CPTAC 21 paired rank changes; saved Spearman rho/percentile CI"
+      },
+      {
+        "panel": "C",
+        "title": "ALDH2",
+        "legacy_source": "second supplement E",
+        "quantity_population": "Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI"
+      },
+      {
+        "panel": "D",
+        "title": "ALDH3A1",
+        "legacy_source": "second supplement E",
+        "quantity_population": "Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI"
+      },
+      {
+        "panel": "E",
+        "title": "ALDH3A2",
+        "legacy_source": "second supplement E",
+        "quantity_population": "Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI"
+      },
+      {
+        "panel": "F",
+        "title": "ALDH7A1",
+        "legacy_source": "second supplement E",
+        "quantity_population": "Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI"
+      }
+    ],
+    "6": [
+      {
+        "panel": "A",
+        "title": "Gastric marker changes",
+        "legacy_source": "old Figure8C",
+        "quantity_population": "frozen-reference standardized mean paired change, not g_av"
+      },
+      {
+        "panel": "B",
+        "title": "H\u2013D7: GSE122401",
+        "legacy_source": "old Figure8A",
+        "quantity_population": "80 pairs; saved rank-H/D7 values and fitted confidence band"
+      },
+      {
+        "panel": "C",
+        "title": "H\u2013D7: TCGA-STAD",
+        "legacy_source": "old Figure8B",
+        "quantity_population": "33 pairs; saved rank-H/D7 values and fitted confidence band"
+      },
+      {
+        "panel": "D",
+        "title": "Component associations",
+        "legacy_source": "second supplement D",
+        "quantity_population": "six horizontal floating 95% HC3 t CI rectangles with vertical coefficient strokes; D spans left column beside E above F; fixed component units"
+      },
+      {
+        "panel": "E",
+        "title": "Component correlations",
+        "legacy_source": "second supplement D diagnostics",
+        "quantity_population": "two descriptive Spearman rho matrices; masked diagonal"
+      },
+      {
+        "panel": "F",
+        "title": "Scoring sensitivity",
+        "legacy_source": "old Figure8E / tissue_context coefficients",
+        "quantity_population": "two separate-scale bar subplots; M1 delta_D coefficient model intervals"
+      }
+    ],
+    "7": [
+      {
+        "panel": "A",
+        "title": "Compartment programs",
+        "legacy_source": "old Figure6A",
+        "quantity_population": "five donor-state rank estimates and stored native CI; endpoint n 10/10/11/16/10"
+      },
+      {
+        "panel": "B",
+        "title": "Members and coverage",
+        "legacy_source": "old Figure6B/C",
+        "quantity_population": "native edgeR coefficients and gate information; untested epithelial member slots explicit"
+      },
+      {
+        "panel": "C",
+        "title": "Epithelial H sensitivity",
+        "legacy_source": "old Figure6D + second supplement B",
+        "quantity_population": "same 23 donors in lexical ID order; rank and normalized mean member-z; native t CI"
+      },
+      {
+        "panel": "D",
+        "title": "Epithelial member changes",
+        "legacy_source": "old Figure6E",
+        "quantity_population": "overall n=23 and enteroendocrine n=12; native log2 coefficients; no invented CI"
+      }
+    ],
+    "8": [
+      {
+        "panel": "A",
+        "title": "Captured cell composition",
+        "legacy_source": "old Figure7A",
+        "quantity_population": "24 donors \u00d7 two tissues; seven categories; percentages from saved proportions"
+      },
+      {
+        "panel": "B",
+        "title": "Method sensitivity",
+        "legacy_source": "old Figure7B",
+        "quantity_population": "four method/threshold configurations; separate native scales; all seven categories"
+      },
+      {
+        "panel": "C",
+        "title": "Enteroendocrine fractions",
+        "legacy_source": "old Figure7C",
+        "quantity_population": "20 paired donors; fraction of retained epithelial cells"
+      }
+    ]
+  },
+  "table_number_mapping": {
+    "TableS3": "Supplementary Table 1",
+    "TableS1": "Supplementary Table 2 (outside scope)",
+    "TableS2": "Supplementary Table 3 (outside scope)",
+    "S4": "Supplementary Table 4",
+    "S5": "Supplementary Table 5",
+    "S6": "Supplementary Table 6",
+    "S7": "Supplementary Table 7"
+  },
+  "legend_rule": "Measured content-aware bands below title and above data; no empty legend reservation; broad balanced wrapping; right-side vertical colorbars",
+  "palette": {
+    "blue": "#0072B2",
+    "orange": "#D55E00",
+    "missing": "#D6D6D6"
+  },
+  "alignment_tolerance_pt": 1.5
+}

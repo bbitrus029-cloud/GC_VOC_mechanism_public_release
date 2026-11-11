@@ -1,0 +1,1131 @@
+source	patient_id	field	raw_value	source_field	source_record	source_path
+GSE29272	TYC0030	anatomical_site	cardia	source-derived site	GSM723666	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0025	anatomical_site	cardia	source-derived site	GSM723657	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0001	anatomical_site	non_cardia	source-derived site	GSM723464	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0020	anatomical_site	cardia	source-derived site	GSM723647	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0031	anatomical_site	cardia	source-derived site	GSM723669	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0005	anatomical_site	non_cardia	source-derived site	GSM723473	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0049	anatomical_site	cardia	source-derived site	GSM723704	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0055	anatomical_site	non_cardia	source-derived site	GSM723573	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0051	anatomical_site	non_cardia	source-derived site	GSM723565	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0016	anatomical_site	non_cardia	source-derived site	GSM723494	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0016	anatomical_site	cardia	source-derived site	GSM723638	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0053	anatomical_site	non_cardia	source-derived site	GSM723568	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0015	anatomical_site	cardia	source-derived site	GSM723636	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0021	anatomical_site	non_cardia	source-derived site	GSM723504	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0033	anatomical_site	cardia	source-derived site	GSM723672	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0017	anatomical_site	cardia	source-derived site	GSM723640	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0048	anatomical_site	non_cardia	source-derived site	GSM723558	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0049	anatomical_site	cardia	source-derived site	GSM723705	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0060	anatomical_site	non_cardia	source-derived site	GSM723582	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0040	anatomical_site	non_cardia	source-derived site	GSM723542	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0004	anatomical_site	non_cardia	source-derived site	GSM723471	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0005	anatomical_site	non_cardia	source-derived site	GSM723472	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0004	anatomical_site	cardia	source-derived site	GSM723614	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0002	anatomical_site	cardia	source-derived site	GSM723610	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0071	anatomical_site	non_cardia	source-derived site	GSM723604	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0058	anatomical_site	cardia	source-derived site	GSM723722	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0057	anatomical_site	non_cardia	source-derived site	GSM723576	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0026	anatomical_site	cardia	source-derived site	GSM723659	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0068	anatomical_site	non_cardia	source-derived site	GSM723599	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0019	anatomical_site	non_cardia	source-derived site	GSM723500	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0031	anatomical_site	non_cardia	source-derived site	GSM723525	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0026	anatomical_site	cardia	source-derived site	GSM723658	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0059	anatomical_site	cardia	source-derived site	GSM723724	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0030	anatomical_site	non_cardia	source-derived site	GSM723523	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0041	anatomical_site	non_cardia	source-derived site	GSM723545	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0043	anatomical_site	cardia	source-derived site	GSM723692	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0034	anatomical_site	non_cardia	source-derived site	GSM723530	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0029	anatomical_site	non_cardia	source-derived site	GSM723521	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0048	anatomical_site	cardia	source-derived site	GSM723702	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0039	anatomical_site	cardia	source-derived site	GSM723684	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0036	anatomical_site	cardia	source-derived site	GSM723679	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0016	anatomical_site	non_cardia	source-derived site	GSM723495	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0047	anatomical_site	non_cardia	source-derived site	GSM723556	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0009	anatomical_site	cardia	source-derived site	GSM723624	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0042	anatomical_site	non_cardia	source-derived site	GSM723546	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0046	anatomical_site	non_cardia	source-derived site	GSM723555	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0031	anatomical_site	cardia	source-derived site	GSM723668	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0072	anatomical_site	non_cardia	source-derived site	GSM723607	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0037	anatomical_site	cardia	source-derived site	GSM723680	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0046	anatomical_site	cardia	source-derived site	GSM723699	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0003	anatomical_site	cardia	source-derived site	GSM723612	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0038	anatomical_site	non_cardia	source-derived site	GSM723539	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0014	anatomical_site	cardia	source-derived site	GSM723634	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0044	anatomical_site	non_cardia	source-derived site	GSM723550	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0063	anatomical_site	non_cardia	source-derived site	GSM723589	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0060	anatomical_site	non_cardia	source-derived site	GSM723583	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0047	anatomical_site	cardia	source-derived site	GSM723701	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0037	anatomical_site	non_cardia	source-derived site	GSM723536	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0056	anatomical_site	non_cardia	source-derived site	GSM723575	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0052	anatomical_site	non_cardia	source-derived site	GSM723566	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0017	anatomical_site	cardia	source-derived site	GSM723641	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0049	anatomical_site	non_cardia	source-derived site	GSM723561	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0061	anatomical_site	non_cardia	source-derived site	GSM723584	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0024	anatomical_site	cardia	source-derived site	GSM723655	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0069	anatomical_site	non_cardia	source-derived site	GSM723601	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0056	anatomical_site	non_cardia	source-derived site	GSM723574	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0002	anatomical_site	non_cardia	source-derived site	GSM723467	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0061	anatomical_site	non_cardia	source-derived site	GSM723585	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0043	anatomical_site	cardia	source-derived site	GSM723693	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0041	anatomical_site	non_cardia	source-derived site	GSM723544	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0029	anatomical_site	cardia	source-derived site	GSM723664	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0007	anatomical_site	non_cardia	source-derived site	GSM723476	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0032	anatomical_site	non_cardia	source-derived site	GSM723526	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0022	anatomical_site	cardia	source-derived site	GSM723651	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0043	anatomical_site	non_cardia	source-derived site	GSM723548	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0064	anatomical_site	non_cardia	source-derived site	GSM723591	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0028	anatomical_site	non_cardia	source-derived site	GSM723519	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0060	anatomical_site	cardia	source-derived site	GSM723726	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0032	anatomical_site	cardia	source-derived site	GSM723671	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0027	anatomical_site	cardia	source-derived site	GSM723660	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0042	anatomical_site	cardia	source-derived site	GSM723691	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0051	anatomical_site	cardia	source-derived site	GSM723708	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0060	anatomical_site	cardia	source-derived site	GSM723727	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0035	anatomical_site	cardia	source-derived site	GSM723677	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0001	anatomical_site	cardia	source-derived site	GSM723608	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0007	anatomical_site	cardia	source-derived site	GSM723620	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0050	anatomical_site	non_cardia	source-derived site	GSM723563	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0008	anatomical_site	non_cardia	source-derived site	GSM723479	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0028	anatomical_site	non_cardia	source-derived site	GSM723518	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0070	anatomical_site	non_cardia	source-derived site	GSM723603	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0065	anatomical_site	non_cardia	source-derived site	GSM723592	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0018	anatomical_site	cardia	source-derived site	GSM723642	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0050	anatomical_site	cardia	source-derived site	GSM723707	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0011	anatomical_site	non_cardia	source-derived site	GSM723485	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0021	anatomical_site	cardia	source-derived site	GSM723648	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0044	anatomical_site	non_cardia	source-derived site	GSM723551	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0013	anatomical_site	cardia	source-derived site	GSM723633	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0015	anatomical_site	non_cardia	source-derived site	GSM723493	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0022	anatomical_site	cardia	source-derived site	GSM723650	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0045	anatomical_site	cardia	source-derived site	GSM723697	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0006	anatomical_site	non_cardia	source-derived site	GSM723474	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0032	anatomical_site	non_cardia	source-derived site	GSM723527	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0020	anatomical_site	cardia	source-derived site	GSM723646	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0066	anatomical_site	non_cardia	source-derived site	GSM723594	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0005	anatomical_site	cardia	source-derived site	GSM723617	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0006	anatomical_site	non_cardia	source-derived site	GSM723475	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0027	anatomical_site	non_cardia	source-derived site	GSM723516	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0019	anatomical_site	non_cardia	source-derived site	GSM723501	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0021	anatomical_site	cardia	source-derived site	GSM723649	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0037	anatomical_site	non_cardia	source-derived site	GSM723537	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0015	anatomical_site	non_cardia	source-derived site	GSM723492	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0036	anatomical_site	non_cardia	source-derived site	GSM723534	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0048	anatomical_site	cardia	source-derived site	GSM723703	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0012	anatomical_site	non_cardia	source-derived site	GSM723486	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0043	anatomical_site	non_cardia	source-derived site	GSM723549	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0053	anatomical_site	cardia	source-derived site	GSM723713	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0053	anatomical_site	non_cardia	source-derived site	GSM723569	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0044	anatomical_site	cardia	source-derived site	GSM723695	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0008	anatomical_site	non_cardia	source-derived site	GSM723478	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0003	anatomical_site	non_cardia	source-derived site	GSM723469	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0018	anatomical_site	non_cardia	source-derived site	GSM723498	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0010	anatomical_site	cardia	source-derived site	GSM723626	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0008	anatomical_site	cardia	source-derived site	GSM723622	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0035	anatomical_site	non_cardia	source-derived site	GSM723533	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0014	anatomical_site	cardia	source-derived site	GSM723635	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0047	anatomical_site	non_cardia	source-derived site	GSM723557	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0011	anatomical_site	cardia	source-derived site	GSM723628	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0023	anatomical_site	cardia	source-derived site	GSM723652	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0067	anatomical_site	non_cardia	source-derived site	GSM723597	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0032	anatomical_site	cardia	source-derived site	GSM723670	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0050	anatomical_site	cardia	source-derived site	GSM723706	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0034	anatomical_site	cardia	source-derived site	GSM723674	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0026	anatomical_site	non_cardia	source-derived site	GSM723514	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0035	anatomical_site	non_cardia	source-derived site	GSM723532	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0011	anatomical_site	cardia	source-derived site	GSM723629	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0059	anatomical_site	non_cardia	source-derived site	GSM723581	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0016	anatomical_site	cardia	source-derived site	GSM723639	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0012	anatomical_site	non_cardia	source-derived site	GSM723487	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0033	anatomical_site	cardia	source-derived site	GSM723673	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0003	anatomical_site	cardia	source-derived site	GSM723613	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0063	anatomical_site	non_cardia	source-derived site	GSM723588	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0014	anatomical_site	non_cardia	source-derived site	GSM723491	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0039	anatomical_site	non_cardia	source-derived site	GSM723541	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0062	anatomical_site	cardia	source-derived site	GSM723731	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0027	anatomical_site	non_cardia	source-derived site	GSM723517	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0019	anatomical_site	cardia	source-derived site	GSM723644	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0030	anatomical_site	non_cardia	source-derived site	GSM723522	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0004	anatomical_site	non_cardia	source-derived site	GSM723470	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0013	anatomical_site	non_cardia	source-derived site	GSM723488	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0057	anatomical_site	cardia	source-derived site	GSM723720	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0023	anatomical_site	cardia	source-derived site	GSM723653	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0028	anatomical_site	cardia	source-derived site	GSM723663	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0040	anatomical_site	cardia	source-derived site	GSM723687	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0059	anatomical_site	cardia	source-derived site	GSM723725	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0036	anatomical_site	cardia	source-derived site	GSM723678	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0071	anatomical_site	non_cardia	source-derived site	GSM723605	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0022	anatomical_site	non_cardia	source-derived site	GSM723506	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0050	anatomical_site	non_cardia	source-derived site	GSM723562	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0046	anatomical_site	cardia	source-derived site	GSM723698	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0007	anatomical_site	cardia	source-derived site	GSM723621	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0054	anatomical_site	non_cardia	source-derived site	GSM723571	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0038	anatomical_site	cardia	source-derived site	GSM723683	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0052	anatomical_site	non_cardia	source-derived site	GSM723567	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0062	anatomical_site	non_cardia	source-derived site	GSM723586	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0021	anatomical_site	non_cardia	source-derived site	GSM723505	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0026	anatomical_site	non_cardia	source-derived site	GSM723515	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0025	anatomical_site	non_cardia	source-derived site	GSM723512	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0027	anatomical_site	cardia	source-derived site	GSM723661	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0006	anatomical_site	cardia	source-derived site	GSM723619	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0039	anatomical_site	cardia	source-derived site	GSM723685	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0038	anatomical_site	non_cardia	source-derived site	GSM723538	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0066	anatomical_site	non_cardia	source-derived site	GSM723595	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0029	anatomical_site	non_cardia	source-derived site	GSM723520	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0057	anatomical_site	non_cardia	source-derived site	GSM723577	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0035	anatomical_site	cardia	source-derived site	GSM723676	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0028	anatomical_site	cardia	source-derived site	GSM723662	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0002	anatomical_site	cardia	source-derived site	GSM723611	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0009	anatomical_site	non_cardia	source-derived site	GSM723480	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0001	anatomical_site	non_cardia	source-derived site	GSM723465	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0006	anatomical_site	cardia	source-derived site	GSM723618	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0040	anatomical_site	non_cardia	source-derived site	GSM723543	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0001	anatomical_site	cardia	source-derived site	GSM723609	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0031	anatomical_site	non_cardia	source-derived site	GSM723524	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0012	anatomical_site	cardia	source-derived site	GSM723631	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0010	anatomical_site	non_cardia	source-derived site	GSM723482	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0039	anatomical_site	non_cardia	source-derived site	GSM723540	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0015	anatomical_site	cardia	source-derived site	GSM723637	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0024	anatomical_site	non_cardia	source-derived site	GSM723511	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0019	anatomical_site	cardia	source-derived site	GSM723645	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0051	anatomical_site	non_cardia	source-derived site	GSM723564	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0022	anatomical_site	non_cardia	source-derived site	GSM723507	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0054	anatomical_site	non_cardia	source-derived site	GSM723570	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0013	anatomical_site	non_cardia	source-derived site	GSM723489	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0045	anatomical_site	non_cardia	source-derived site	GSM723552	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0037	anatomical_site	cardia	source-derived site	GSM723681	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0052	anatomical_site	cardia	source-derived site	GSM723711	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0058	anatomical_site	cardia	source-derived site	GSM723723	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0042	anatomical_site	cardia	source-derived site	GSM723690	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0054	anatomical_site	cardia	source-derived site	GSM723714	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0062	anatomical_site	cardia	source-derived site	GSM723730	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0002	anatomical_site	non_cardia	source-derived site	GSM723466	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0017	anatomical_site	non_cardia	source-derived site	GSM723496	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0014	anatomical_site	non_cardia	source-derived site	GSM723490	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0023	anatomical_site	non_cardia	source-derived site	GSM723508	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0033	anatomical_site	non_cardia	source-derived site	GSM723528	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0072	anatomical_site	non_cardia	source-derived site	GSM723606	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0005	anatomical_site	cardia	source-derived site	GSM723616	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0067	anatomical_site	non_cardia	source-derived site	GSM723596	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0018	anatomical_site	cardia	source-derived site	GSM723643	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0030	anatomical_site	cardia	source-derived site	GSM723667	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0045	anatomical_site	cardia	source-derived site	GSM723696	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0058	anatomical_site	non_cardia	source-derived site	GSM723579	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0065	anatomical_site	non_cardia	source-derived site	GSM723593	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0029	anatomical_site	cardia	source-derived site	GSM723665	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0017	anatomical_site	non_cardia	source-derived site	GSM723497	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0041	anatomical_site	cardia	source-derived site	GSM723689	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0013	anatomical_site	cardia	source-derived site	GSM723632	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0041	anatomical_site	cardia	source-derived site	GSM723688	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0020	anatomical_site	non_cardia	source-derived site	GSM723503	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0010	anatomical_site	non_cardia	source-derived site	GSM723483	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0009	anatomical_site	cardia	source-derived site	GSM723625	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0018	anatomical_site	non_cardia	source-derived site	GSM723499	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0056	anatomical_site	cardia	source-derived site	GSM723719	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0033	anatomical_site	non_cardia	source-derived site	GSM723529	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0051	anatomical_site	cardia	source-derived site	GSM723709	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0048	anatomical_site	non_cardia	source-derived site	GSM723559	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0061	anatomical_site	cardia	source-derived site	GSM723728	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0009	anatomical_site	non_cardia	source-derived site	GSM723481	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0036	anatomical_site	non_cardia	source-derived site	GSM723535	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0047	anatomical_site	cardia	source-derived site	GSM723700	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0057	anatomical_site	cardia	source-derived site	GSM723721	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0008	anatomical_site	cardia	source-derived site	GSM723623	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0045	anatomical_site	non_cardia	source-derived site	GSM723553	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0007	anatomical_site	non_cardia	source-derived site	GSM723477	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0040	anatomical_site	cardia	source-derived site	GSM723686	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0055	anatomical_site	cardia	source-derived site	GSM723716	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0052	anatomical_site	cardia	source-derived site	GSM723710	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0034	anatomical_site	non_cardia	source-derived site	GSM723531	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0020	anatomical_site	non_cardia	source-derived site	GSM723502	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0024	anatomical_site	non_cardia	source-derived site	GSM723510	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0055	anatomical_site	cardia	source-derived site	GSM723717	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0049	anatomical_site	non_cardia	source-derived site	GSM723560	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0062	anatomical_site	non_cardia	source-derived site	GSM723587	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0042	anatomical_site	non_cardia	source-derived site	GSM723547	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0053	anatomical_site	cardia	source-derived site	GSM723712	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0070	anatomical_site	non_cardia	source-derived site	GSM723602	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0054	anatomical_site	cardia	source-derived site	GSM723715	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0061	anatomical_site	cardia	source-derived site	GSM723729	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0003	anatomical_site	non_cardia	source-derived site	GSM723468	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0011	anatomical_site	non_cardia	source-derived site	GSM723484	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0024	anatomical_site	cardia	source-derived site	GSM723654	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0025	anatomical_site	cardia	source-derived site	GSM723656	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0046	anatomical_site	non_cardia	source-derived site	GSM723554	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0023	anatomical_site	non_cardia	source-derived site	GSM723509	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0004	anatomical_site	cardia	source-derived site	GSM723615	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0025	anatomical_site	non_cardia	source-derived site	GSM723513	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0059	anatomical_site	non_cardia	source-derived site	GSM723580	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0012	anatomical_site	cardia	source-derived site	GSM723630	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0069	anatomical_site	non_cardia	source-derived site	GSM723600	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0038	anatomical_site	cardia	source-derived site	GSM723682	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0068	anatomical_site	non_cardia	source-derived site	GSM723598	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0055	anatomical_site	non_cardia	source-derived site	GSM723572	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0044	anatomical_site	cardia	source-derived site	GSM723694	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0056	anatomical_site	cardia	source-derived site	GSM723718	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0058	anatomical_site	non_cardia	source-derived site	GSM723578	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYB0064	anatomical_site	non_cardia	source-derived site	GSM723590	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0010	anatomical_site	cardia	source-derived site	GSM723627	A:GSE29272:source_path:6efeaa4ffd34
+GSE29272	TYC0034	anatomical_site	cardia	source-derived site	GSM723675	A:GSE29272:source_path:6efeaa4ffd34
+GSE27342	49	age	60	age	GSM675986	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	sex	F	gender	GSM675986	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	stage	IIIB	stage	GSM675986	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	grade_not_Lauren	G3	grade	GSM675986	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	age	57	age	GSM675926	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	sex	M	gender	GSM675926	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	stage	IIIA	stage	GSM675926	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	grade_not_Lauren	G2	grade	GSM675926	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	age	56	age	GSM675993	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	sex	F	gender	GSM675993	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	stage	IIIA	stage	GSM675993	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	grade_not_Lauren	G1	grade	GSM675993	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	age	41	age	GSM675891	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	sex	F	gender	GSM675891	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	stage	IV	stage	GSM675891	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	grade_not_Lauren	unknown	grade	GSM675891	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	age	75	age	GSM676033	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	sex	F	gender	GSM676033	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	stage	IV	stage	GSM676033	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	grade_not_Lauren	unknown	grade	GSM676033	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	age	51	age	GSM675955	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	sex	F	gender	GSM675955	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	stage	III	stage	GSM675955	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	grade_not_Lauren	G3	grade	GSM675955	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	age	63	age	GSM676018	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	sex	M	gender	GSM676018	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	stage	IV	stage	GSM676018	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	grade_not_Lauren	unknown	grade	GSM676018	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	age	75	age	GSM675944	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	sex	M	gender	GSM675944	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	stage	III	stage	GSM675944	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	grade_not_Lauren	G3	grade	GSM675944	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	age	75	age	GSM675945	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	sex	M	gender	GSM675945	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	stage	III	stage	GSM675945	A:GSE27342:source_path:608f1d17e25b
+GSE27342	28	grade_not_Lauren	G3	grade	GSM675945	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	age	71	age	GSM675924	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	sex	M	gender	GSM675924	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	stage	III	stage	GSM675924	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	grade_not_Lauren	G3	grade	GSM675924	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	age	58	age	GSM675979	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	sex	M	gender	GSM675979	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	stage	IV	stage	GSM675979	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	grade_not_Lauren	G3	grade	GSM675979	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	age	56	age	GSM675901	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	sex	M	gender	GSM675901	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	stage	IIIB	stage	GSM675901	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	grade_not_Lauren	G3	grade	GSM675901	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	age	57	age	GSM676023	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	sex	F	gender	GSM676023	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	stage	IIIA	stage	GSM676023	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	grade_not_Lauren	G3	grade	GSM676023	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	age	55	age	GSM676038	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	sex	M	gender	GSM676038	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	stage	IIIB	stage	GSM676038	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	grade_not_Lauren	G3	grade	GSM676038	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	age	51	age	GSM675912	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	sex	M	gender	GSM675912	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	stage	IIIB	stage	GSM675912	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	grade_not_Lauren	G2	grade	GSM675912	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	age	68	age	GSM675962	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	sex	M	gender	GSM675962	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	stage	III	stage	GSM675962	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	grade_not_Lauren	G3	grade	GSM675962	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	age	53	age	GSM675907	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	sex	M	gender	GSM675907	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	stage	IIIB	stage	GSM675907	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	grade_not_Lauren	G2	grade	GSM675907	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	age	69	age	GSM675935	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	sex	F	gender	GSM675935	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	stage	III	stage	GSM675935	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	grade_not_Lauren	unknown	grade	GSM675935	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	age	53	age	GSM675916	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	sex	F	gender	GSM675916	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	stage	IIIB	stage	GSM675916	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	grade_not_Lauren	G3	grade	GSM675916	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	age	unknown	age	GSM676021	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	sex	unknown	gender	GSM676021	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	stage	unknown	stage	GSM676021	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	grade_not_Lauren	unknown	grade	GSM676021	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	age	81	age	GSM676000	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	sex	M	gender	GSM676000	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	stage	III	stage	GSM676000	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	grade_not_Lauren	unknown	grade	GSM676000	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	age	56	age	GSM675998	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	sex	F	gender	GSM675998	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	stage	unknown	stage	GSM675998	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	grade_not_Lauren	unknown	grade	GSM675998	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	age	65	age	GSM676003	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	sex	M	gender	GSM676003	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	stage	IIIA	stage	GSM676003	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	grade_not_Lauren	G2	grade	GSM676003	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	age	43	age	GSM675994	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	sex	F	gender	GSM675994	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	stage	III	stage	GSM675994	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	grade_not_Lauren	G1	grade	GSM675994	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	age	65	age	GSM675936	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	sex	F	gender	GSM675936	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	stage	IIIA	stage	GSM675936	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	grade_not_Lauren	G3	grade	GSM675936	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	age	76	age	GSM676008	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	sex	M	gender	GSM676008	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	stage	II	stage	GSM676008	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	grade_not_Lauren	G4	grade	GSM676008	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	age	41	age	GSM675890	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	sex	F	gender	GSM675890	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	stage	IV	stage	GSM675890	A:GSE27342:source_path:608f1d17e25b
+GSE27342	1	grade_not_Lauren	unknown	grade	GSM675890	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	age	53	age	GSM675982	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	sex	F	gender	GSM675982	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	stage	IIIA	stage	GSM675982	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	grade_not_Lauren	G3	grade	GSM675982	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	age	unknown	age	GSM675981	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	sex	unknown	gender	GSM675981	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	stage	unknown	stage	GSM675981	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	grade_not_Lauren	unknown	grade	GSM675981	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	age	40	age	GSM675946	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	sex	M	gender	GSM675946	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	stage	III	stage	GSM675946	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	grade_not_Lauren	G3	grade	GSM675946	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	age	50	age	GSM675939	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	sex	M	gender	GSM675939	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	stage	III	stage	GSM675939	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	grade_not_Lauren	unknown	grade	GSM675939	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	age	59	age	GSM675943	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	sex	M	gender	GSM675943	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	stage	III	stage	GSM675943	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	grade_not_Lauren	G3	grade	GSM675943	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	age	50	age	GSM676044	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	sex	F	gender	GSM676044	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	stage	III	stage	GSM676044	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	grade_not_Lauren	G3	grade	GSM676044	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	age	34	age	GSM676030	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	sex	M	gender	GSM676030	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	stage	III	stage	GSM676030	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	grade_not_Lauren	unknown	grade	GSM676030	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	age	43	age	GSM675995	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	sex	F	gender	GSM675995	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	stage	III	stage	GSM675995	A:GSE27342:source_path:608f1d17e25b
+GSE27342	53	grade_not_Lauren	G1	grade	GSM675995	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	age	57	age	GSM676022	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	sex	F	gender	GSM676022	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	stage	IIIA	stage	GSM676022	A:GSE27342:source_path:608f1d17e25b
+GSE27342	67	grade_not_Lauren	G3	grade	GSM676022	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	age	41	age	GSM675950	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	sex	M	gender	GSM675950	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	stage	II	stage	GSM675950	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	grade_not_Lauren	G2	grade	GSM675950	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	age	47	age	GSM675940	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	sex	M	gender	GSM675940	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	stage	IB	stage	GSM675940	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	grade_not_Lauren	unknown	grade	GSM675940	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	age	55	age	GSM675988	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	sex	M	gender	GSM675988	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	stage	IIIB	stage	GSM675988	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	grade_not_Lauren	unknown	grade	GSM675988	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	age	62	age	GSM676042	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	sex	F	gender	GSM676042	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	stage	IV	stage	GSM676042	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	grade_not_Lauren	G1	grade	GSM676042	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	age	56	age	GSM675992	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	sex	F	gender	GSM675992	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	stage	IIIA	stage	GSM675992	A:GSE27342:source_path:608f1d17e25b
+GSE27342	52	grade_not_Lauren	G1	grade	GSM675992	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	age	68	age	GSM675969	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	sex	M	gender	GSM675969	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	stage	IV	stage	GSM675969	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	grade_not_Lauren	G2	grade	GSM675969	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	age	42	age	GSM675930	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	sex	M	gender	GSM675930	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	stage	III	stage	GSM675930	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	grade_not_Lauren	unknown	grade	GSM675930	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	age	65	age	GSM675964	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	sex	M	gender	GSM675964	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	stage	III	stage	GSM675964	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	grade_not_Lauren	G3	grade	GSM675964	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	age	59	age	GSM675966	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	sex	M	gender	GSM675966	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	stage	III	stage	GSM675966	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	grade_not_Lauren	G1	grade	GSM675966	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	age	54	age	GSM675921	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	sex	M	gender	GSM675921	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	stage	III	stage	GSM675921	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	grade_not_Lauren	unknown	grade	GSM675921	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	age	55	age	GSM675905	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	sex	F	gender	GSM675905	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	stage	III	stage	GSM675905	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	grade_not_Lauren	unknown	grade	GSM675905	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	age	54	age	GSM676037	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	sex	M	gender	GSM676037	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	stage	unknown	stage	GSM676037	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	grade_not_Lauren	unknown	grade	GSM676037	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	age	76	age	GSM675953	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	sex	F	gender	GSM675953	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	stage	II	stage	GSM675953	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	grade_not_Lauren	unknown	grade	GSM675953	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	age	62	age	GSM675893	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	sex	F	gender	GSM675893	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	stage	III	stage	GSM675893	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	grade_not_Lauren	unknown	grade	GSM675893	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	age	62	age	GSM675896	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	sex	F	gender	GSM675896	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	stage	IIIA	stage	GSM675896	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	grade_not_Lauren	G1	grade	GSM675896	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	age	62	age	GSM675897	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	sex	F	gender	GSM675897	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	stage	IIIA	stage	GSM675897	A:GSE27342:source_path:608f1d17e25b
+GSE27342	4	grade_not_Lauren	G1	grade	GSM675897	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	age	51	age	GSM675954	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	sex	F	gender	GSM675954	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	stage	III	stage	GSM675954	A:GSE27342:source_path:608f1d17e25b
+GSE27342	33	grade_not_Lauren	G3	grade	GSM675954	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	age	65	age	GSM675937	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	sex	F	gender	GSM675937	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	stage	IIIA	stage	GSM675937	A:GSE27342:source_path:608f1d17e25b
+GSE27342	24	grade_not_Lauren	G3	grade	GSM675937	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	age	51	age	GSM675913	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	sex	M	gender	GSM675913	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	stage	IIIB	stage	GSM675913	A:GSE27342:source_path:608f1d17e25b
+GSE27342	12	grade_not_Lauren	G2	grade	GSM675913	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	age	68	age	GSM676025	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	sex	M	gender	GSM676025	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	stage	III	stage	GSM676025	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	grade_not_Lauren	G3	grade	GSM676025	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	age	51	age	GSM676028	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	sex	M	gender	GSM676028	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	stage	II	stage	GSM676028	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	grade_not_Lauren	G4	grade	GSM676028	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	age	67	age	GSM676041	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	sex	F	gender	GSM676041	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	stage	II	stage	GSM676041	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	grade_not_Lauren	G3	grade	GSM676041	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	age	84	age	GSM675984	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	sex	M	gender	GSM675984	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	stage	unknown	stage	GSM675984	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	grade_not_Lauren	unknown	grade	GSM675984	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	age	55	age	GSM676013	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	sex	M	gender	GSM676013	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	stage	IIIB	stage	GSM676013	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	grade_not_Lauren	G2	grade	GSM676013	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	age	55	age	GSM675911	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	sex	M	gender	GSM675911	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	stage	III	stage	GSM675911	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	grade_not_Lauren	G3	grade	GSM675911	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	age	40	age	GSM675947	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	sex	M	gender	GSM675947	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	stage	III	stage	GSM675947	A:GSE27342:source_path:608f1d17e25b
+GSE27342	29	grade_not_Lauren	G3	grade	GSM675947	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	age	36	age	GSM675956	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	sex	M	gender	GSM675956	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	stage	IIIA	stage	GSM675956	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	grade_not_Lauren	unknown	grade	GSM675956	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	age	71	age	GSM675903	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	sex	M	gender	GSM675903	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	stage	IIIB	stage	GSM675903	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	grade_not_Lauren	G3	grade	GSM675903	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	age	68	age	GSM675963	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	sex	M	gender	GSM675963	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	stage	III	stage	GSM675963	A:GSE27342:source_path:608f1d17e25b
+GSE27342	37	grade_not_Lauren	G3	grade	GSM675963	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	age	71	age	GSM676047	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	sex	M	gender	GSM676047	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	stage	unknown	stage	GSM676047	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	grade_not_Lauren	unknown	grade	GSM676047	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	age	81	age	GSM676001	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	sex	M	gender	GSM676001	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	stage	III	stage	GSM676001	A:GSE27342:source_path:608f1d17e25b
+GSE27342	56	grade_not_Lauren	unknown	grade	GSM676001	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	age	78	age	GSM676011	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	sex	F	gender	GSM676011	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	stage	IIIB	stage	GSM676011	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	grade_not_Lauren	G3	grade	GSM676011	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	age	71	age	GSM675997	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	sex	F	gender	GSM675997	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	stage	III	stage	GSM675997	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	grade_not_Lauren	G2	grade	GSM675997	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	age	56	age	GSM675919	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	sex	M	gender	GSM675919	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	stage	IIIB	stage	GSM675919	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	grade_not_Lauren	G3	grade	GSM675919	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	age	53	age	GSM675983	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	sex	F	gender	GSM675983	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	stage	IIIA	stage	GSM675983	A:GSE27342:source_path:608f1d17e25b
+GSE27342	47	grade_not_Lauren	G3	grade	GSM675983	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	age	71	age	GSM676046	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	sex	M	gender	GSM676046	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	stage	unknown	stage	GSM676046	A:GSE27342:source_path:608f1d17e25b
+GSE27342	79	grade_not_Lauren	unknown	grade	GSM676046	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	age	60	age	GSM675987	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	sex	F	gender	GSM675987	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	stage	IIIB	stage	GSM675987	A:GSE27342:source_path:608f1d17e25b
+GSE27342	49	grade_not_Lauren	G3	grade	GSM675987	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	age	50	age	GSM675974	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	sex	M	gender	GSM675974	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	stage	III	stage	GSM675974	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	grade_not_Lauren	G3	grade	GSM675974	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	age	64	age	GSM675915	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	sex	M	gender	GSM675915	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	stage	IIIB	stage	GSM675915	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	grade_not_Lauren	G3	grade	GSM675915	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	age	71	age	GSM675996	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	sex	F	gender	GSM675996	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	stage	III	stage	GSM675996	A:GSE27342:source_path:608f1d17e25b
+GSE27342	54	grade_not_Lauren	G2	grade	GSM675996	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	age	84	age	GSM675985	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	sex	M	gender	GSM675985	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	stage	unknown	stage	GSM675985	A:GSE27342:source_path:608f1d17e25b
+GSE27342	48	grade_not_Lauren	unknown	grade	GSM675985	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	age	54	age	GSM676036	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	sex	M	gender	GSM676036	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	stage	unknown	stage	GSM676036	A:GSE27342:source_path:608f1d17e25b
+GSE27342	74	grade_not_Lauren	unknown	grade	GSM676036	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	age	58	age	GSM675978	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	sex	M	gender	GSM675978	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	stage	IV	stage	GSM675978	A:GSE27342:source_path:608f1d17e25b
+GSE27342	45	grade_not_Lauren	G3	grade	GSM675978	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	age	65	age	GSM675973	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	sex	F	gender	GSM675973	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	stage	IIIA	stage	GSM675973	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	grade_not_Lauren	G3	grade	GSM675973	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	age	58	age	GSM675928	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	sex	M	gender	GSM675928	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	stage	III	stage	GSM675928	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	grade_not_Lauren	G2-G3	grade	GSM675928	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	age	61	age	GSM676035	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	sex	M	gender	GSM676035	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	stage	III	stage	GSM676035	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	grade_not_Lauren	G2-G3	grade	GSM676035	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	age	65	age	GSM676015	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	sex	M	gender	GSM676015	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	stage	III	stage	GSM676015	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	grade_not_Lauren	G3	grade	GSM676015	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	age	54	age	GSM676027	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	sex	M	gender	GSM676027	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	stage	III	stage	GSM676027	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	grade_not_Lauren	unknown	grade	GSM676027	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	age	55	age	GSM676004	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	sex	M	gender	GSM676004	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	stage	III	stage	GSM676004	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	grade_not_Lauren	G2	grade	GSM676004	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	age	53	age	GSM675917	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	sex	F	gender	GSM675917	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	stage	IIIB	stage	GSM675917	A:GSE27342:source_path:608f1d17e25b
+GSE27342	14	grade_not_Lauren	G3	grade	GSM675917	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	age	42	age	GSM675931	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	sex	M	gender	GSM675931	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	stage	III	stage	GSM675931	A:GSE27342:source_path:608f1d17e25b
+GSE27342	21	grade_not_Lauren	unknown	grade	GSM675931	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	age	58	age	GSM676048	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	sex	M	gender	GSM676048	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	stage	unknown	stage	GSM676048	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	grade_not_Lauren	unknown	grade	GSM676048	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	age	75	age	GSM676032	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	sex	F	gender	GSM676032	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	stage	IV	stage	GSM676032	A:GSE27342:source_path:608f1d17e25b
+GSE27342	72	grade_not_Lauren	unknown	grade	GSM676032	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	age	56	age	GSM675918	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	sex	M	gender	GSM675918	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	stage	IIIB	stage	GSM675918	A:GSE27342:source_path:608f1d17e25b
+GSE27342	15	grade_not_Lauren	G3	grade	GSM675918	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	age	78	age	GSM676010	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	sex	F	gender	GSM676010	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	stage	IIIB	stage	GSM676010	A:GSE27342:source_path:608f1d17e25b
+GSE27342	61	grade_not_Lauren	G3	grade	GSM676010	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	age	47	age	GSM675941	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	sex	M	gender	GSM675941	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	stage	IB	stage	GSM675941	A:GSE27342:source_path:608f1d17e25b
+GSE27342	26	grade_not_Lauren	unknown	grade	GSM675941	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	age	68	age	GSM676016	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	sex	M	gender	GSM676016	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	stage	III	stage	GSM676016	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	grade_not_Lauren	unknown	grade	GSM676016	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	age	74	age	GSM675971	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	sex	M	gender	GSM675971	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	stage	IB	stage	GSM675971	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	grade_not_Lauren	unknown	grade	GSM675971	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	age	54	age	GSM675894	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	sex	F	gender	GSM675894	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	stage	III	stage	GSM675894	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	grade_not_Lauren	G2	grade	GSM675894	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	age	65	age	GSM675965	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	sex	M	gender	GSM675965	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	stage	III	stage	GSM675965	A:GSE27342:source_path:608f1d17e25b
+GSE27342	38	grade_not_Lauren	G3	grade	GSM675965	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	age	71	age	GSM675902	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	sex	M	gender	GSM675902	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	stage	IIIB	stage	GSM675902	A:GSE27342:source_path:608f1d17e25b
+GSE27342	7	grade_not_Lauren	G3	grade	GSM675902	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	age	65	age	GSM676014	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	sex	M	gender	GSM676014	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	stage	III	stage	GSM676014	A:GSE27342:source_path:608f1d17e25b
+GSE27342	63	grade_not_Lauren	G3	grade	GSM676014	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	age	49	age	GSM675976	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	sex	M	gender	GSM675976	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	stage	III	stage	GSM675976	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	grade_not_Lauren	unknown	grade	GSM675976	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	age	65	age	GSM676002	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	sex	M	gender	GSM676002	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	stage	IIIA	stage	GSM676002	A:GSE27342:source_path:608f1d17e25b
+GSE27342	57	grade_not_Lauren	G2	grade	GSM676002	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	age	42	age	GSM675960	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	sex	M	gender	GSM675960	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	stage	IB	stage	GSM675960	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	grade_not_Lauren	G3	grade	GSM675960	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	age	68	age	GSM675968	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	sex	M	gender	GSM675968	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	stage	IV	stage	GSM675968	A:GSE27342:source_path:608f1d17e25b
+GSE27342	40	grade_not_Lauren	G2	grade	GSM675968	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	age	71	age	GSM675925	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	sex	M	gender	GSM675925	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	stage	III	stage	GSM675925	A:GSE27342:source_path:608f1d17e25b
+GSE27342	18	grade_not_Lauren	G3	grade	GSM675925	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	age	unknown	age	GSM675980	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	sex	unknown	gender	GSM675980	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	stage	unknown	stage	GSM675980	A:GSE27342:source_path:608f1d17e25b
+GSE27342	46	grade_not_Lauren	unknown	grade	GSM675980	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	age	51	age	GSM676029	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	sex	M	gender	GSM676029	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	stage	II	stage	GSM676029	A:GSE27342:source_path:608f1d17e25b
+GSE27342	70	grade_not_Lauren	G4	grade	GSM676029	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	age	73	age	GSM675933	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	sex	M	gender	GSM675933	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	stage	IB	stage	GSM675933	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	grade_not_Lauren	unknown	grade	GSM675933	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	age	68	age	GSM676017	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	sex	M	gender	GSM676017	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	stage	III	stage	GSM676017	A:GSE27342:source_path:608f1d17e25b
+GSE27342	64	grade_not_Lauren	unknown	grade	GSM676017	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	age	69	age	GSM675949	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	sex	M	gender	GSM675949	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	stage	III	stage	GSM675949	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	grade_not_Lauren	G3-G4	grade	GSM675949	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	age	55	age	GSM676005	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	sex	M	gender	GSM676005	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	stage	III	stage	GSM676005	A:GSE27342:source_path:608f1d17e25b
+GSE27342	58	grade_not_Lauren	G2	grade	GSM676005	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	age	49	age	GSM675977	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	sex	M	gender	GSM675977	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	stage	III	stage	GSM675977	A:GSE27342:source_path:608f1d17e25b
+GSE27342	44	grade_not_Lauren	unknown	grade	GSM675977	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	age	36	age	GSM675957	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	sex	M	gender	GSM675957	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	stage	IIIA	stage	GSM675957	A:GSE27342:source_path:608f1d17e25b
+GSE27342	34	grade_not_Lauren	unknown	grade	GSM675957	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	age	56	age	GSM675999	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	sex	F	gender	GSM675999	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	stage	unknown	stage	GSM675999	A:GSE27342:source_path:608f1d17e25b
+GSE27342	55	grade_not_Lauren	unknown	grade	GSM675999	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	age	61	age	GSM676034	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	sex	M	gender	GSM676034	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	stage	III	stage	GSM676034	A:GSE27342:source_path:608f1d17e25b
+GSE27342	73	grade_not_Lauren	G2-G3	grade	GSM676034	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	age	unknown	age	GSM675908	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	sex	unknown	gender	GSM675908	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	stage	unknown	stage	GSM675908	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	grade_not_Lauren	unknown	grade	GSM675908	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	age	53	age	GSM675906	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	sex	M	gender	GSM675906	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	stage	IIIB	stage	GSM675906	A:GSE27342:source_path:608f1d17e25b
+GSE27342	9	grade_not_Lauren	G2	grade	GSM675906	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	age	50	age	GSM675938	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	sex	M	gender	GSM675938	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	stage	III	stage	GSM675938	A:GSE27342:source_path:608f1d17e25b
+GSE27342	25	grade_not_Lauren	unknown	grade	GSM675938	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	age	76	age	GSM676009	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	sex	M	gender	GSM676009	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	stage	II	stage	GSM676009	A:GSE27342:source_path:608f1d17e25b
+GSE27342	60	grade_not_Lauren	G4	grade	GSM676009	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	age	69	age	GSM675948	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	sex	M	gender	GSM675948	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	stage	III	stage	GSM675948	A:GSE27342:source_path:608f1d17e25b
+GSE27342	30	grade_not_Lauren	G3-G4	grade	GSM675948	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	age	63	age	GSM676019	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	sex	M	gender	GSM676019	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	stage	IV	stage	GSM676019	A:GSE27342:source_path:608f1d17e25b
+GSE27342	65	grade_not_Lauren	unknown	grade	GSM676019	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	age	unknown	age	GSM676020	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	sex	unknown	gender	GSM676020	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	stage	unknown	stage	GSM676020	A:GSE27342:source_path:608f1d17e25b
+GSE27342	66	grade_not_Lauren	unknown	grade	GSM676020	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	age	67	age	GSM675958	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	sex	F	gender	GSM675958	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	stage	IV	stage	GSM675958	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	grade_not_Lauren	G3	grade	GSM675958	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	age	74	age	GSM675970	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	sex	M	gender	GSM675970	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	stage	IB	stage	GSM675970	A:GSE27342:source_path:608f1d17e25b
+GSE27342	41	grade_not_Lauren	unknown	grade	GSM675970	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	age	76	age	GSM675952	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	sex	F	gender	GSM675952	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	stage	II	stage	GSM675952	A:GSE27342:source_path:608f1d17e25b
+GSE27342	32	grade_not_Lauren	unknown	grade	GSM675952	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	age	64	age	GSM675914	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	sex	M	gender	GSM675914	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	stage	IIIB	stage	GSM675914	A:GSE27342:source_path:608f1d17e25b
+GSE27342	13	grade_not_Lauren	G3	grade	GSM675914	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	age	67	age	GSM676040	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	sex	F	gender	GSM676040	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	stage	II	stage	GSM676040	A:GSE27342:source_path:608f1d17e25b
+GSE27342	76	grade_not_Lauren	G3	grade	GSM676040	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	age	67	age	GSM675959	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	sex	F	gender	GSM675959	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	stage	IV	stage	GSM675959	A:GSE27342:source_path:608f1d17e25b
+GSE27342	35	grade_not_Lauren	G3	grade	GSM675959	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	age	63	age	GSM675899	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	sex	M	gender	GSM675899	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	stage	IIIB	stage	GSM675899	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	grade_not_Lauren	G3	grade	GSM675899	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	age	34	age	GSM676031	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	sex	M	gender	GSM676031	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	stage	III	stage	GSM676031	A:GSE27342:source_path:608f1d17e25b
+GSE27342	71	grade_not_Lauren	unknown	grade	GSM676031	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	age	63	age	GSM675898	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	sex	M	gender	GSM675898	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	stage	IIIB	stage	GSM675898	A:GSE27342:source_path:608f1d17e25b
+GSE27342	5	grade_not_Lauren	G3	grade	GSM675898	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	age	55	age	GSM675904	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	sex	F	gender	GSM675904	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	stage	III	stage	GSM675904	A:GSE27342:source_path:608f1d17e25b
+GSE27342	8	grade_not_Lauren	unknown	grade	GSM675904	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	age	65	age	GSM675972	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	sex	F	gender	GSM675972	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	stage	IIIA	stage	GSM675972	A:GSE27342:source_path:608f1d17e25b
+GSE27342	42	grade_not_Lauren	G3	grade	GSM675972	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	age	50	age	GSM676045	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	sex	F	gender	GSM676045	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	stage	III	stage	GSM676045	A:GSE27342:source_path:608f1d17e25b
+GSE27342	78	grade_not_Lauren	G3	grade	GSM676045	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	age	56	age	GSM676006	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	sex	F	gender	GSM676006	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	stage	II	stage	GSM676006	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	grade_not_Lauren	G3	grade	GSM676006	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	age	54	age	GSM676026	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	sex	M	gender	GSM676026	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	stage	III	stage	GSM676026	A:GSE27342:source_path:608f1d17e25b
+GSE27342	69	grade_not_Lauren	unknown	grade	GSM676026	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	age	62	age	GSM675892	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	sex	F	gender	GSM675892	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	stage	III	stage	GSM675892	A:GSE27342:source_path:608f1d17e25b
+GSE27342	2	grade_not_Lauren	unknown	grade	GSM675892	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	age	55	age	GSM675989	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	sex	M	gender	GSM675989	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	stage	IIIB	stage	GSM675989	A:GSE27342:source_path:608f1d17e25b
+GSE27342	50	grade_not_Lauren	unknown	grade	GSM675989	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	age	50	age	GSM675975	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	sex	M	gender	GSM675975	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	stage	III	stage	GSM675975	A:GSE27342:source_path:608f1d17e25b
+GSE27342	43	grade_not_Lauren	G3	grade	GSM675975	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	age	unknown	age	GSM675909	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	sex	unknown	gender	GSM675909	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	stage	unknown	stage	GSM675909	A:GSE27342:source_path:608f1d17e25b
+GSE27342	10	grade_not_Lauren	unknown	grade	GSM675909	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	age	73	age	GSM675932	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	sex	M	gender	GSM675932	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	stage	IB	stage	GSM675932	A:GSE27342:source_path:608f1d17e25b
+GSE27342	22	grade_not_Lauren	unknown	grade	GSM675932	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	age	59	age	GSM675942	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	sex	M	gender	GSM675942	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	stage	III	stage	GSM675942	A:GSE27342:source_path:608f1d17e25b
+GSE27342	27	grade_not_Lauren	G3	grade	GSM675942	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	age	56	age	GSM675900	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	sex	M	gender	GSM675900	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	stage	IIIB	stage	GSM675900	A:GSE27342:source_path:608f1d17e25b
+GSE27342	6	grade_not_Lauren	G3	grade	GSM675900	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	age	53	age	GSM675923	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	sex	M	gender	GSM675923	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	stage	III	stage	GSM675923	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	grade_not_Lauren	G2-G3	grade	GSM675923	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	age	41	age	GSM675951	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	sex	M	gender	GSM675951	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	stage	II	stage	GSM675951	A:GSE27342:source_path:608f1d17e25b
+GSE27342	31	grade_not_Lauren	G2	grade	GSM675951	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	age	69	age	GSM675934	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	sex	F	gender	GSM675934	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	stage	III	stage	GSM675934	A:GSE27342:source_path:608f1d17e25b
+GSE27342	23	grade_not_Lauren	unknown	grade	GSM675934	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	age	68	age	GSM676024	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	sex	M	gender	GSM676024	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	stage	III	stage	GSM676024	A:GSE27342:source_path:608f1d17e25b
+GSE27342	68	grade_not_Lauren	G3	grade	GSM676024	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	age	53	age	GSM675922	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	sex	M	gender	GSM675922	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	stage	III	stage	GSM675922	A:GSE27342:source_path:608f1d17e25b
+GSE27342	17	grade_not_Lauren	G2-G3	grade	GSM675922	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	age	55	age	GSM676012	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	sex	M	gender	GSM676012	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	stage	IIIB	stage	GSM676012	A:GSE27342:source_path:608f1d17e25b
+GSE27342	62	grade_not_Lauren	G2	grade	GSM676012	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	age	57	age	GSM675927	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	sex	M	gender	GSM675927	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	stage	IIIA	stage	GSM675927	A:GSE27342:source_path:608f1d17e25b
+GSE27342	19	grade_not_Lauren	G2	grade	GSM675927	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	age	55	age	GSM675910	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	sex	M	gender	GSM675910	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	stage	III	stage	GSM675910	A:GSE27342:source_path:608f1d17e25b
+GSE27342	11	grade_not_Lauren	G3	grade	GSM675910	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	age	42	age	GSM675961	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	sex	M	gender	GSM675961	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	stage	IB	stage	GSM675961	A:GSE27342:source_path:608f1d17e25b
+GSE27342	36	grade_not_Lauren	G3	grade	GSM675961	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	age	70	age	GSM675990	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	sex	M	gender	GSM675990	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	stage	II	stage	GSM675990	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	grade_not_Lauren	G3	grade	GSM675990	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	age	54	age	GSM675920	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	sex	M	gender	GSM675920	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	stage	III	stage	GSM675920	A:GSE27342:source_path:608f1d17e25b
+GSE27342	16	grade_not_Lauren	unknown	grade	GSM675920	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	age	58	age	GSM675929	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	sex	M	gender	GSM675929	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	stage	III	stage	GSM675929	A:GSE27342:source_path:608f1d17e25b
+GSE27342	20	grade_not_Lauren	G2-G3	grade	GSM675929	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	age	56	age	GSM676007	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	sex	F	gender	GSM676007	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	stage	II	stage	GSM676007	A:GSE27342:source_path:608f1d17e25b
+GSE27342	59	grade_not_Lauren	G3	grade	GSM676007	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	age	55	age	GSM676039	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	sex	M	gender	GSM676039	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	stage	IIIB	stage	GSM676039	A:GSE27342:source_path:608f1d17e25b
+GSE27342	75	grade_not_Lauren	G3	grade	GSM676039	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	age	58	age	GSM676049	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	sex	M	gender	GSM676049	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	stage	unknown	stage	GSM676049	A:GSE27342:source_path:608f1d17e25b
+GSE27342	80	grade_not_Lauren	unknown	grade	GSM676049	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	age	62	age	GSM676043	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	sex	F	gender	GSM676043	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	stage	IV	stage	GSM676043	A:GSE27342:source_path:608f1d17e25b
+GSE27342	77	grade_not_Lauren	G1	grade	GSM676043	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	age	70	age	GSM675991	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	sex	M	gender	GSM675991	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	stage	II	stage	GSM675991	A:GSE27342:source_path:608f1d17e25b
+GSE27342	51	grade_not_Lauren	G3	grade	GSM675991	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	age	54	age	GSM675895	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	sex	F	gender	GSM675895	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	stage	III	stage	GSM675895	A:GSE27342:source_path:608f1d17e25b
+GSE27342	3	grade_not_Lauren	G2	grade	GSM675895	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	age	59	age	GSM675967	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	sex	M	gender	GSM675967	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	stage	III	stage	GSM675967	A:GSE27342:source_path:608f1d17e25b
+GSE27342	39	grade_not_Lauren	G1	grade	GSM675967	A:GSE27342:source_path:608f1d17e25b
+GSE122401	Pat1	lauren_subtype	Diffuse	histology	GSM3501782	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat1	lauren_subtype	Diffuse	histology	GSM3501862	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat10	lauren_subtype	Diffuse	histology	GSM3501791	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat10	lauren_subtype	Diffuse	histology	GSM3501871	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat11	lauren_subtype	Diffuse	histology	GSM3501792	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat11	lauren_subtype	Diffuse	histology	GSM3501872	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat12	lauren_subtype	Diffuse	histology	GSM3501793	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat12	lauren_subtype	Diffuse	histology	GSM3501873	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat13	lauren_subtype	Diffuse	histology	GSM3501794	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat13	lauren_subtype	Diffuse	histology	GSM3501874	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat14	lauren_subtype	Diffuse	histology	GSM3501795	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat14	lauren_subtype	Diffuse	histology	GSM3501875	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat15	lauren_subtype	Diffuse	histology	GSM3501796	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat15	lauren_subtype	Diffuse	histology	GSM3501876	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat16	lauren_subtype	Diffuse	histology	GSM3501797	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat16	lauren_subtype	Diffuse	histology	GSM3501877	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat17	lauren_subtype	Diffuse	histology	GSM3501798	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat17	lauren_subtype	Diffuse	histology	GSM3501878	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat18	lauren_subtype	Diffuse	histology	GSM3501799	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat18	lauren_subtype	Diffuse	histology	GSM3501879	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat19	lauren_subtype	Diffuse	histology	GSM3501800	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat19	lauren_subtype	Diffuse	histology	GSM3501880	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat2	lauren_subtype	Diffuse	histology	GSM3501783	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat2	lauren_subtype	Diffuse	histology	GSM3501863	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat20	lauren_subtype	Diffuse	histology	GSM3501801	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat20	lauren_subtype	Diffuse	histology	GSM3501881	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat21	lauren_subtype	Diffuse	histology	GSM3501802	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat21	lauren_subtype	Diffuse	histology	GSM3501882	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat22	lauren_subtype	Diffuse	histology	GSM3501803	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat22	lauren_subtype	Diffuse	histology	GSM3501883	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat23	lauren_subtype	Diffuse	histology	GSM3501804	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat23	lauren_subtype	Diffuse	histology	GSM3501884	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat24	lauren_subtype	Diffuse	histology	GSM3501805	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat24	lauren_subtype	Diffuse	histology	GSM3501885	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat25	lauren_subtype	Diffuse	histology	GSM3501806	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat25	lauren_subtype	Diffuse	histology	GSM3501887	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat26	lauren_subtype	Diffuse	histology	GSM3501807	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat26	lauren_subtype	Diffuse	histology	GSM3501889	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat27	lauren_subtype	Diffuse	histology	GSM3501808	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat27	lauren_subtype	Diffuse	histology	GSM3501891	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat28	lauren_subtype	Diffuse	histology	GSM3501809	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat28	lauren_subtype	Diffuse	histology	GSM3501893	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat29	lauren_subtype	Diffuse	histology	GSM3501810	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat29	lauren_subtype	Diffuse	histology	GSM3501895	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat3	lauren_subtype	Diffuse	histology	GSM3501784	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat3	lauren_subtype	Diffuse	histology	GSM3501864	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat30	lauren_subtype	Diffuse	histology	GSM3501811	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat30	lauren_subtype	Diffuse	histology	GSM3501897	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat31	lauren_subtype	Diffuse	histology	GSM3501812	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat31	lauren_subtype	Diffuse	histology	GSM3501899	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat32	lauren_subtype	Diffuse	histology	GSM3501813	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat32	lauren_subtype	Diffuse	histology	GSM3501902	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat33	lauren_subtype	Intestinal	histology	GSM3501814	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat33	lauren_subtype	Intestinal	histology	GSM3501904	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat34	lauren_subtype	Diffuse	histology	GSM3501815	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat34	lauren_subtype	Diffuse	histology	GSM3501906	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat35	lauren_subtype	Diffuse	histology	GSM3501816	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat35	lauren_subtype	Diffuse	histology	GSM3501908	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat36	lauren_subtype	Diffuse	histology	GSM3501817	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat36	lauren_subtype	Diffuse	histology	GSM3501909	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat37	lauren_subtype	Diffuse	histology	GSM3501818	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat37	lauren_subtype	Diffuse	histology	GSM3501911	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat38	lauren_subtype	Diffuse	histology	GSM3501819	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat38	lauren_subtype	Diffuse	histology	GSM3501912	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat39	lauren_subtype	Diffuse	histology	GSM3501820	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat39	lauren_subtype	Diffuse	histology	GSM3501914	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat4	lauren_subtype	Diffuse	histology	GSM3501785	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat4	lauren_subtype	Diffuse	histology	GSM3501865	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat40	lauren_subtype	Diffuse	histology	GSM3501821	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat40	lauren_subtype	Diffuse	histology	GSM3501916	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat41	lauren_subtype	Diffuse	histology	GSM3501822	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat41	lauren_subtype	Diffuse	histology	GSM3501917	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat42	lauren_subtype	Diffuse	histology	GSM3501823	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat42	lauren_subtype	Diffuse	histology	GSM3501918	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat43	lauren_subtype	Diffuse	histology	GSM3501824	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat43	lauren_subtype	Diffuse	histology	GSM3501919	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat44	lauren_subtype	Diffuse	histology	GSM3501825	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat44	lauren_subtype	Diffuse	histology	GSM3501920	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat45	lauren_subtype	Diffuse	histology	GSM3501826	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat45	lauren_subtype	Diffuse	histology	GSM3501921	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat46	lauren_subtype	Diffuse	histology	GSM3501827	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat46	lauren_subtype	Diffuse	histology	GSM3501922	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat47	lauren_subtype	Diffuse	histology	GSM3501828	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat47	lauren_subtype	Diffuse	histology	GSM3501923	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat48	lauren_subtype	Diffuse	histology	GSM3501829	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat48	lauren_subtype	Diffuse	histology	GSM3501924	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat49	lauren_subtype	Diffuse	histology	GSM3501830	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat49	lauren_subtype	Diffuse	histology	GSM3501925	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat5	lauren_subtype	Diffuse	histology	GSM3501786	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat5	lauren_subtype	Diffuse	histology	GSM3501866	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat50	lauren_subtype	Diffuse	histology	GSM3501831	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat50	lauren_subtype	Diffuse	histology	GSM3501926	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat51	lauren_subtype	Diffuse	histology	GSM3501832	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat51	lauren_subtype	Diffuse	histology	GSM3501927	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat52	lauren_subtype	Diffuse	histology	GSM3501833	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat52	lauren_subtype	Diffuse	histology	GSM3501928	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat53	lauren_subtype	Diffuse	histology	GSM3501834	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat53	lauren_subtype	Diffuse	histology	GSM3501929	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat54	lauren_subtype	Intestinal	histology	GSM3501835	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat54	lauren_subtype	Intestinal	histology	GSM3501930	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat55	lauren_subtype	Diffuse	histology	GSM3501836	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat55	lauren_subtype	Diffuse	histology	GSM3501931	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat56	lauren_subtype	Mixed	histology	GSM3501837	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat56	lauren_subtype	Mixed	histology	GSM3501932	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat57	lauren_subtype	Diffuse	histology	GSM3501838	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat57	lauren_subtype	Diffuse	histology	GSM3501933	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat58	lauren_subtype	Diffuse	histology	GSM3501839	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat58	lauren_subtype	Diffuse	histology	GSM3501934	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat59	lauren_subtype	Mixed	histology	GSM3501840	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat59	lauren_subtype	Mixed	histology	GSM3501935	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat6	lauren_subtype	Diffuse	histology	GSM3501787	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat6	lauren_subtype	Diffuse	histology	GSM3501867	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat60	lauren_subtype	Diffuse	histology	GSM3501841	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat60	lauren_subtype	Diffuse	histology	GSM3501936	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat61	lauren_subtype	Intestinal	histology	GSM3501842	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat61	lauren_subtype	Intestinal	histology	GSM3501937	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat62	lauren_subtype	Diffuse	histology	GSM3501843	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat62	lauren_subtype	Diffuse	histology	GSM3501938	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat63	lauren_subtype	Diffuse	histology	GSM3501844	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat63	lauren_subtype	Diffuse	histology	GSM3501939	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat64	lauren_subtype	Diffuse	histology	GSM3501845	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat64	lauren_subtype	Diffuse	histology	GSM3501940	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat65	lauren_subtype	Diffuse	histology	GSM3501846	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat65	lauren_subtype	Diffuse	histology	GSM3501941	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat66	lauren_subtype	Diffuse	histology	GSM3501847	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat66	lauren_subtype	Diffuse	histology	GSM3501942	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat67	lauren_subtype	Diffuse	histology	GSM3501848	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat67	lauren_subtype	Diffuse	histology	GSM3501943	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat68	lauren_subtype	Diffuse	histology	GSM3501849	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat68	lauren_subtype	Diffuse	histology	GSM3501944	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat69	lauren_subtype	Diffuse	histology	GSM3501850	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat69	lauren_subtype	Diffuse	histology	GSM3501945	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat7	lauren_subtype	Diffuse	histology	GSM3501788	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat7	lauren_subtype	Diffuse	histology	GSM3501868	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat70	lauren_subtype	Diffuse	histology	GSM3501851	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat70	lauren_subtype	Diffuse	histology	GSM3501946	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat71	lauren_subtype	Diffuse	histology	GSM3501852	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat71	lauren_subtype	Diffuse	histology	GSM3501947	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat72	lauren_subtype	Diffuse	histology	GSM3501853	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat72	lauren_subtype	Diffuse	histology	GSM3501948	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat73	lauren_subtype	Diffuse	histology	GSM3501854	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat73	lauren_subtype	Diffuse	histology	GSM3501949	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat74	lauren_subtype	Diffuse	histology	GSM3501855	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat74	lauren_subtype	Diffuse	histology	GSM3501950	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat75	lauren_subtype	Diffuse	histology	GSM3501856	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat75	lauren_subtype	Diffuse	histology	GSM3501951	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat76	lauren_subtype	N/A	histology	GSM3501857	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat76	lauren_subtype	N/A	histology	GSM3501952	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat77	lauren_subtype	Diffuse	histology	GSM3501858	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat77	lauren_subtype	Diffuse	histology	GSM3501953	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat78	lauren_subtype	Diffuse	histology	GSM3501859	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat78	lauren_subtype	Diffuse	histology	GSM3501954	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat79	lauren_subtype	Diffuse	histology	GSM3501860	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat79	lauren_subtype	Diffuse	histology	GSM3501955	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat8	lauren_subtype	Diffuse	histology	GSM3501789	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat8	lauren_subtype	Diffuse	histology	GSM3501869	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat80	lauren_subtype	Diffuse	histology	GSM3501861	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat80	lauren_subtype	Diffuse	histology	GSM3501956	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat9	lauren_subtype	Diffuse	histology	GSM3501790	A:GSE122401:source_path:ac2d98e14c1e
+GSE122401	Pat9	lauren_subtype	Diffuse	histology	GSM3501870	A:GSE122401:source_path:ac2d98e14c1e
+TCGA_STAD	TCGA-HU-A4GC	sampling_timing	288	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GC-01A	A:TCGA_STAD:source_path:8f7be0e9d84d
+TCGA_STAD	TCGA-IN-AB1V	sampling_timing	152	sample.days_to_collection; index_date=Diagnosis	TCGA-IN-AB1V-11A	A:TCGA_STAD:source_path:9ee99722788f
+TCGA_STAD	TCGA-HU-A4HB	sampling_timing	111	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4HB-01A	A:TCGA_STAD:source_path:e1cd607320a1
+TCGA_STAD	TCGA-IN-AB1X	sampling_timing	96	sample.days_to_collection; index_date=Diagnosis	TCGA-IN-AB1X-01A	A:TCGA_STAD:source_path:51e59bd4b3ab
+TCGA_STAD	TCGA-HU-A4GH	sampling_timing	547	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GH-01A	A:TCGA_STAD:source_path:c4bd470da321
+TCGA_STAD	TCGA-HU-A4GP	sampling_timing	476	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GP-01A	A:TCGA_STAD:source_path:a8826635e9d7
+TCGA_STAD	TCGA-HU-A4GN	sampling_timing	483	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GN-11A	A:TCGA_STAD:source_path:09a145d7d738
+TCGA_STAD	TCGA-IN-AB1V	sampling_timing	152	sample.days_to_collection; index_date=Diagnosis	TCGA-IN-AB1V-01A	A:TCGA_STAD:source_path:46a8232d4015
+TCGA_STAD	TCGA-HU-A4GY	sampling_timing	183	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GY-01A	A:TCGA_STAD:source_path:af607cb26136
+TCGA_STAD	TCGA-HU-A4GC	sampling_timing	288	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GC-11A	A:TCGA_STAD:source_path:af95f8ae0027
+TCGA_STAD	TCGA-HU-A4GY	sampling_timing	183	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GY-11A	A:TCGA_STAD:source_path:9fca43501e46
+TCGA_STAD	TCGA-HU-A4GP	sampling_timing	476	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GP-11A	A:TCGA_STAD:source_path:86f05346ee61
+TCGA_STAD	TCGA-HU-A4GH	sampling_timing	547	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GH-11A	A:TCGA_STAD:source_path:2d54d32cba5e
+TCGA_STAD	TCGA-HU-A4HB	sampling_timing	111	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4HB-11A	A:TCGA_STAD:source_path:27958ae9d852
+TCGA_STAD	TCGA-HU-A4GN	sampling_timing	483	sample.days_to_collection; index_date=Diagnosis	TCGA-HU-A4GN-01A	A:TCGA_STAD:source_path:e6ea1e237ee5
+TCGA_STAD	TCGA-IN-AB1X	sampling_timing	96	sample.days_to_collection; index_date=Diagnosis	TCGA-IN-AB1X-11A	A:TCGA_STAD:source_path:911c2a99bc04
+GSE150290	Pat01	lauren_subtype	Intestinal	lauren classification	GSM4546301	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat01	source_diagnosis_not_stage	EGC	diagnosis	GSM4546301	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat02	lauren_subtype	Diffuse	lauren classification	GSM4546303	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat02	source_diagnosis_not_stage	AGC	diagnosis	GSM4546303	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat03	lauren_subtype	Diffuse	lauren classification	GSM4546305	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat03	source_diagnosis_not_stage	EGC	diagnosis	GSM4546305	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat04	lauren_subtype	Diffuse	lauren classification	GSM4546307	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat04	source_diagnosis_not_stage	EGC	diagnosis	GSM4546307	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat05	lauren_subtype	Diffuse	lauren classification	GSM4546309	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat05	source_diagnosis_not_stage	EGC	diagnosis	GSM4546309	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat06	lauren_subtype	Diffuse	lauren classification	GSM4546311	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat06	source_diagnosis_not_stage	EGC	diagnosis	GSM4546311	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat07	lauren_subtype	Intestinal	lauren classification	GSM4546313	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat07	source_diagnosis_not_stage	EGC	diagnosis	GSM4546313	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat08	lauren_subtype	Diffuse	lauren classification	GSM4546315	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat08	source_diagnosis_not_stage	EGC	diagnosis	GSM4546315	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat09	lauren_subtype	Intestinal	lauren classification	GSM4546317	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat09	source_diagnosis_not_stage	EGC	diagnosis	GSM4546317	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat10	lauren_subtype	Diffuse	lauren classification	GSM4546319	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat10	source_diagnosis_not_stage	EGC	diagnosis	GSM4546319	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat11	lauren_subtype	Diffuse	lauren classification	GSM4546321	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat11	source_diagnosis_not_stage	AGC	diagnosis	GSM4546321	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat12	lauren_subtype	Diffuse	lauren classification	GSM4546323	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat12	source_diagnosis_not_stage	AGC	diagnosis	GSM4546323	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat13	lauren_subtype	Intestinal	lauren classification	GSM4546325	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat13	source_diagnosis_not_stage	ECG	diagnosis	GSM4546325	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat14	lauren_subtype	Diffuse	lauren classification	GSM4546327	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat14	source_diagnosis_not_stage	AGC	diagnosis	GSM4546327	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat15	lauren_subtype	Diffuse	lauren classification	GSM4546329	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat15	source_diagnosis_not_stage	AGC	diagnosis	GSM4546329	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat16	lauren_subtype	Diffuse	lauren classification	GSM4546331	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat16	source_diagnosis_not_stage	EGC	diagnosis	GSM4546331	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat17	lauren_subtype	Intestinal	lauren classification	GSM4546333	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat17	source_diagnosis_not_stage	EGC	diagnosis	GSM4546333	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat18	lauren_subtype	Intestinal	lauren classification	GSM4546335	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat18	source_diagnosis_not_stage	EGC	diagnosis	GSM4546335	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat19	lauren_subtype	Intestinal	lauren classification	GSM4546337	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat19	source_diagnosis_not_stage	EGC	diagnosis	GSM4546337	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat20	lauren_subtype	Diffuse	lauren classification	GSM4546339	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat20	source_diagnosis_not_stage	AGC	diagnosis	GSM4546339	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat22	lauren_subtype	Intestinal	lauren classification	GSM4546342	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat22	source_diagnosis_not_stage	EGC	diagnosis	GSM4546342	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat23	lauren_subtype	Diffuse	lauren classification	GSM4546344	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat23	source_diagnosis_not_stage	AGC	diagnosis	GSM4546344	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat24	lauren_subtype	Diffuse	lauren classification	GSM4546346	A:GSE150290:source_path:7eed4ae57a99
+GSE150290	Pat24	source_diagnosis_not_stage	AGC	diagnosis	GSM4546346	A:GSE150290:source_path:7eed4ae57a99

@@ -1,0 +1,33 @@
+figure	panel	title	old_source	quantity_population	required_roles	bundled_mode
+2	A	RNA program changes	old Figure2A/B distributions	faceted percentage histograms of paired rank-score changes; shared equal-width bins per program; 112/49/33/80 pairs; TCGA G unavailable	rna;primary	COMPLETE_PANEL
+2	B	Protein program changes	old Figure3A/B	relative protein rank score; G6 28/H4 30 paired patients	protein_G;protein_H	EXTERNAL_INPUT_REQUIRED
+2	C	Across-cohort effects	old Figure2A/B + Figure3A/B estimates	program Hedges g_av with stored 95% CI; four RNA sources and CPTAC	primary	COMPLETE_PANEL
+2	D	Anatomical strata	old Figure2D	stored program g_av and CI; 48 cardia/64 non-cardia	strata	COMPLETE_PANEL
+3	A	G member patterns	old Figure2C + Figure3C	native RNA and protein coefficients; separate source-scale keys; fixed seven genes	rna_members;protein_members;primary	COMPLETE_PANEL
+3	B	Functional submodules	old Figure4C	grouped bars; stored g_av and 95% CI; no GSE122401 submodule	submodules	COMPLETE_PANEL
+3	C	Scoring sensitivity	old Figure4 primary/alternative	G rank versus mean-z program g_av; identity guide; four finite sources	primary;alternative	COMPLETE_PANEL
+3	D	Member influence	old Figure4 omissions/primary	27 primary-rank omissions; native CI and intact reference; four separate scales	omissions;primary	COMPLETE_PANEL
+3	E	Buffering context	old Figure5A	G-buffer rank and mean-z program g_av with saved CI; missing entries retained	context_rank;context_z	COMPLETE_PANEL
+4	A	H member expression	old Figure2C	grouped bars for all 16 H-member native RNA coefficients with saved 95% CIs; fixed four-source palette	rna_members	COMPLETE_PANEL
+4	B	H protein changes	old Figure5B/C	boxplots with every patient: CPTAC paired protein change n=30; Mun centered log2 T/N n=80; type-7 hinges; observed 1.5-IQR whiskers, not CIs	protein_changes;mun_ratios	EXTERNAL_INPUT_REQUIRED
+4	C	H robustness	old Figure4 primary/alternative	five-source H program g_av with saved 95% CI	primary;alternative	COMPLETE_PANEL
+4	D	Related programs	old Figure5A	three H context programs; stored program g_av; five sources	context	COMPLETE_PANEL
+5	A	G program association	old Figure3E	CPTAC 19 paired rank changes; saved Spearman rho/percentile CI	G_pairs;G_result	EXTERNAL_INPUT_REQUIRED
+5	B	H program association	old Figure3F	CPTAC 21 paired rank changes; saved Spearman rho/percentile CI	H_pairs;H_result	EXTERNAL_INPUT_REQUIRED
+5	C	ALDH2	second supplement E	Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI	E_pairs;E_results	COMPLETE_PANEL
+5	D	ALDH3A1	second supplement E	Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI	E_pairs;E_results	COMPLETE_PANEL
+5	E	ALDH3A2	second supplement E	Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI	E_pairs;E_results	COMPLETE_PANEL
+5	F	ALDH7A1	second supplement E	Mun common 80 patients; RNA log2(UQ+1) change versus averaged centered log2 T/N protein; stored rho/percentile CI	E_pairs;E_results	COMPLETE_PANEL
+6	A	Gastric marker changes	old Figure8C	frozen-reference standardized mean paired change, not g_av	markers	COMPLETE_PANEL
+6	B	H–D7: GSE122401	old Figure8A	80 pairs; saved rank-H/D7 values and fitted confidence band	GSE122401_pairs;GSE122401_fit	COMPLETE_PANEL
+6	C	H–D7: TCGA-STAD	old Figure8B	33 pairs; saved rank-H/D7 values and fitted confidence band	TCGA_pairs;TCGA_fit	COMPLETE_PANEL
+6	D	Component associations	second supplement D	six horizontal floating 95% HC3 t CI rectangles with vertical coefficient strokes; D spans left column beside E above F; fixed component units	D_results	COMPLETE_PANEL
+6	E	Component correlations	second supplement D diagnostics	two descriptive Spearman rho matrices; masked diagonal	correlations	COMPLETE_PANEL
+6	F	Scoring sensitivity	old Figure8E / tissue_context coefficients	two separate-scale bar subplots; M1 delta_D coefficient model intervals	coefficients	COMPLETE_PANEL
+7	A	Compartment programs	old Figure6A	five donor-state rank estimates and stored native CI; endpoint n 10/10/11/16/10	programs	COMPLETE_PANEL
+7	B	Members and coverage	old Figure6B/C	native edgeR coefficients and gate information; untested epithelial member slots explicit	members;coverage	COMPLETE_PANEL
+7	C	Epithelial H sensitivity	old Figure6D + second supplement B	same 23 donors in lexical ID order; rank and normalized mean member-z; native t CI	rank;normalized;normalized_result	COMPLETE_PANEL
+7	D	Epithelial member changes	old Figure6E	overall n=23 and enteroendocrine n=12; native log2 coefficients; no invented CI	epi_members	COMPLETE_PANEL
+8	A	Captured cell composition	old Figure7A	24 donors × two tissues; seven categories; percentages from saved proportions	composition	EXTERNAL_INPUT_REQUIRED
+8	B	Method sensitivity	old Figure7B	four method/threshold configurations; separate native scales; all seven categories	methods	COMPLETE_PANEL
+8	C	Enteroendocrine fractions	old Figure7C	20 paired donors; fraction of retained epithelial cells	eec_pairs	COMPLETE_PANEL

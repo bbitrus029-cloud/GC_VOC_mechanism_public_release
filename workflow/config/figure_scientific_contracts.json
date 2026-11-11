@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "canonicalization": "Scientific projection; UTF-8 identifiers, finite IEEE-754 binary64 float.hex values (signed zero normalized), uppercase booleans; row sort by exact declared keys; compact JSON [fields, typed_rows]. No rounding or statistical tolerance change. Byte formatting, column order and ignored operational columns are not identities.",
+  "inputs": {
+    "figure_2_protein_G": {
+      "fields": [
+        "endpoint_id",
+        "population_reference_id",
+        "patient_id",
+        "Tumor_score",
+        "NAT_score",
+        "delta"
+      ],
+      "numeric": [
+        "Tumor_score",
+        "NAT_score",
+        "delta"
+      ],
+      "boolean": [],
+      "keys": [
+        "patient_id"
+      ],
+      "rows": 28,
+      "source": "PDC000614/LinkedOmics CPTAC-GC",
+      "population": "28 G6 or 30 H4 exact paired patients",
+      "units": "within-sample rank scores; Tumor minus NAT",
+      "preparation_route": "protein",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "7a170b6b7eb512412104039253383f0da29edc7b3ba074854e089c28aebdf1e0"
+    },
+    "figure_2_protein_H": {
+      "fields": [
+        "endpoint_id",
+        "population_reference_id",
+        "patient_id",
+        "Tumor_score",
+        "NAT_score",
+        "delta"
+      ],
+      "numeric": [
+        "Tumor_score",
+        "NAT_score",
+        "delta"
+      ],
+      "boolean": [],
+      "keys": [
+        "patient_id"
+      ],
+      "rows": 30,
+      "source": "PDC000614/LinkedOmics CPTAC-GC",
+      "population": "28 G6 or 30 H4 exact paired patients",
+      "units": "within-sample rank scores; Tumor minus NAT",
+      "preparation_route": "protein",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "0f2508eae3eb7998b5c656fe1173a1d59145b4b4fe50660545d256a72985770d"
+    },
+    "figure_4_protein_changes": {
+      "fields": [
+        "population_reference_id",
+        "member",
+        "patient_id",
+        "NAT_value",
+        "Tumor_value",
+        "delta",
+        "NAT_sample_id",
+        "Tumor_sample_id",
+        "input_scale"
+      ],
+      "numeric": [
+        "NAT_value",
+        "Tumor_value",
+        "delta"
+      ],
+      "boolean": [],
+      "keys": [
+        "member",
+        "patient_id"
+      ],
+      "rows": 120,
+      "source": "PDC000614/LinkedOmics CPTAC-GC",
+      "population": "four fixed H4 members in the same 30 patients; 120 pairs",
+      "units": "TMT_median_centered_log2_ratio; paired Tumor minus NAT",
+      "preparation_route": "protein",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "1ad0d02f9075b0514aab1cb16405784f0383a391eb7cdb3acad9a25ba18091fa"
+    },
+    "figure_5_G_pairs": {
+      "fields": [
+        "endpoint_id",
+        "population_reference_id",
+        "patient_id",
+        "RNA_Tumor_score",
+        "RNA_NAT_score",
+        "protein_Tumor_score",
+        "protein_NAT_score",
+        "RNA_delta",
+        "protein_delta",
+        "RNA_Tumor_record_id",
+        "RNA_NAT_record_id",
+        "protein_Tumor_record_id",
+        "protein_NAT_record_id"
+      ],
+      "numeric": [
+        "RNA_Tumor_score",
+        "RNA_NAT_score",
+        "protein_Tumor_score",
+        "protein_NAT_score",
+        "RNA_delta",
+        "protein_delta"
+      ],
+      "boolean": [],
+      "keys": [
+        "patient_id"
+      ],
+      "rows": 19,
+      "source": "PDC000614/LinkedOmics CPTAC-GC",
+      "population": "19 G6 or 21 H4 exact patient quadruplets",
+      "units": "layer-specific within-sample ranks; paired Tumor minus NAT",
+      "preparation_route": "protein",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "c14fe3f00ac592a64588e65e09848396a8c4bc04de6b267b9c5ad0f69d874937"
+    },
+    "figure_5_H_pairs": {
+      "fields": [
+        "endpoint_id",
+        "population_reference_id",
+        "patient_id",
+        "RNA_Tumor_score",
+        "RNA_NAT_score",
+        "protein_Tumor_score",
+        "protein_NAT_score",
+        "RNA_delta",
+        "protein_delta",
+        "RNA_Tumor_record_id",
+        "RNA_NAT_record_id",
+        "protein_Tumor_record_id",
+        "protein_NAT_record_id"
+      ],
+      "numeric": [
+        "RNA_Tumor_score",
+        "RNA_NAT_score",
+        "protein_Tumor_score",
+        "protein_NAT_score",
+        "RNA_delta",
+        "protein_delta"
+      ],
+      "boolean": [],
+      "keys": [
+        "patient_id"
+      ],
+      "rows": 21,
+      "source": "PDC000614/LinkedOmics CPTAC-GC",
+      "population": "19 G6 or 21 H4 exact patient quadruplets",
+      "units": "layer-specific within-sample ranks; paired Tumor minus NAT",
+      "preparation_route": "protein",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "75dd53d76c5aaf6e8231c2251ea10cd088d3d97d5be592f46ee62d2490beb1d7"
+    },
+    "figure_8_composition": {
+      "fields": [
+        "donor",
+        "tissue",
+        "compartment",
+        "cell_count",
+        "total_count",
+        "source_tissue",
+        "proportion",
+        "primary_100",
+        "strict_200",
+        "count_aware"
+      ],
+      "numeric": [
+        "cell_count",
+        "total_count",
+        "proportion"
+      ],
+      "boolean": [
+        "primary_100",
+        "strict_200",
+        "count_aware"
+      ],
+      "keys": [
+        "donor",
+        "tissue",
+        "compartment"
+      ],
+      "rows": 336,
+      "source": "GSE206785",
+      "population": "24 donors x two tissues x seven fixed compartments; 20 primary / 18 strict donors",
+      "units": "retained captured cells; compartment count / total captured cells",
+      "preparation_route": "composition",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "79e35326c56103c4f85184d8082b3ebb8ac3f9b95ccd0797668bec33b7acc6a2"
+    },
+    "figure_8_donors": {
+      "fields": [
+        "donor",
+        "primary_100",
+        "strict_200",
+        "count_aware"
+      ],
+      "numeric": [],
+      "boolean": [
+        "primary_100",
+        "strict_200",
+        "count_aware"
+      ],
+      "keys": [
+        "donor"
+      ],
+      "rows": 24,
+      "source": "GSE206785",
+      "population": "24 exact donors; flags derived from same composition source",
+      "units": "donor membership; local display index is radix donor order",
+      "preparation_route": "composition",
+      "status": "SUPPORTED_FROM_EXISTING_ANALYSIS_OUTPUTS; upstream raw acquisition and qualification not exercised in this repair",
+      "scientific_sha256": "80a321ea64d970e1804300e08ebcff7d4ac8c1c7a2f8cdd9293bea72de685900"
+    }
+  },
+  "preparation": {
+    "protein": {
+      "entry": "workflow/pipelines/prepare_figure_inputs.py protein",
+      "analysis": "workflow/R/analysis/original_protein.R: build_tables/run",
+      "inputs": [
+        "figure_source_protein_pairs",
+        "figure_source_protein_members",
+        "figure_source_bridge_pairs"
+      ],
+      "input_schemas": {
+        "figure_source_protein_pairs": [
+          "endpoint_id",
+          "population_reference_id",
+          "patient_id",
+          "Tumor_score",
+          "NAT_score",
+          "delta"
+        ],
+        "figure_source_protein_members": [
+          "population_reference_id",
+          "member",
+          "patient_id",
+          "layer",
+          "tissue",
+          "value",
+          "sample_id",
+          "input_scale"
+        ],
+        "figure_source_bridge_pairs": [
+          "endpoint_id",
+          "population_reference_id",
+          "patient_id",
+          "RNA_Tumor_score",
+          "RNA_NAT_score",
+          "protein_Tumor_score",
+          "protein_NAT_score",
+          "RNA_delta",
+          "protein_delta",
+          "RNA_Tumor_record_id",
+          "RNA_NAT_record_id",
+          "protein_Tumor_record_id",
+          "protein_NAT_record_id"
+        ]
+      }
+    },
+    "composition": {
+      "entry": "workflow/pipelines/prepare_figure_inputs.py composition",
+      "analysis": "workflow/R/analysis/original_single_cell.R: tables/run",
+      "inputs": [
+        "figure_source_composition"
+      ],
+      "input_schemas": {
+        "figure_source_composition": [
+          "donor",
+          "tissue",
+          "compartment",
+          "cell_count",
+          "total_count",
+          "source_tissue",
+          "proportion",
+          "primary_100",
+          "strict_200",
+          "count_aware"
+        ]
+      }
+    }
+  }
+}

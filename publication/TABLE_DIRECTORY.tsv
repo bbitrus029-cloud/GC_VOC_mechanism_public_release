@@ -1,0 +1,109 @@
+section_id	project_table	submission_number	label	related_figures	source_rows	eligible_rows	held_rows	navigation_authority	public_source
+S4_04	S4	Supplementary Table 4	Original bulk RNA	Figures 2–4	22	22	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_03	S4	Supplementary Table 4	Original bulk RNA — native members	Figures 3, 4	33	33	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_05	S4	Supplementary Table 4	Result-informed external bulk RNA	Figures 2–4	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_06	S4	Supplementary Table 4	Result-informed external bulk RNA — native members	Figures 3, 4	11	11	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_07	S4	Supplementary Table 4	Original robustness diagnostics — G submodule	Figure 3B	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_08	S4	Supplementary Table 4	Original Influence: full-cohort reference	Figures 2–4 (support)	32	32	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_09	S4	Supplementary Table 4	Original robustness diagnostics — leave one gene out	Figures 3–4	44	44	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_10	S4	Supplementary Table 4	Original robustness diagnostics — member direction concordance	Figures 3–4	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_11	S4	Supplementary Table 4	Original robustness diagnostics — paired Wilcoxon	Figures 2–4 (support)	32	32	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_12	S4	Supplementary Table 4	Original robustness diagnostics — paired percentile bootstrap	Figures 2–4 (support)	32	32	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_13	S4	Supplementary Table 4	Original robustness diagnostics — standardized member mean direction	Figures 3, 4	24	24	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_14	S4	Supplementary Table 4	Original robustness diagnostics — alternative probe collapse	Figures 2–4 (support)	12	12	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_15	S4	Supplementary Table 4	Original robustness diagnostics — common background	Figures 2–4 (support)	12	12	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_16	S4	Supplementary Table 4	Original robustness diagnostics — site stratum estimate	Figure 2D	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_17	S4	Supplementary Table 4	Result-informed robustness — standardized member mean	Figures 3–4	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_18	S4	Supplementary Table 4	Result-informed robustness — leave one member out	Figures 3–4	11	11	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_19	S4	Supplementary Table 4	Result-informed robustness — paired Wilcoxon	Figures 2–4 (support)	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_20	S4	Supplementary Table 4	Result-informed robustness — paired percentile bootstrap	Figures 2–4 (support)	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_21	S4	Supplementary Table 4	Result-informed robustness — member direction concordance	Figures 3–4	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_22	S4	Supplementary Table 4	Original bulk reproducibility states	Figures 2–4 (support)	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_23	S4	Supplementary Table 4	Original loo replication labels	Figures 3–4	11	11	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_24	S4	Supplementary Table 4	Original score method diagnostics	Figures 3–4	24	24	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_25	S4	Supplementary Table 4	Original program coverage — GSE29272	Figures 2–4 (support)	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_26	S4	Supplementary Table 4	Original program coverage — GSE27342	Figures 2–4 (support)	10	10	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_27	S4	Supplementary Table 4	Original program coverage — TCGA	Figures 2–4 (support)	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_28	S4	Supplementary Table 4	Original program coverage — common microarray background	Figures 3–4	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_01	S4	Supplementary Table 4	Completeness: Original inactive backup slots	Complete reporting only	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_02	S4	Supplementary Table 4	Completeness: Original inactive backup slots — native members	Complete reporting only	11	11	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_03	S5	Supplementary Table 5	Original protein	Figures 2–4	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_02	S5	Supplementary Table 5	Original protein — native members	Figures 3, 4	10	10	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_01	S5	Supplementary Table 5	Original same-patient bridges	Figure 5A/B	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_E	S5	Supplementary Table 5	Matched-patient RNA–protein member associations	Figure 5C–F	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_04	S5	Supplementary Table 5	Result-informed protein	Figure 4B (support)	5	5	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_05	S5	Supplementary Table 5	Bridge BCa sensitivity	Figure 5A/B (support)	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_06	S5	Supplementary Table 5	Original nominal protein diagnostics — G submodule	Figure 3B	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_07	S5	Supplementary Table 5	Original nominal protein diagnostics — paired Wilcoxon	Figures 2–4 (support)	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_08	S5	Supplementary Table 5	Original nominal protein diagnostics — paired percentile bootstrap	Figures 2–4 (support)	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_09	S5	Supplementary Table 5	Original nominal protein diagnostics — score method direction	Figures 3–4	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_10	S5	Supplementary Table 5	Original nominal protein diagnostics — standardized member mean	Figures 3, 4	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_11	S5	Supplementary Table 5	Original nominal protein diagnostics — leave one gene out	Figures 3–4	10	10	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S5_12	S5	Supplementary Table 5	Original nominal protein diagnostics — member direction concordance	Figures 3–4	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_04	S5	Supplementary Table 5	Original protein and bridge complete-pair populations	Figures 2–5 (support)	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_02	S6	Supplementary Table 6	Original cellular expression	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_03	S6	Supplementary Table 6	Original cellular expression — native members	Figure 7	14	14	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_01	S6	Supplementary Table 6	Original cellular expression — nonformal/exploratory	Figure 7	10	10	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_05	S6	Supplementary Table 6	Original captured composition — empirical logit	Figure 8	14	14	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_04	S6	Supplementary Table 6	Original captured composition — CLR	Figure 8	7	7	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_06	S6	Supplementary Table 6	Original captured composition — quasibinomial logit tissue plus donor	Figure 8	7	7	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_07	S6	Supplementary Table 6	Result-informed epithelial expression	Figure 7	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_08	S6	Supplementary Table 6	Result-informed epithelial expression — native members	Figure 7	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_B	S6	Supplementary Table 6	Normalized epithelial H4: technical scoring sensitivity	Figure 7C	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_09	S6	Supplementary Table 6	Result-informed epithelial composition	Figure 8	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_10	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ALDH2	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_11	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ALDH3A2	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_12	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ALDH7A1	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_13	S6	Supplementary Table 6	Original nominal program diagnostics — member direction concordance	Figure 7	5	5	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_14	S6	Supplementary Table 6	Original nominal program diagnostics — paired Wilcoxon	Figure 7	5	5	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_15	S6	Supplementary Table 6	Original nominal program diagnostics — paired percentile bootstrap	Figure 7	5	5	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_16	S6	Supplementary Table 6	Original nominal program diagnostics — standardized member mean	Figure 7	5	5	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_17	S6	Supplementary Table 6	Original nominal program diagnostics — fixed diagnostic / G buffer	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_18	S6	Supplementary Table 6	Original nominal program diagnostics — fixed diagnostic / H conjugation	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_19	S6	Supplementary Table 6	Original nominal program diagnostics — fixed diagnostic / H expanded	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_20	S6	Supplementary Table 6	Original nominal program diagnostics — fixed diagnostic / H reductive	Figure 7	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_21	S6	Supplementary Table 6	Original nominal program diagnostics — fixed diagnostic / oxidation support	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_22	S6	Supplementary Table 6	Original nominal program diagnostics — fixed diagnostic / substrate assembly	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_23	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ALDH3A1	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_24	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ACSL4	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_25	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ALOX15B	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_26	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / ALOX5	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_27	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / LPCAT3	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_28	S6	Supplementary Table 6	Original nominal program diagnostics — leave one gene out / POR	Figure 7	1	1	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_29	S6	Supplementary Table 6	Result-informed epithelial diagnostics	Figures 7, 8 (support)	5	0	5	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S6_30	S6	Supplementary Table 6	Original quasibinomial model characteristics	Figure 8	7	7	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_01	S7	Supplementary Table 7	Result-informed D7 and composition-adjustment slots	Figure 6	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_D	S7	Supplementary Table 7	Separate gastric-component models	Figure 6D	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_02	S7	Supplementary Table 7	Result-informed D7 member descriptions	Figure 6	28	28	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_03	S7	Supplementary Table 7	Result-informed model coefficients	Figure 6	10	10	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_04	S7	Supplementary Table 7	Result-informed HC3 estimates	Figure 6	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_05	S7	Supplementary Table 7	Result-informed intercept support	Figure 6	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_06	S7	Supplementary Table 7	Result-informed influence summary	Figure 6	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_07	S7	Supplementary Table 7	Result-informed full unadjusted H	Figure 6	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S4_omissions_01	S4_omissions	Supplementary Table 4	S4 supporting detail: patient omissions	Figures 2–4 (support)	1276	1276	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+S7_omissions_01	S7_omissions	Supplementary Table 7	S7 supporting detail: patient omissions	Figure 6	113	113	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_A_population	S4_clinical	Supplementary Table 4	Analytical populations: clinical-field availability	Figures 2–8	24	24	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_A_detail	S4_clinical	Supplementary Table 4	Clinical availability by analytical population	Figures 2–8	405	126	279	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_01	S4_clinical	Supplementary Table 4	Reference tissues and source-cohort qualifications	Figures 2–8	19	19	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_02	S4_clinical	Supplementary Table 4	Endpoint-population clinical summaries	Figures 2–5 (support)	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_07	S4_clinical	Supplementary Table 4	Known shared, overlapping and nested populations	Figures 2–8	7	7	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_08	S4_clinical	Supplementary Table 4	Bulk pair flow	Figures 2–4 (support)	3	3	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_09	S4_clinical	Supplementary Table 4	Analysis roles and population distinctions (Figure 1 companion)	Figures 2–8	9	9	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_06	S4_background	Supplementary Table 4	Terminal coverage limits and inactive slots	Coverage / completeness	19	19	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_C_background	S4_background	Supplementary Table 4	Frozen expression backgrounds	Figures 2–5, 7 (support)	26	26	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_03	S6_scales	Supplementary Table 6	Original cellular populations and program eligibility	Figure 7 (support)	14	14	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_10	S6_scales	Supplementary Table 6	GSE150290 epithelial cell selection and lineage qualification	Figures 7, 8 (support)	17	0	17	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_05	S6_scales	Supplementary Table 6	Supplementary epithelial expression eligibility	Figure 7 (support)	2	2	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_B_scales	S6_scales	Supplementary Table 6	Epithelial score definitions on common donors	Figure 7C	23	23	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_D_correlations	S7_components	Supplementary Table 7	Descriptive component correlations	Figure 6E	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_D_influence_summary	S7_components	Supplementary Table 7	Component influence summary	Figure 6D	6	6	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_D_omissions	S7_components	Supplementary Table 7	Component omissions	Figure 6D	339	339	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_E_influence_summary	S5_influence	Supplementary Table 5	Member-association influence summary	Figure 5C–F	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_E_omissions	S5_influence	Supplementary Table 5	Member-association omissions	Figure 5C–F	320	320	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_K_specimens	S6_IHC	Supplementary Table 6	Descriptive HPA IHC: specimen traceability	Supporting context	41	41	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_K_staining	S6_IHC	Supplementary Table 6	Individual antibody and specimen annotations	Supporting context	41	41	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_K_antibodies	S6_IHC	Supplementary Table 6	Antibody reliability and limitations	Supporting context	8	8	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+PE2_K_consensus	S6_IHC	Supplementary Table 6	HPA gene consensus: descriptive context	Supporting context	4	4	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_reader_cohorts	TableS3	Supplementary Table 1	1. Cohorts and analytical populations	Figures 2–8	9	9	0	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_reader_clinical	TableS3	Supplementary Table 1	2. Key clinical and reference-tissue information	Figures 2–8	8	0	8	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json
+TableS3_reader_eligibility	TableS3	Supplementary Table 1	3. Essential eligibility and population dependence	Figures 2–8	8	0	8	Current layout section ID; 2026-11-10 Directory correction	publication/table_layout.json

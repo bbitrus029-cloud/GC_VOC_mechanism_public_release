@@ -1,0 +1,62 @@
+{
+  "PE2_D_GSE122401_D_pit4_beta_component": {
+    "diagnostics": {
+      "condition_number": 3.39707646423884,
+      "standardized_condition_number": 1.00630921085326,
+      "rank": 2,
+      "max_leverage": 0.107809562682844,
+      "zero_component_supported": true
+    },
+    "excluded": []
+  },
+  "PE2_D_GSE122401_D_gland2_beta_component": {
+    "diagnostics": {
+      "condition_number": 3.12673213943306,
+      "standardized_condition_number": 1.00630921085326,
+      "rank": 2,
+      "max_leverage": 0.124310098488354,
+      "zero_component_supported": true
+    },
+    "excluded": []
+  },
+  "PE2_D_GSE122401_PGC_z_beta_component": {
+    "diagnostics": {
+      "condition_number": 3.65861423995763,
+      "standardized_condition_number": 1.00630921085326,
+      "rank": 2,
+      "max_leverage": 0.137256445318582,
+      "zero_component_supported": true
+    },
+    "excluded": []
+  },
+  "PE2_D_TCGA_STAD_D_pit4_beta_component": {
+    "diagnostics": {
+      "condition_number": 1.58772524380254,
+      "standardized_condition_number": 1.0155048005795,
+      "rank": 2,
+      "max_leverage": 0.126729156155674,
+      "zero_component_supported": true
+    },
+    "excluded": []
+  },
+  "PE2_D_TCGA_STAD_D_gland2_beta_component": {
+    "diagnostics": {
+      "condition_number": 1.44171012662485,
+      "standardized_condition_number": 1.0155048005795,
+      "rank": 2,
+      "max_leverage": 0.138371021332901,
+      "zero_component_supported": true
+    },
+    "excluded": []
+  },
+  "PE2_D_TCGA_STAD_PGC_z_beta_component": {
+    "diagnostics": {
+      "condition_number": 1.50597995060516,
+      "standardized_condition_number": 1.0155048005795,
+      "rank": 2,
+      "max_leverage": 0.162661817415035,
+      "zero_component_supported": true
+    },
+    "excluded": []
+  }
+}

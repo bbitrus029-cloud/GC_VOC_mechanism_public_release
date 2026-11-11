@@ -1,0 +1,11 @@
+hypothesis_id	family	family_size	estimand_population
+PE2_D_GSE122401_D_pit4_beta_component	PE2_D_COMPONENT_ASSOC	6	Pit4 HC3 slope; original 80-pair reference
+PE2_D_GSE122401_D_gland2_beta_component	PE2_D_COMPONENT_ASSOC	6	Gland2 HC3 slope; original 80-pair reference
+PE2_D_GSE122401_PGC_z_beta_component	PE2_D_COMPONENT_ASSOC	6	PGC-z HC3 slope; original 80-pair reference
+PE2_D_TCGA_STAD_D_pit4_beta_component	PE2_D_COMPONENT_ASSOC	6	Pit4 HC3 slope; original 33-pair reference
+PE2_D_TCGA_STAD_D_gland2_beta_component	PE2_D_COMPONENT_ASSOC	6	Gland2 HC3 slope; original 33-pair reference
+PE2_D_TCGA_STAD_PGC_z_beta_component	PE2_D_COMPONENT_ASSOC	6	PGC-z HC3 slope; original 33-pair reference
+PE2_E_MUN_ALDH2_rho	PE2_E_MUN_MEMBER_BRIDGE	4	ALDH2 Spearman rho; verified common 80 patients
+PE2_E_MUN_ALDH3A1_rho	PE2_E_MUN_MEMBER_BRIDGE	4	ALDH3A1 Spearman rho; same population
+PE2_E_MUN_ALDH3A2_rho	PE2_E_MUN_MEMBER_BRIDGE	4	ALDH3A2 Spearman rho; same population
+PE2_E_MUN_ALDH7A1_rho	PE2_E_MUN_MEMBER_BRIDGE	4	ALDH7A1 Spearman rho; same population

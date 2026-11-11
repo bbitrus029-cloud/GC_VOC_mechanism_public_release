@@ -1,126 +1,160 @@
 item	source_label	canonical_path	reference_scope
-Figure2	Figure2A.tsv	publication/Figure2/source/Figure2A.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2B.tsv	publication/Figure2/source/Figure2B.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2C.tsv	publication/Figure2/source/Figure2C.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2D.tsv	results/diagnostics/original/bulk/site_stratum_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2D_interactions.tsv	results/diagnostics/original/bulk/site_interaction_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2boxes.tsv	publication/Figure2/source/Figure2boxes.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2density.tsv	publication/Figure2/source/Figure2distributions.tsv	Observed patient deltas; omitted Gaussian density grid can be derived as described in INDEX.md, not an identical file.
-Figure2	Figure2distributions.tsv	publication/Figure2/source/Figure2distributions.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2pair_flow.tsv	provenance/eligibility/supplementary/external_bulk_inference/bindings/pair_flow.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2pair_ledger.tsv	provenance/eligibility/supplementary/supplementary_readiness/bindings/GSE122401_sample_pair_ledger.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2paired_original.tsv	publication/Figure2/source/Figure2paired_original.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure2	Figure2rank_scores.tsv	publication/Figure2/source/Figure2rank_scores.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3A_estimate.tsv	publication/Figure3/source/Figure3A_estimate.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3B_estimate.tsv	publication/Figure3/source/Figure3B_estimate.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3C.tsv	publication/Figure3/source/Figure3C.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3D.tsv	publication/Figure3/source/Figure3D.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3E_estimate.tsv	publication/Figure3/source/Figure3E_estimate.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3F_estimate.tsv	publication/Figure3/source/Figure3F_estimate.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3frozen_supplementary_protein.tsv	provenance/eligibility/supplementary/supplementary_readiness/bindings/D_common_H4_population.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure3	Figure3ratio_support.tsv	results/supplementary/protein/patient_centered_ratios.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4B_states.tsv	publication/Figure4/source/Figure4B_states.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4C.tsv	publication/Figure4/source/Figure4C.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4D.tsv	publication/Figure4/source/Figure4D.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4D_display.tsv	publication/Figure4/source/Figure4D_display.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4E.tsv	publication/Figure4/source/Figure4E.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4alternative.tsv	publication/Figure4/source/Figure4alternative.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4bulk_support.tsv	publication/Figure4/source/Figure4bulk_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4omissions.tsv	publication/Figure4/source/Figure4omissions.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4primary.tsv	publication/Figure4/source/Figure4primary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4protein_score_support.tsv	results/diagnostics/original/protein_bridge/score_method_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4protein_support.tsv	results/diagnostics/original/protein_bridge/nominal_protein_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4score_support.tsv	publication/Figure4/source/Figure4score_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure4	Figure4supplementary_support.tsv	results/diagnostics/supplementary/external_bulk/robustness_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5A_alternative.tsv	publication/Figure5/source/Figure5A_alternative.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5A_primary.tsv	publication/Figure5/source/Figure5A_primary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5B_summaries.tsv	publication/Figure5/source/Figure5B_summaries.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5C.tsv	publication/Figure5/source/Figure5C.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5C_estimates.tsv	results/supplementary/protein/member_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5bulk_support.tsv	publication/Figure4/source/Figure4bulk_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5frozen_supplementary_protein.tsv	provenance/eligibility/supplementary/supplementary_readiness/bindings/D_common_H4_population.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5protein_score_support.tsv	results/diagnostics/original/protein_bridge/score_method_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5protein_support.tsv	results/diagnostics/original/protein_bridge/nominal_protein_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure5	Figure5score_support.tsv	publication/Figure4/source/Figure4score_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6A_estimates.tsv	publication/Figure6/source/Figure6A_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6B.tsv	publication/Figure6/source/Figure6B.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6B_support.tsv	publication/Figure6/source/Figure6B_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6C.tsv	provenance/protocols/implementation/original/single_cell/state_role_freeze.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6D_alternative.tsv	publication/Figure6/source/Figure6D_alternative.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6D_rank.tsv	publication/Figure6/source/Figure6D_rank.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6D_reference.tsv	publication/Figure6/source/Figure6D_reference.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6D_support.tsv	publication/Figure6/source/Figure6D_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure6	Figure6E.tsv	publication/Figure6/source/Figure6E.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure7	Figure7B.tsv	results/original/single_cell/captured_composition_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure7	Figure7C.tsv	publication/Figure7/source/Figure7C.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure7	Figure7C_donor_index.tsv	publication/Figure7/source/Figure7C.tsv	Donor identities for category=enteroendocrine; display index/order omitted.
-Figure7	Figure7C_pairs.tsv	publication/Figure7/source/Figure7C.tsv	Use category=enteroendocrine; paired counts, denominators and proportions retained, display ordering omitted.
-Figure7	Figure7D.tsv	publication/Figure7/source/Figure7D.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure7	Figure7D_individual_display.tsv	publication/Figure7/source/Figure7C.tsv	Both enteroendocrine and other_unassigned categories; equivalent donor values, omitted repeated display layout.
-Figure7	Figure7D_percentage_points.tsv	publication/Figure7/source/Figure7D_percentage_points.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure7	Figure7model_support.tsv	results/diagnostics/original/single_cell/quasibinomial_audit.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8A.tsv	publication/Figure8/source/Figure8A.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8A_fit.tsv	results/supplementary/tissue_context/GSE122401_fitted_line_source.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8B.tsv	publication/Figure8/source/Figure8B.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8B_fit.tsv	results/supplementary/tissue_context/TCGA_STAD_fitted_line_source.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8C.tsv	publication/Figure8/source/Figure8C.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8D.tsv	publication/Figure8/source/Figure8D.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8D_summary.tsv	publication/Figure8/source/Figure8D_summary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8E.tsv	publication/Figure8/source/Figure8E.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8F.tsv	results/diagnostics/supplementary/tissue_context/leave_one_patient_out.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8families.tsv	results/integration/supplementary_tissue_protein_family_closure.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8hypotheses.tsv	results/integration/supplementary_tissue_protein_hypotheses.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8influence_support.tsv	results/diagnostics/supplementary/tissue_context/influence_summary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-Figure8	Figure8patient_order.tsv	publication/Figure8/source/Figure8A.tsv	GSE122401 observed values; TCGA_STAD is in Figure8B.tsv; concatenated display order omitted.
-tables	data_dictionary.tsv	publication/tables/source/data_dictionary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	GSE27342_coverage.tsv	data/metadata/GSE27342/qualification/GSE27342_coverage.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	GSE27342_pair_ledger.tsv	data/metadata/GSE27342/qualification/GSE27342_pair_ledger.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	GSE29272_coverage.tsv	data/metadata/GSE29272/qualification/GSE29272_coverage.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	GSE29272_pair_ledger.tsv	data/metadata/GSE29272/qualification/GSE29272_pair_ledger.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	TCGA_coverage.tsv	data/metadata/TCGA_STAD/qualification/TCGA_coverage.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	common_background_coverage.tsv	provenance/eligibility/original/bulk_ingress/review/common_background_coverage.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	exclusions_and_deviations.tsv	provenance/eligibility/original/bulk_ingress/review/exclusions_and_deviations.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	B_population_readiness.tsv	provenance/eligibility/supplementary/epithelial_admission/review/B_population_readiness.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	pair_flow.tsv	provenance/eligibility/supplementary/external_bulk_inference/bindings/pair_flow.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	state_role_freeze.tsv	provenance/protocols/implementation/original/single_cell/state_role_freeze.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	endpoint_coverage.tsv	provenance/release/original/protein_and_release/endpoint_coverage.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	influence_diagnostics.tsv	results/diagnostics/original/bulk/influence_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	loo_replication_labels.tsv	results/diagnostics/original/bulk/loo_replication_labels.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	robustness_diagnostics.tsv	results/diagnostics/original/bulk/robustness_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	score_method_diagnostics.tsv	results/diagnostics/original/bulk/score_method_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	nominal_protein_diagnostics.tsv	results/diagnostics/original/protein_bridge/nominal_protein_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	score_method_diagnostics.tsv	results/diagnostics/original/protein_bridge/score_method_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	nominal_program_diagnostics.tsv	results/diagnostics/original/single_cell/nominal_program_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	quasibinomial_audit.tsv	results/diagnostics/original/single_cell/quasibinomial_audit.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	score_method_diagnostics.tsv	results/diagnostics/original/single_cell/score_method_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	diagnostic_index.tsv	results/diagnostics/supplementary/epithelial/diagnostic_index.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	robustness_diagnostics.tsv	results/diagnostics/supplementary/external_bulk/robustness_diagnostics.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	HC3_estimates.tsv	results/diagnostics/supplementary/tissue_context/HC3_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	full_unadjusted_H.tsv	results/diagnostics/supplementary/tissue_context/full_unadjusted_H.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	influence_summary.tsv	results/diagnostics/supplementary/tissue_context/influence_summary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	intercept_support.tsv	results/diagnostics/supplementary/tissue_context/intercept_support.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	leave_one_patient_out.tsv	results/diagnostics/supplementary/tissue_context/leave_one_patient_out.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	clinical_reference_context.tsv	results/integration/clinical_reference_context.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	family_reconciliation.tsv	results/integration/family_reconciliation.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	integrated_evidence_claims.tsv	results/integration/integrated_evidence_claims.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	patient_metadata_descriptive_summary.tsv	results/integration/patient_metadata_descriptive_summary.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	source_analysis_roster.tsv	results/integration/source_analysis_roster.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	source_dependence.tsv	results/integration/source_dependence.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	supplementary_tissue_protein_family_closure.tsv	results/integration/supplementary_tissue_protein_family_closure.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	supplementary_tissue_protein_hypotheses.tsv	results/integration/supplementary_tissue_protein_hypotheses.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_member_estimates.tsv	results/original/bulk/all_member_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_program_estimates.tsv	results/original/bulk/all_program_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	bulk_reproducibility_states.tsv	results/original/bulk/bulk_reproducibility_states.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_member_estimates.tsv	results/original/protein_bridge/all_member_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_program_estimates.tsv	results/original/protein_bridge/all_program_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	cptac_bridge_estimates.tsv	results/original/protein_bridge/cptac_bridge_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_member_estimates.tsv	results/original/single_cell/all_member_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_program_estimates.tsv	results/original/single_cell/all_program_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	captured_composition_estimates.tsv	results/original/single_cell/captured_composition_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_results.tsv	results/supplementary/epithelial/all_results.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	family_closure.tsv	results/supplementary/epithelial/family_closure.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	all_inferential_results.tsv	results/supplementary/external_bulk/all_inferential_results.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	family_closure.tsv	results/supplementary/external_bulk/family_closure.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	member_estimates.tsv	results/supplementary/protein/member_estimates.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	D7_member_descriptions.tsv	results/supplementary/tissue_context/D7_member_descriptions.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
-tables	model_coefficients.tsv	results/supplementary/tissue_context/model_coefficients.tsv	Canonical bundled scientific source; labels may refer to a duplicate source.
+Figure2	rna	publication/Figure2/source/dual_journal/inputs/Figure2distributions.tsv	Current scientific identity from dual_journal mapping
+Figure2	rna_G	publication/Figure2/source/dual_journal/inputs/Figure2A.tsv	Current scientific identity from dual_journal mapping
+Figure2	rna_H	publication/Figure2/source/dual_journal/inputs/Figure2B.tsv	Current scientific identity from dual_journal mapping
+Figure2	primary	publication/Figure2/source/dual_journal/inputs/Figure4primary.tsv	Current scientific identity from dual_journal mapping
+Figure2	strata	publication/Figure2/source/dual_journal/inputs/Figure2D.tsv	Current scientific identity from dual_journal mapping
+Figure3	rna_members	publication/Figure3/source/dual_journal/inputs/Figure2C.tsv	Current scientific identity from dual_journal mapping
+Figure3	protein_members	publication/Figure3/source/dual_journal/inputs/Figure3C.tsv	Current scientific identity from dual_journal mapping
+Figure3	submodules	publication/Figure3/source/dual_journal/inputs/Figure4C.tsv	Current scientific identity from dual_journal mapping
+Figure3	primary	publication/Figure2/source/dual_journal/inputs/Figure4primary.tsv	Current scientific identity from dual_journal mapping
+Figure3	alternative	publication/Figure3/source/dual_journal/inputs/Figure4alternative.tsv	Current scientific identity from dual_journal mapping
+Figure3	omissions	publication/Figure3/source/dual_journal/inputs/Figure4omissions.tsv	Current scientific identity from dual_journal mapping
+Figure3	context_rank	publication/Figure3/source/dual_journal/inputs/Figure5A_primary.tsv	Current scientific identity from dual_journal mapping
+Figure3	context_z	publication/Figure3/source/dual_journal/inputs/Figure5A_alternative.tsv	Current scientific identity from dual_journal mapping
+Figure4	rna_members	publication/Figure3/source/dual_journal/inputs/Figure2C.tsv	Current scientific identity from dual_journal mapping
+Figure4	mun_ratios	publication/Figure4/source/dual_journal/inputs/Figure5C.tsv	Current scientific identity from dual_journal mapping
+Figure4	primary	publication/Figure2/source/dual_journal/inputs/Figure4primary.tsv	Current scientific identity from dual_journal mapping
+Figure4	alternative	publication/Figure3/source/dual_journal/inputs/Figure4alternative.tsv	Current scientific identity from dual_journal mapping
+Figure4	context	publication/Figure3/source/dual_journal/inputs/Figure5A_primary.tsv	Current scientific identity from dual_journal mapping
+Figure5	G_result	publication/Figure5/source/dual_journal/inputs/Figure3E_estimate.tsv	Current scientific identity from dual_journal mapping
+Figure5	H_result	publication/Figure5/source/dual_journal/inputs/Figure3F_estimate.tsv	Current scientific identity from dual_journal mapping
+Figure5	E_pairs	results/supplementary/second_post_effect/E_paired_values.tsv	Current scientific identity from dual_journal mapping
+Figure5	E_results	results/supplementary/second_post_effect/E_results.tsv	Current scientific identity from dual_journal mapping
+Figure6	markers	publication/Figure6/source/dual_journal/inputs/Figure8C.tsv	Current scientific identity from dual_journal mapping
+Figure6	GSE122401_pairs	publication/Figure6/source/dual_journal/inputs/Figure8A.tsv	Current scientific identity from dual_journal mapping
+Figure6	GSE122401_fit	publication/Figure6/source/dual_journal/inputs/Figure8A_fit.tsv	Current scientific identity from dual_journal mapping
+Figure6	TCGA_pairs	publication/Figure6/source/dual_journal/inputs/Figure8B.tsv	Current scientific identity from dual_journal mapping
+Figure6	TCGA_fit	publication/Figure6/source/dual_journal/inputs/Figure8B_fit.tsv	Current scientific identity from dual_journal mapping
+Figure6	D_results	results/supplementary/second_post_effect/D_results.tsv	Current scientific identity from dual_journal mapping
+Figure6	correlations	results/diagnostics/supplementary/second_post_effect/D_component_correlations.tsv	Current scientific identity from dual_journal mapping
+Figure6	coefficients	results/supplementary/tissue_context/model_coefficients.tsv	Current scientific identity from dual_journal mapping
+Figure7	programs	publication/Figure7/source/dual_journal/inputs/Figure6A_estimates.tsv	Current scientific identity from dual_journal mapping
+Figure7	members	publication/Figure7/source/dual_journal/inputs/Figure6B.tsv	Current scientific identity from dual_journal mapping
+Figure7	coverage	publication/Figure7/source/dual_journal/inputs/Figure6C.tsv	Current scientific identity from dual_journal mapping
+Figure7	rank	publication/Figure7/source/dual_journal/inputs/Figure6D_rank.tsv	Current scientific identity from dual_journal mapping
+Figure7	normalized	results/supplementary/second_post_effect/B_donor_values.tsv	Current scientific identity from dual_journal mapping
+Figure7	normalized_result	results/supplementary/second_post_effect/B_diagnostic.tsv	Current scientific identity from dual_journal mapping
+Figure7	scale_comparison	results/supplementary/second_post_effect/B_scale_comparison.tsv	Current scientific identity from dual_journal mapping
+Figure7	epi_members	publication/Figure7/source/dual_journal/inputs/Figure6E.tsv	Current scientific identity from dual_journal mapping
+Figure8	methods	publication/Figure8/source/dual_journal/inputs/Figure7B.tsv	Current scientific identity from dual_journal mapping
+Figure8	eec_pairs	publication/Figure8/source/dual_journal/inputs/Figure7C_pairs.tsv	Current scientific identity from dual_journal mapping
+Figure8	eec_results	publication/Figure8/source/dual_journal/inputs/Figure7D.tsv	Current scientific identity from dual_journal mapping
+Supporting source	publication/Figure2/source/Figure2A.tsv	publication/Figure2/source/dual_journal/inputs/Figure2A.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure2/source/Figure2B.tsv	publication/Figure2/source/dual_journal/inputs/Figure2B.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure2/source/Figure2C.tsv	publication/Figure3/source/dual_journal/inputs/Figure2C.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure2/source/Figure2boxes.tsv	publication/Figure2/source/dual_journal/inputs/Figure2boxes.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure2/source/Figure2distributions.tsv	publication/Figure2/source/dual_journal/inputs/Figure2distributions.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure2/source/Figure2paired_original.tsv	results/original/bulk/patient_score_deltas.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure2/source/Figure2rank_scores.tsv	data/processed/GSE122401/analysis/rank_scores.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure3/source/Figure3A_estimate.tsv	results/original/protein_bridge/all_program_estimates.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure3/source/Figure3B_estimate.tsv	results/original/protein_bridge/all_program_estimates.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure3/source/Figure3C.tsv	publication/Figure3/source/dual_journal/inputs/Figure3C.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure3/source/Figure3D.tsv	publication/source/legacy_support/Figure3D.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure3/source/Figure3E_estimate.tsv	publication/Figure5/source/dual_journal/inputs/Figure3E_estimate.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure3/source/Figure3F_estimate.tsv	publication/Figure5/source/dual_journal/inputs/Figure3F_estimate.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4B_states.tsv	publication/source/legacy_support/Figure4B_states.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4C.tsv	publication/Figure3/source/dual_journal/inputs/Figure4C.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4D.tsv	results/original/bulk/all_program_estimates.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4D_display.tsv	publication/source/legacy_support/Figure4D_display.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4E.tsv	publication/source/legacy_support/Figure4E.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4alternative.tsv	publication/Figure3/source/dual_journal/inputs/Figure4alternative.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4bulk_support.tsv	results/diagnostics/original/bulk/robustness_diagnostics.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4omissions.tsv	publication/Figure3/source/dual_journal/inputs/Figure4omissions.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4primary.tsv	publication/Figure2/source/dual_journal/inputs/Figure4primary.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure4/source/Figure4score_support.tsv	results/diagnostics/original/bulk/score_method_diagnostics.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure5/source/Figure5A_alternative.tsv	publication/Figure3/source/dual_journal/inputs/Figure5A_alternative.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure5/source/Figure5A_primary.tsv	publication/Figure3/source/dual_journal/inputs/Figure5A_primary.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure5/source/Figure5B_summaries.tsv	publication/source/legacy_support/Figure5B_summaries.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure5/source/Figure5C.tsv	publication/Figure4/source/dual_journal/inputs/Figure5C.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6A_estimates.tsv	publication/Figure7/source/dual_journal/inputs/Figure6A_estimates.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6B.tsv	publication/Figure7/source/dual_journal/inputs/Figure6B.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6B_support.tsv	publication/source/legacy_support/Figure6B_support.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6D_alternative.tsv	publication/source/legacy_support/Figure6D_alternative.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6D_rank.tsv	publication/Figure7/source/dual_journal/inputs/Figure6D_rank.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6D_reference.tsv	publication/source/legacy_support/Figure6D_reference.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6D_support.tsv	publication/source/legacy_support/Figure6D_support.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure6/source/Figure6E.tsv	publication/Figure7/source/dual_journal/inputs/Figure6E.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure7/source/Figure7C.tsv	results/supplementary/epithelial/captured_composition_donor_source.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure7/source/Figure7D.tsv	publication/Figure8/source/dual_journal/inputs/Figure7D.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure7/source/Figure7D_percentage_points.tsv	publication/source/legacy_support/Figure7D_percentage_points.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure8/source/Figure8A.tsv	publication/Figure6/source/dual_journal/inputs/Figure8A.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure8/source/Figure8B.tsv	publication/Figure6/source/dual_journal/inputs/Figure8B.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure8/source/Figure8C.tsv	publication/Figure6/source/dual_journal/inputs/Figure8C.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure8/source/Figure8D.tsv	results/supplementary/tissue_context/member_pair_source.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure8/source/Figure8D_summary.tsv	results/supplementary/tissue_context/D7_member_descriptions.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting source	publication/Figure8/source/Figure8E.tsv	publication/source/legacy_support/Figure8E.tsv	Historical identity retained; current assignment is in PANEL_MAPPING.tsv and figure_inputs.tsv
+Supporting table/source	Figure2D.tsv	results/diagnostics/original/bulk/site_stratum_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure2D_interactions.tsv	results/diagnostics/original/bulk/site_interaction_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure2pair_flow.tsv	provenance/eligibility/supplementary/external_bulk_inference/bindings/pair_flow.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure2pair_ledger.tsv	provenance/eligibility/supplementary/supplementary_readiness/bindings/GSE122401_sample_pair_ledger.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure3frozen_supplementary_protein.tsv	provenance/eligibility/supplementary/supplementary_readiness/bindings/D_common_H4_population.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure3ratio_support.tsv	results/supplementary/protein/patient_centered_ratios.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure4protein_score_support.tsv	results/diagnostics/original/protein_bridge/score_method_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure4protein_support.tsv	results/diagnostics/original/protein_bridge/nominal_protein_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure4supplementary_support.tsv	results/diagnostics/supplementary/external_bulk/robustness_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure5C_estimates.tsv	results/supplementary/protein/member_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure5frozen_supplementary_protein.tsv	provenance/eligibility/supplementary/supplementary_readiness/bindings/D_common_H4_population.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure5protein_score_support.tsv	results/diagnostics/original/protein_bridge/score_method_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure5protein_support.tsv	results/diagnostics/original/protein_bridge/nominal_protein_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure6C.tsv	provenance/protocols/implementation/original/single_cell/state_role_freeze.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure7B.tsv	results/original/single_cell/captured_composition_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure7model_support.tsv	results/diagnostics/original/single_cell/quasibinomial_audit.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure8A_fit.tsv	results/supplementary/tissue_context/GSE122401_fitted_line_source.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure8B_fit.tsv	results/supplementary/tissue_context/TCGA_STAD_fitted_line_source.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure8F.tsv	results/diagnostics/supplementary/tissue_context/leave_one_patient_out.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure8families.tsv	results/integration/supplementary_tissue_protein_family_closure.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure8hypotheses.tsv	results/integration/supplementary_tissue_protein_hypotheses.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	Figure8influence_support.tsv	results/diagnostics/supplementary/tissue_context/influence_summary.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	data_dictionary.tsv	publication/tables/source/data_dictionary.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	GSE27342_coverage.tsv	data/metadata/GSE27342/qualification/GSE27342_coverage.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	GSE27342_pair_ledger.tsv	data/metadata/GSE27342/qualification/GSE27342_pair_ledger.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	GSE29272_coverage.tsv	data/metadata/GSE29272/qualification/GSE29272_coverage.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	GSE29272_pair_ledger.tsv	data/metadata/GSE29272/qualification/GSE29272_pair_ledger.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	TCGA_coverage.tsv	data/metadata/TCGA_STAD/qualification/TCGA_coverage.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	common_background_coverage.tsv	provenance/eligibility/original/bulk_ingress/review/common_background_coverage.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	exclusions_and_deviations.tsv	provenance/eligibility/original/bulk_ingress/review/exclusions_and_deviations.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	B_population_readiness.tsv	provenance/eligibility/supplementary/epithelial_admission/review/B_population_readiness.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	pair_flow.tsv	provenance/eligibility/supplementary/external_bulk_inference/bindings/pair_flow.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	state_role_freeze.tsv	provenance/protocols/implementation/original/single_cell/state_role_freeze.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	endpoint_coverage.tsv	provenance/release/original/protein_and_release/endpoint_coverage.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	influence_diagnostics.tsv	results/diagnostics/original/bulk/influence_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	loo_replication_labels.tsv	results/diagnostics/original/bulk/loo_replication_labels.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	robustness_diagnostics.tsv	results/diagnostics/original/bulk/robustness_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	score_method_diagnostics.tsv	results/diagnostics/original/bulk/score_method_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	nominal_protein_diagnostics.tsv	results/diagnostics/original/protein_bridge/nominal_protein_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	score_method_diagnostics.tsv	results/diagnostics/original/protein_bridge/score_method_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	nominal_program_diagnostics.tsv	results/diagnostics/original/single_cell/nominal_program_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	quasibinomial_audit.tsv	results/diagnostics/original/single_cell/quasibinomial_audit.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	score_method_diagnostics.tsv	results/diagnostics/original/single_cell/score_method_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	diagnostic_index.tsv	results/diagnostics/supplementary/epithelial/diagnostic_index.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	robustness_diagnostics.tsv	results/diagnostics/supplementary/external_bulk/robustness_diagnostics.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	HC3_estimates.tsv	results/diagnostics/supplementary/tissue_context/HC3_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	full_unadjusted_H.tsv	results/diagnostics/supplementary/tissue_context/full_unadjusted_H.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	influence_summary.tsv	results/diagnostics/supplementary/tissue_context/influence_summary.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	intercept_support.tsv	results/diagnostics/supplementary/tissue_context/intercept_support.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	leave_one_patient_out.tsv	results/diagnostics/supplementary/tissue_context/leave_one_patient_out.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	clinical_reference_context.tsv	results/integration/clinical_reference_context.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	family_reconciliation.tsv	results/integration/family_reconciliation.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	integrated_evidence_claims.tsv	results/integration/integrated_evidence_claims.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	patient_metadata_descriptive_summary.tsv	results/integration/patient_metadata_descriptive_summary.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	source_analysis_roster.tsv	results/integration/source_analysis_roster.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	source_dependence.tsv	results/integration/source_dependence.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	supplementary_tissue_protein_family_closure.tsv	results/integration/supplementary_tissue_protein_family_closure.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	supplementary_tissue_protein_hypotheses.tsv	results/integration/supplementary_tissue_protein_hypotheses.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_member_estimates.tsv	results/original/bulk/all_member_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_program_estimates.tsv	results/original/bulk/all_program_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	bulk_reproducibility_states.tsv	results/original/bulk/bulk_reproducibility_states.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_member_estimates.tsv	results/original/protein_bridge/all_member_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_program_estimates.tsv	results/original/protein_bridge/all_program_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	cptac_bridge_estimates.tsv	results/original/protein_bridge/cptac_bridge_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_member_estimates.tsv	results/original/single_cell/all_member_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_program_estimates.tsv	results/original/single_cell/all_program_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	captured_composition_estimates.tsv	results/original/single_cell/captured_composition_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_results.tsv	results/supplementary/epithelial/all_results.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	family_closure.tsv	results/supplementary/epithelial/family_closure.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	all_inferential_results.tsv	results/supplementary/external_bulk/all_inferential_results.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	family_closure.tsv	results/supplementary/external_bulk/family_closure.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	member_estimates.tsv	results/supplementary/protein/member_estimates.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	D7_member_descriptions.tsv	results/supplementary/tissue_context/D7_member_descriptions.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
+Supporting table/source	model_coefficients.tsv	results/supplementary/tissue_context/model_coefficients.tsv	Canonical public table; current section navigation in TABLE_DIRECTORY.tsv
